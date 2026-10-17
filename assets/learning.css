@@ -1,4 +1,8 @@
 /* The tutorial layout borrows familiar course navigation, with StudyLab's own styling. */
+.study-primary-nav{display:flex;flex-wrap:wrap;gap:4px;border:1px solid #27835f;border-radius:8px;padding:3px;background:#102d24}
+.study-primary-nav .nav-link{color:#d9f6e8;font-weight:650;white-space:nowrap}.study-primary-nav .nav-link.active{background:#168455;color:#fff}
+.advanced-workspace-nav{display:flex;align-items:center;flex-wrap:wrap;gap:10px;padding:12px 0 20px;border-bottom:1px solid var(--border);margin-bottom:20px}
+.advanced-library-tab{margin:0 0 18px;border-color:#27835f;color:var(--text-primary)}
 #navbar{height:auto;min-height:52px;flex-wrap:wrap;padding:8px 12px;gap:8px}
 .nav-left{flex:1 1 600px;flex-wrap:wrap;min-width:0}.nav-right{margin-left:auto}
 #app{height:calc(100dvh - var(--nav-height,105px))}

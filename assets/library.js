@@ -10,6 +10,12 @@ const OfflineLibrary = {
   label(lang) { return ({python:'Python',javascript:'JavaScript',cpp:'C++',c:'C',java:'Java',sql:'SQL',rust:'Rust'})[lang] || lang; },
   source(id) { return this.catalog.sources.find(s => s.id === id)?.label || id; },
   state() { return Store.get('library_progress', {}); },
+  advancedHeader(){
+    App.mode='advanced';document.body.dataset.mode='advanced';document.querySelectorAll('.mode-btn').forEach(b=>b.classList.toggle('active',b.dataset.mode==='advanced'));
+    const bar=document.createElement('nav');bar.className='advanced-workspace-nav';bar.setAttribute('aria-label','Advanced workspace');
+    bar.innerHTML='<strong>Advanced</strong><button class="btn-ghost" onclick="App.setMode(\'advanced\')">Coding problems</button><button class="btn-ghost" onclick="App.setMode(\'advanced\');Academy.setCodingCategory(\'dsa\')">DSA &amp; roadmaps</button><button class="btn-primary" aria-current="page" onclick="Navigation.open({view:\'library\'})">Offline Library</button>';
+    this.root.querySelector('.advanced-workspace-nav')?.remove();this.root.prepend(bar);
+  },
   cacheName(){return 'codelab-library-v2-'+encodeURIComponent(new URL('./',document.baseURI).pathname)+'-'+this.catalog.revision;},
   init() {
     this.root = document.getElementById('view-library');
@@ -196,7 +202,8 @@ const OfflineLibrary = {
     this.saving = true;
     try {
       this.cacheStatus('Preparing offline storage…');
-      if (!(await this.registrationPromise)) throw new Error('Service worker could not be installed');
+      const registration=await this.registrationPromise;if(!registration)throw new Error('Service worker could not be installed');
+      if(navigator.serviceWorker.controller&&(registration.waiting||registration.installing))throw new Error('Apply the available app update first, then save this version for offline use');
       let timer;
       try {
         await Promise.race([navigator.serviceWorker.ready, new Promise((_, reject) => { timer = setTimeout(() => reject(new Error('Offline storage setup timed out')), 20000); })]);
@@ -225,4 +232,5 @@ const OfflineLibrary = {
     finally { this.saving = false; }
   }
 };
+for(const method of ['render','reader','showSources']){const original=OfflineLibrary[method];OfflineLibrary[method]=function(...args){const result=original.apply(this,args);if(Router.current==='library')this.advancedHeader();return result;};}
 window.addEventListener('DOMContentLoaded', () => OfflineLibrary.init());

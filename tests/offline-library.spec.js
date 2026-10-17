@@ -36,7 +36,7 @@ test('generated packs are complete and internally consistent', async () => {
 test('filters, bookmarks, pagination and saved review state', async ({ page }) => {
   const errors = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto('/');
-  await page.getByRole('button', { name: '📚 Offline Library', exact:true }).click();
+  await page.locator('.mode-btn[data-mode="advanced"]').click();await page.getByRole('button',{name:/3 .*Offline Library/}).click();
   await expect(page.getByRole('heading', {name:'Offline Library', exact:true})).toBeVisible();
   await expect(page.locator('.lib-table tbody tr')).toHaveCount(40);
   await page.getByRole('button', {name:'Next →',exact:true}).click();

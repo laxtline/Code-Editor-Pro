@@ -4,7 +4,7 @@ import shutil
 import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
-STATIC=['index.html','sw.js','manifest.webmanifest','CodeLab-Offline.html','Start-CodeLab.py','local_tools.py','Start-CodeLab.cmd','Start-CodeLab-Vivaldi.ps1','OFFLINE-START-HERE.md','README.md','.vscode/extensions.json','.vscode/tasks.json']
+STATIC=['index.html','StudyLab.html','sw.js','manifest.webmanifest','CodeLab-Offline.html','Start-CodeLab.py','local_tools.py','Start-CodeLab.cmd','Start-CodeLab-Vivaldi.ps1','OFFLINE-START-HERE.md','README.md','.vscode/extensions.json','.vscode/tasks.json']
 
 def build():
     target=(ROOT/'_site').resolve()
@@ -25,7 +25,7 @@ def build():
 Extract the whole ZIP first.
 Windows: double-click Start-CodeLab.cmd.
 Vivaldi: run .\Start-CodeLab-Vivaldi.ps1 in PowerShell.
-VS Code: open this folder, then open index.html with Live Server.
+VS Code: open this folder, then open StudyLab.html with Live Server.
 Detailed steps: OFFLINE-START-HERE.md in this same folder.
 Any system with Python 3: python Start-CodeLab.py
 Keep the server window open while using the app. It binds to 127.0.0.1 only.

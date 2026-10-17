@@ -1,5 +1,7 @@
 # StudyLab
 
+Open **`StudyLab.html`** for the current app. Study Material, My Study and Smart Revision are permanent top navigation buttons. The full Offline Library is under **Advanced ? 3 ? Offline Library**; its entries, workspaces, bookmarks and notes are retained. This entry bundles current UI scripts to avoid an older cached index hiding new sections.
+
 A static coding and placement practice app with an editor, judged exercises, contests, mock exams, theory lessons and a bundled offline study library. No build step is needed to use or deploy the generated app.
 
 ## Version 3.0 upgrades
@@ -37,7 +39,7 @@ Study notes are independently written from the supplied syllabus and primary doc
 
 ## Open the app
 
-All local-use instructions are in **`OFFLINE-START-HERE.md` in this same folder**. VS Code users can open `index.html` with Live Server. On this computer the local workspace configuration opens Vivaldi; its machine-specific browser path is excluded from Git.
+All local-use instructions are in **`OFFLINE-START-HERE.md` in this same folder**. VS Code users can open `StudyLab.html` with Live Server. On this computer the local workspace configuration opens Vivaldi; its machine-specific browser path is excluded from Git.
 
 For a background localhost server and automatic Vivaldi opening, run `.\Start-CodeLab-Vivaldi.ps1` in this folder. Use `-Stop` to stop that server, or `-LiveServer` to open an already running VS Code Live Server (port 5500). The script auto-detects Vivaldi and does not require npm or internet. See the local guide for full commands.
 

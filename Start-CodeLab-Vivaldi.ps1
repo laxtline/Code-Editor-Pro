@@ -112,7 +112,7 @@ if ($LiveServer) {
 }
 
 if (-not $NoBrowser) {
-    Start-Process -FilePath $browserPath -ArgumentList $url
+    Start-Process -FilePath $browserPath -ArgumentList ($url + 'StudyLab.html')
     Write-Host 'Opened StudyLab in Vivaldi.'
 }
 Write-Host ('StudyLab URL: ' + $url)

@@ -451,7 +451,12 @@ button:focus-visible, a.nav-link:focus-visible, input:focus-visible, select:focu
       <a class="nav-link" data-nav="list" onclick="Router.go('list')">Problems</a>
       <a class="nav-link" data-nav="contest" onclick="Router.go('contest')">Contest</a>
     </span>
-    <button class="nav-link" data-nav="library" onclick="if(!Exam.active) Router.go('library'); else Toast.show('Finish the current exam to open the reference library.')">📚 Offline Library</button>
+    <nav class="study-primary-nav" aria-label="Study sections">
+      <button class="nav-link" data-nav="study" onclick="Navigation.open({view:'study'})">Study Material</button>
+      <button class="nav-link" data-nav="dashboard" onclick="Navigation.open({view:'dashboard'})">My Study</button>
+      <button class="nav-link" data-nav="revision" onclick="Navigation.open({view:'revision'})">Smart Revision</button>
+    </nav>
+    <button class="nav-link" data-nav="theory" onclick="Router.go('theory')">Theory</button>
     <span class="mode-nav m-exam">
       <a class="nav-link" data-nav="exam" onclick="Router.go('exam')">New Exam</a>
     </span>

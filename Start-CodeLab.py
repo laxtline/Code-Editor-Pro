@@ -45,7 +45,7 @@ def main():
     server.tools=LocalTools(root,enabled=not args.no_local_tools)
     url=f'http://127.0.0.1:{server.server_port}/'
     print('StudyLab is running at '+url+'\nKeep this window open. Press Ctrl+C to stop.\nNo internet is needed for Python, JavaScript, SQL or the study library.')
-    if not args.no_browser:webbrowser.open(url)
+    if not args.no_browser:webbrowser.open(url+'StudyLab.html')
     try:server.serve_forever()
     except KeyboardInterrupt:pass
     finally:server.server_close()

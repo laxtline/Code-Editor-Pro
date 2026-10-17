@@ -105,7 +105,7 @@ const ClassicSave={
 
 function installLearning(){
   for(const viewId of ['dashboard','revision']){const view=document.createElement('section');view.id='view-'+viewId;view.className='view';document.getElementById('app').append(view);}
-  const nav=document.createElement('button');nav.className='nav-link';nav.dataset.nav='dashboard';nav.textContent='My Study';nav.onclick=()=>Navigation.open({view:'dashboard'});document.querySelector('[data-nav="study"]').before(nav);
+  for(const view of ['dashboard','revision'])document.querySelector('[data-nav="'+view+'"]').onclick=()=>Navigation.open({view});
   ProgressBackup.arrays.push('learning_events');ProgressBackup.objects.push('revision_state','learning_daily','study_progress','study_settings','learning_meta','classic_session');ProgressBackup.raw=/^cl_(code_|notes_|editorial_|library_draft_|library_notes_|pg_|study_notes_|study_code_).+$/;
   const originalBusy=ProgressBackup.busy.bind(ProgressBackup);ProgressBackup.busy=()=>originalBusy()||Study.running;
   const originalCreate=ProgressBackup.create.bind(ProgressBackup);ProgressBackup.create=()=>{ClassicSave.persist();LearningTiming.flush();return originalCreate();};

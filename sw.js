@@ -6,10 +6,11 @@ const CATALOG = self.CODELAB_OFFLINE_CATALOG;
 const PREFIX = 'codelab-library-v2-'+encodeURIComponent(new URL(self.registration.scope).pathname)+'-';
 const CACHE = PREFIX + CATALOG.revision;
 const SHELL = ['./', ...self.CODELAB_RUNTIME.shell];
-const ALLOWED = new Set([...SHELL, ...CATALOG.files,...self.CODELAB_RUNTIME.files.map(f=>f.path)].map(path => new URL(path, self.registration.scope).href));
+const ENTRY = 'StudyLab.html';
+const ALLOWED = new Set([...SHELL, ENTRY, ...CATALOG.files,...self.CODELAB_RUNTIME.files.map(f=>f.path)].map(path => new URL(path, self.registration.scope).href));
 
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)));
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll([...SHELL, ENTRY])));
 });
 self.addEventListener('activate', event => {
   event.waitUntil((async () => {
@@ -42,6 +43,11 @@ self.addEventListener('fetch', event => {
   if (!ALLOWED.has(url.href)) return;
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);
+    // This entry includes the complete current UI, so online navigation can
+    // refresh it without mixing a new document with older cached app modules.
+    if(request.mode==='navigate' && url.href===new URL(ENTRY,self.registration.scope).href){
+      try{const fresh=await fetch(request);if(fresh.ok){await cache.put(url.href,fresh.clone());return fresh;}}catch{}
+    }
     const saved = await cache.match(url.href);
     if (saved) return saved;
     const response = await fetch(request);

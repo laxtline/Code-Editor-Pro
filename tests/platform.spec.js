@@ -14,7 +14,7 @@ test('packaged GitHub project path loads local Python, SQL, Monaco and install m
   await page.waitForFunction(()=>Py.ready&&EditorTools.richReady);
   const result=await page.evaluate(async()=>({python:await Py.run('import sys, json\nprint(json.loads(sys.stdin.readline())[0]+int(input()))','[20]\n22\n',5000),sql:await SqlRun.run('SELECT 21*2 AS answer;'),base:RuntimeAssets.base('python')}));
   expect(result.python).toEqual({stdout:'42\n',stderr:''});expect(result.sql.stdout).toContain('42');expect(result.base).toBe(HOST+'vendor/runtimes/python/');
-  const manifest=await (await request.get(HOST+'manifest.webmanifest')).json();expect(manifest.scope).toBe('./');expect(manifest.start_url).toBe('./');
+  const manifest=await (await request.get(HOST+'manifest.webmanifest')).json();expect(manifest.scope).toBe('./');expect(manifest.start_url).toBe('./StudyLab.html');
   for(const icon of manifest.icons)expect((await request.get(HOST+icon.src)).ok()).toBe(true);
   await page.getByRole('button',{name:'Online / Offline',exact:true}).click();
   await expect(page.getByRole('heading',{name:'Use StudyLab online & offline',exact:true})).toBeVisible();
@@ -35,7 +35,7 @@ test('saved full app boots offline from a new tab with Python, SQL, rich editor 
   await expect(page.locator('#lib-cache-status')).toContainText('Ready offline.');
   expect(await page.evaluate(()=>RuntimeAssets.saved())).toBe('ready');
   await context.setOffline(true);
-  const offline=await context.newPage();await offline.goto(HOST+'?offline=1#library/lc-156');
+  const offline=await context.newPage();await offline.goto(HOST+'StudyLab.html?offline=1#library/lc-156');
   await expect(offline.getByRole('heading',{name:'156. Binary Tree Upside Down',exact:true})).toBeVisible();
   await offline.waitForFunction(()=>Py.ready&&EditorTools.richReady);
   expect(await offline.evaluate(()=>Py.run('import json, sys\nprint(sum(json.load(sys.stdin)))','[20,22]',5000))).toEqual({stdout:'42\n',stderr:''});

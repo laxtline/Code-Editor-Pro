@@ -27,7 +27,7 @@ const Study={
   },
   init(){
     const view=document.createElement('section');view.id='view-study';view.className='view';document.getElementById('view-sources').after(view);
-    const nav=document.createElement('button');nav.className='nav-link';nav.dataset.nav='study';nav.textContent='Study Material';nav.onclick=()=>Navigation.open({view:'study'});document.querySelector('[data-nav="theory"]').after(nav);
+    document.querySelector('[data-nav="study"]').onclick=()=>Navigation.open({view:'study'});
     view.addEventListener('input',event=>{const el=event.target;if(el.id==='study-search')this.filter(el.value);if(el.dataset.studySave){Store.setRaw(el.dataset.studySave,el.value);}});
   },
   show(courseId,lessonId,tab='lesson'){

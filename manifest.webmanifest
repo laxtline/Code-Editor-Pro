@@ -3,7 +3,7 @@
   "name": "StudyLab — Coding & Placement Practice",
   "short_name": "StudyLab",
   "description": "Coding, aptitude, theory and your offline study collection.",
-  "start_url": "./",
+  "start_url": "./StudyLab.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#191a2e",
