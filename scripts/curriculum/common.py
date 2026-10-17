@@ -1,4 +1,4 @@
-"""Original CodeLab teaching notes. Source links verify concepts, not copied text."""
+"""Original Study Lab teaching notes. Source links verify concepts, not copied text."""
 COURSES=[]
 SOURCES={
  'w3html':('W3Schools HTML topic reference','https://www.w3schools.com/html/'),

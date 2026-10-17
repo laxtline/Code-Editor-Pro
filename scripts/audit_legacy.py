@@ -331,7 +331,7 @@ def review_bank(topics):
         if changed:changes.append(dict(ordinal=i,changes=changed,reason=explanation))
         entry.update(id=f'legacy-{i:03}',topic=topic,explanation=explanation,formula=meta[topic]['formula'],
             trick=meta[topic]['trick'],difficulty='Easy' if original['section']!='Logical' else 'Medium',
-            origin='CodeLab classic bank · reviewed',sources=meta[topic]['sources'],legacyOriginal=original['q'],legacyOrdinal=i)
+            origin='Study Lab classic bank · reviewed',sources=meta[topic]['sources'],legacyOriginal=original['q'],legacyOrdinal=i)
         reviewed.append(entry)
     report=dict(snapshotSha256=hashlib.sha256(raw).hexdigest(),reviewed=len(reviewed),changed=len(changes),changes=changes)
     (ROOT/'data/legacy-audit-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -391,7 +391,7 @@ def review_aptitude(topics):
         entry['answer']=entry['options'].index(answer)
         if any(entry[k]!=original[k] for k in ('q','options','answer')):changed.append(i)
         entry.update(id=f'aptitude-{i:03}',topic=topic,explanation=why,formula=meta[topic]['formula'],
-            trick=meta[topic]['trick'],difficulty='Easy',origin='CodeLab sectional bank · reviewed',
+            trick=meta[topic]['trick'],difficulty='Easy',origin='Study Lab sectional bank · reviewed',
             sources=meta[topic]['sources'],legacyOriginal=original['q'],legacyOrdinal=i)
         results.append(entry)
     return results,dict(reviewed=36,clarified=changed)

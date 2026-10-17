@@ -40,7 +40,7 @@ const CodingReview = {
     let history=Store.get('coding_history',[]).filter(r=>r.id!==report.id);history.unshift(report);Store.set('coding_history',history.slice(0,20));
     this.latest=report;return report;
   },
-  download(id){const r=this.currentReport(id)||this.latest;if(r)download('codelab-coding-report.json',JSON.stringify(r,null,2),'application/json');},
+  download(id){const r=this.currentReport(id)||this.latest;if(r)download('study-lab-coding-report.json',JSON.stringify(r,null,2),'application/json');},
   show(id){
     const report=this.currentReport(id)||this.latest;if(!report)return;
     const h=Academy.h.bind(Academy);

@@ -17,7 +17,7 @@ test('packaged GitHub project path loads local Python, SQL, Monaco and install m
   const manifest=await (await request.get(HOST+'manifest.webmanifest')).json();expect(manifest.scope).toBe('./');expect(manifest.start_url).toBe('./');
   for(const icon of manifest.icons)expect((await request.get(HOST+icon.src)).ok()).toBe(true);
   await page.getByRole('button',{name:'Online / Offline',exact:true}).click();
-  await expect(page.getByRole('heading',{name:'Use CodeLab online & offline',exact:true})).toBeVisible();
+  await expect(page.getByRole('heading',{name:'Use Study Lab online & offline',exact:true})).toBeVisible();
   await expect(page.getByRole('link',{name:'Download full offline ZIP',exact:true})).toHaveAttribute('href','downloads/CodeLab-Offline.zip');
 });
 
@@ -60,7 +60,7 @@ test('offline readiness detects a missing engine file and cache names isolate re
 test('downloaded ZIP includes all runtime hashes and runs without external network requests',async({page,request})=>{
   const unpack=path.resolve('test-results/offline-runtime-package');fs.mkdirSync(unpack,{recursive:true});
   execFileSync('python',['-m','zipfile','-e','downloads/CodeLab-Offline.zip',unpack]);
-  const root=path.join(unpack,'CodeLab');
+  const root=path.join(unpack,'Study Lab');
   expect(fs.existsSync(path.join(root,'.git'))).toBe(false);expect(fs.existsSync(path.join(root,'node_modules'))).toBe(false);
   expect(fs.existsSync(path.join(root,'OFFLINE-START-HERE.md'))).toBe(true);expect(fs.existsSync(path.join(root,'Start-CodeLab-Vivaldi.ps1'))).toBe(true);
   expect(JSON.parse(fs.readFileSync(path.join(root,'.vscode/settings.json'),'utf8'))).not.toHaveProperty('liveServer.settings.AdvanceCustomBrowserCmdLine');

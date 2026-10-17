@@ -1,4 +1,4 @@
-"""Loopback-only local compiler and private folder backup support for CodeLab.
+"""Loopback-only local compiler and private folder backup support for Study Lab.
 
 Programs run with the user's permissions, not in a security sandbox. The API is
 same-origin, token-protected, bounded, and never enabled on the public website.
@@ -170,7 +170,7 @@ class LocalTools:
                 size=int(handler.headers.get('Content-Length','0'))
                 if not 0<size<=MAX_BODY or handler.headers.get('Content-Type','').split(';')[0]!='application/json':respond(413,{'error':'Expected bounded JSON request.'});return True
                 data=json.loads(handler.rfile.read(size));result=self.compile(data) if path.endswith('/run') else self.merge_records(data)
-            else:respond(404,{'error':'Unknown CodeLab endpoint.'});return True
+            else:respond(404,{'error':'Unknown Study Lab endpoint.'});return True
             respond(200,result)
         except (ValueError,TypeError,json.JSONDecodeError) as error:respond(400,{'error':str(error)})
         except Exception:respond(500,{'error':'Local operation failed. Check the launcher logs.'})

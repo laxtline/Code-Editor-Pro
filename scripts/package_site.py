@@ -20,7 +20,7 @@ def build():
         if source.stat().st_size>=100_000_000:raise SystemExit('File exceeds GitHub single-file limit: '+str(relative))
         destination=target/relative;destination.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source,destination)
     (target/'.nojekyll').write_text('')
-    guide=r'''CodeLab online and offline
+    guide=r'''Study Lab online and offline
 ==========================
 Extract the whole ZIP first.
 Windows: double-click Start-CodeLab.cmd.
@@ -46,9 +46,9 @@ Source and runtime license notices are included in offline/licenses and vendor.
     output=downloads/'CodeLab-Offline.zip'
     with zipfile.ZipFile(output,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=7) as archive:
         # Portable workspace defaults omit this computer's private Vivaldi installation path.
-        archive.writestr('CodeLab/.vscode/settings.json','{"liveServer.settings.host":"127.0.0.1","liveServer.settings.port":5500,"liveServer.settings.root":"/","liveServer.settings.ignoreFiles":["**/.git/**","**/.codelab-data/**","**/.codelab-server*"]}\n')
+        archive.writestr('Study Lab/.vscode/settings.json','{"liveServer.settings.host":"127.0.0.1","liveServer.settings.port":5500,"liveServer.settings.root":"/","liveServer.settings.ignoreFiles":["**/.git/**","**/.codelab-data/**","**/.codelab-server*"]}\n')
         for path in sorted(target.rglob('*')):
-            if path.is_file():archive.write(path,'CodeLab/'+path.relative_to(target).as_posix())
+            if path.is_file():archive.write(path,'Study Lab/'+path.relative_to(target).as_posix())
     (target/'downloads').mkdir();shutil.copy2(output,target/'downloads'/output.name)
     print(f'Pages artifact: {target} ({len(files)} files)')
     print(f'Complete offline ZIP: {output.stat().st_size/1048576:.2f} MiB')

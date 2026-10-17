@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-  CodeLab — Free LeetCode + TCS NQT Practice Platform
+  Study Lab — Free LeetCode + TCS NQT Practice Platform
   Deploy: Upload this entire folder to GitHub Pages or Netlify
   GitHub Pages: Push to repo → Settings → Pages → main branch → /root
   Netlify: Drag & Drop index.html at netlify.com/drop
@@ -14,7 +14,7 @@
 <meta name="theme-color" content="#17213a" />
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CodeLab — Free LeetCode + TCS NQT Practice</title>
+<title>Study Lab — Free LeetCode + TCS NQT Practice</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -440,7 +440,7 @@ button:focus-visible, a.nav-link:focus-visible, input:focus-visible, select:focu
 <!-- ============================== NAVBAR ============================== -->
 <div id="navbar">
   <div class="nav-left">
-    <div class="logo" onclick="App.home()">💻 CodeLab</div>
+    <div class="logo" onclick="App.home()">💻 Study Lab</div>
     <div class="mode-switch">
       <button class="mode-btn" data-mode="normal" onclick="App.setMode('normal')" title="Code editor — write &amp; run any language">⚡ Normal</button>
       <button class="mode-btn active" data-mode="advanced" onclick="App.setMode('advanced')" title="LeetCode-style problem practice">🎯 Advanced</button>
@@ -657,7 +657,7 @@ button:focus-visible, a.nav-link:focus-visible, input:focus-visible, select:focu
       if(!d){ d=document.createElement('div'); d.id='__diag';
         d.style.cssText='position:fixed;left:0;right:0;bottom:0;max-height:45vh;overflow:auto;background:#2a0000;color:#ffd2d2;font:12px/1.5 monospace;padding:10px 14px;z-index:999999;white-space:pre-wrap;border-top:3px solid #ff375f;box-shadow:0 -4px 20px rgba(0,0,0,.5)';
         (document.body||document.documentElement).appendChild(d);
-        d.textContent='⚠ CodeLab error (screenshot this and send it):\n';
+        d.textContent='⚠ Study Lab error (screenshot this and send it):\n';
       }
       d.textContent += '\n'+msg;
     }catch(_){}
@@ -2127,7 +2127,7 @@ function registerSnippets(){
         return { suggestions: SNIPS[lang].map(s=>({
           label:s[0], kind:K, insertText:s[1],
           insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
-          documentation:'CodeLab snippet', range
+          documentation:'Study Lab snippet', range
         })) };
       }
     });
@@ -3842,7 +3842,7 @@ const UI = {
   welcome(){
     if(Store.getRaw('first_visit', null)==='false') return;
     const m=document.getElementById('modal-welcome');
-    m.innerHTML='<div class="modal"><div class="modal-head"><h2>👋 Welcome to CodeLab!</h2></div><div class="modal-body">'+
+    m.innerHTML='<div class="modal"><div class="modal-head"><h2>👋 Welcome to Study Lab!</h2></div><div class="modal-body">'+
       '<div style="color:var(--text-secondary);margin-bottom:8px;">Your FREE LeetCode + TCS NQT Platform</div>'+
       '<div class="welcome-feat"><div>✅ '+BUILTIN_QUESTIONS.length+' problems pre-loaded</div><div>✅ Python, JavaScript &amp; HTML/CSS/JS run in the browser</div><div>✅ C/C++/Java via free cloud compiler</div><div>✅ Placement exam mode — service, product, custom &amp; aptitude</div><div>✅ Save your work in the My Code section</div><div>✅ All progress saved locally</div></div>'+
       '<div style="border-top:1px solid var(--border);padding-top:12px;font-size:13px;"><strong>Quick Start:</strong><br>1. Click any problem in the Problems tab<br>2. Write code in the editor<br>3. Ctrl+Enter to Run · Ctrl+Shift+Enter to Submit</div>'+

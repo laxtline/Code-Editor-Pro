@@ -10,7 +10,7 @@ def extend(topic, add, questions):
         if visual:item['visual']=visual
         if passage:item['passage']=passage
         if rule:item['formula']=rule
-        item['origin']='CodeLab original visual/passage/caselet practice'
+        item['origin']='Study Lab original visual/passage/caselet practice'
     def sequence(title,items,alt):return dict(type='sequence',title=title,items=items,alt=alt)
     def arrows(angles):return [dict(shape='arrow',angle=a) for a in angles]+[dict(shape='missing')]
     def shapes(names):return [dict(shape=s) for s in names]+[dict(shape='missing')]

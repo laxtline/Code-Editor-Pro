@@ -1,4 +1,4 @@
-/* The tutorial layout borrows familiar course navigation, with CodeLab's own styling. */
+/* The tutorial layout borrows familiar course navigation, with Study Lab's own styling. */
 #navbar{height:auto;min-height:52px;flex-wrap:wrap;padding:8px 12px;gap:8px}
 .nav-left{flex:1 1 600px;flex-wrap:wrap;min-width:0}.nav-right{margin-left:auto}
 #app{height:calc(100dvh - var(--nav-height,105px))}

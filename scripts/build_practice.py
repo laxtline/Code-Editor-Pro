@@ -43,7 +43,7 @@ def add(key, prompt, correct, explanation, distractors=None, difficulty='Medium'
     QUESTIONS.append(dict(id=f'prep-{key}-{sum(q["topic"]==key for q in QUESTIONS)+1:02}',
         section=meta['section'], topic=key, q=prompt, options=options, answer=options.index(right),
         explanation=explanation, formula=meta['formula'], trick=meta['trick'], difficulty=difficulty,
-        origin='CodeLab original practice', sources=meta['sources']))
+        origin='Study Lab original practice', sources=meta['sources']))
 
 
 def numeric_topics():
@@ -415,13 +415,13 @@ SOURCES = [
  dict(id='coverage',title='IndiaBIX — aptitude topic index',url='https://www.indiabix.com/aptitude/',note='Topic coverage reference; question text in the new bank is original.'),
  dict(id='careerride',title='CareerRide — placement preparation',url='https://www.careerride.com/placement-papers.aspx',note='Cross-check for placement subject coverage.'),
  dict(id='gfg',title='GeeksforGeeks — aptitude overview',url='https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/',note='Cross-check for quantitative, reasoning and verbal topic families.'),
- dict(id='tcs',title='TCS — All India NQT hiring pattern',url='https://www.tcs.com/careers/india/tcs-all-india-nqt-hiring',note='Official Foundation 75 min and Advanced 115 min structure. Practice MCQ counts here are chosen by CodeLab.'),
+ dict(id='tcs',title='TCS — All India NQT hiring pattern',url='https://www.tcs.com/careers/india/tcs-all-india-nqt-hiring',note='Official Foundation 75 min and Advanced 115 min structure. Practice MCQ counts here are chosen by Study Lab.'),
  dict(id='infosys',title='Infosys — HackWithInfy 2026 sample',url='https://www.infosys.com/careers/hackwithinfy/2026/sample-questions_hwi.pdf',note='Official coding preparation reference; our questions and staged mock timings are independent practice choices.'),
  dict(id='rrb',title='RRB — CEN 05/2024 NTPC graduate notice',url='https://www.rrbcdg.gov.in/uploads/2024/05-NTPCG/Detailed%20CEN%2005-2024%20NTPC.pdf',note='Named notice: CBT-1 indicative 30 maths, 30 reasoning, 40 awareness; 90 min; −1/3 per wrong answer. Not a claim about future notices.'),
  dict(id='gate',title='GATE 2026 — official pattern',url='https://gate2026.iitg.ac.in/question-paper-pattern.html',note='General aptitude is 15 marks; our GA drills are not a full GATE paper and use single-choice practice items.'),
  dict(id='algorithms',title='TheAlgorithms/Python — MIT references',url='https://github.com/TheAlgorithms/Python',note='12 licensed source modules bundled with pinned commit and attribution.'),
  dict(id='js-algorithms',title='JavaScript algorithms — topic reference',url='https://github.com/trekhleb/javascript-algorithms',note='Algorithm and data-structure coverage reference; new judged tasks are original.'),
- dict(id='mit-algorithms',title='MIT OpenCourseWare — Introduction to Algorithms',url='https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/lecture-notes/',note='Data structures, heaps, graphs and DP coverage reference. Added coding statements, cases and implementations are authored independently for CodeLab.'),
+ dict(id='mit-algorithms',title='MIT OpenCourseWare — Introduction to Algorithms',url='https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/lecture-notes/',note='Data structures, heaps, graphs and DP coverage reference. Added coding statements, cases and implementations are authored independently for Study Lab.'),
 ]
 
 

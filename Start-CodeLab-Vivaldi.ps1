@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-Start this CodeLab folder and open it in Vivaldi. No internet or npm needed.
+Start this Study Lab folder and open it in Vivaldi. No internet or npm needed.
 .EXAMPLE
 .\Start-CodeLab-Vivaldi.ps1
 .EXAMPLE
@@ -45,7 +45,7 @@ function Find-Vivaldi {
 }
 
 if ($Stop) {
-    if (-not (Test-Path -LiteralPath $statePath)) { Write-Host 'No launcher-managed CodeLab server is recorded.'; return }
+    if (-not (Test-Path -LiteralPath $statePath)) { Write-Host 'No launcher-managed Study Lab server is recorded.'; return }
     $saved = Get-Content -LiteralPath $statePath -Raw | ConvertFrom-Json
     $health = Get-CodeLabHealth $saved.url
     if (-not $health) { throw 'The recorded server could not be verified. No process was stopped.' }
@@ -55,11 +55,11 @@ if ($Stop) {
     }
     Stop-Process -Id $health.pid -ErrorAction Stop
     Remove-Item -LiteralPath $statePath
-    Write-Host 'CodeLab background server stopped. Vivaldi remains open.'
+    Write-Host 'Study Lab background server stopped. Vivaldi remains open.'
     return
 }
 
-if (-not (Test-Path -LiteralPath (Join-Path $projectRoot 'index.html'))) { throw 'Keep this script in the CodeLab folder beside index.html.' }
+if (-not (Test-Path -LiteralPath (Join-Path $projectRoot 'index.html'))) { throw 'Keep this script in the Study Lab folder beside index.html.' }
 if (-not $NoBrowser) { $browserPath = Find-Vivaldi }
 
 if ($LiveServer) {
@@ -67,7 +67,7 @@ if ($LiveServer) {
     $url = 'http://127.0.0.1:' + $Port + '/'
     try {
         $response = Invoke-WebRequest -Uri ($url + 'assets/runtime-manifest.js') -UseBasicParsing -TimeoutSec 3
-        if ($response.StatusCode -ne 200 -or -not $response.Content.StartsWith('window.CODELAB_RUNTIME=')) { throw 'Not CodeLab' }
+        if ($response.StatusCode -ne 200 -or -not $response.Content.StartsWith('window.CODELAB_RUNTIME=')) { throw 'Not Study Lab' }
     } catch { throw 'Start index.html with VS Code Live Server first, then retry -LiveServer (default port 5500).' }
 } else {
     $url = $null
@@ -113,6 +113,6 @@ if ($LiveServer) {
 
 if (-not $NoBrowser) {
     Start-Process -FilePath $browserPath -ArgumentList $url
-    Write-Host 'Opened CodeLab in Vivaldi.'
+    Write-Host 'Opened Study Lab in Vivaldi.'
 }
-Write-Host ('CodeLab URL: ' + $url)
+Write-Host ('Study Lab URL: ' + $url)

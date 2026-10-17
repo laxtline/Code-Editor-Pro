@@ -1,4 +1,4 @@
-name: Publish CodeLab online and offline
+name: Publish Study Lab online and offline
 
 on:
   push:
