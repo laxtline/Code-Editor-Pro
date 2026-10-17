@@ -62,7 +62,10 @@ Browser khole bina server start/check karna ho:
 - Complete bundled Offline Library, diagrams, solutions, notes aur drafts.
 - JavaScript, Python ke bundled standard-library modules, SQLite SQL aur HTML/CSS preview.
 - Monaco editor, local saving, reports aur Export/Import Progress.
-- C/C++/Java cloud compilation aur external reference links ke liye internet chahiye.
+- Launcher se C/C++ offline run hoga agar GCC/Clang installed hai; Java ke liye JDK chahiye. Restart launcher after installation. Live Server/GitHub Pages par in languages ka cloud compiler internet use karta hai. External reference links bhi online hain.
+- Native programs aapke account permissions se run hote hain; time/output limits hain, OS sandbox nahi. Java code mein public class Main use karo.
+- Study Material ke DSA, Python, Web Development, AI/ML, Core CS aur other subject pages, notes, exercises aur interview answers offline bundled hain.
+- My Study mein daily goals, streak, weak topics aur 1/3/7/14-day revision queue hai.
 - Extra Python packages bundled nahi hain.
 
 `CodeLab-Offline.html` double-click se lightweight MCQ/theory/library/JavaScript edition khol sakte ho.
@@ -72,7 +75,11 @@ Full offline Python/SQL/editor ke liye Live Server ya launcher use karo.
 
 Progress browser aur address/port ke hisaab se save hota hai. Vivaldi aur doosre browsers ka progress alag hai.
 `127.0.0.1:5500`, `127.0.0.1:4173`, `localhost` aur GitHub Pages alag storage origins hain.
-Ek method se doosre par move karte waqt **Export all progress**, phir **Import progress** use karo.
+Online aur offline dono mein browser autosave immediate hai. Launcher additionally isi folder ke private `.codelab-data/progress.json` mein automatic backup karta hai. Same folder ke launcher ports is backup se saved items restore/merge karte hain. Is private folder ko backup ke liye copy kar sakte ho; GitHub ya public host par upload mat karo.
+
+Live Server automatic folder backup nahi likhta. GitHub Pages, Live Server aur different devices ke beech move karte waqt **Export all progress**, phir **Import progress** use karo. Automatic cloud/device sync configured nahi hai. Nav mein Save status ya Settings se saving details khol sakte ho.
+
+Browser aur folder ke purane matching items different hon to Save status mein Keep browser / Restore folder choose kar sakte ho. Backup writing fail ho to browser copy retained rahegi aur folder retry hoga.
 Backup mein latest editor draft, notes aur reports aate hain; compiler API credentials export nahi hote.
 Import matching saved items replace karta hai. Pehle current work export kar lo, aur running test ko finish ya save/leave karo.
 Purane CodeLab JSON backups bhi import kar sakte ho.
@@ -87,3 +94,7 @@ Pehle active session finish/save-and-leave karo aur doosre CodeLab tabs/windows 
 Update ke baad full app dobara offline save karo. Alag ZIP folder update karne ke liye latest ZIP download/extract karo.
 Purane version mein update button na ho to saare CodeLab tabs band karke online dobara kholo.
 GitHub deployment ka status repository ke Actions tab mein check karo. Local use independent hai.
+
+## Navigation aur resume
+
+Top ke Back/Forward buttons ya browser history use karo. Active test se leave karne par answers, code aur original deadline saved rehte hain; time away bhi deadline mein count hota hai. Session URL reload karne par saved round resume hoga. Lesson notes/code type karte hi save hote hain; important work ka Export bhi rakho.

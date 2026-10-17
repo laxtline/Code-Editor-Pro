@@ -7,7 +7,7 @@ const {execFileSync}=require('node:child_process');
 test('Windows PowerShell launcher handles occupied ports, spaced folders, reuse and verified stop',async({request})=>{
   test.skip(process.platform!=='win32','Windows-only Vivaldi launcher; packaged browser runtime tests run on every OS.');
   const root=path.resolve('test-results/Launcher space [portable]');fs.mkdirSync(root,{recursive:true});
-  for(const name of ['Start-CodeLab.py','Start-CodeLab-Vivaldi.ps1','index.html'])fs.copyFileSync(name,path.join(root,name));
+  for(const name of ['Start-CodeLab.py','local_tools.py','Start-CodeLab-Vivaldi.ps1','index.html'])fs.copyFileSync(name,path.join(root,name));
   fs.mkdirSync(path.join(root,'assets'),{recursive:true});fs.copyFileSync('assets/runtime-manifest.js',path.join(root,'assets/runtime-manifest.js'));
   const occupied=net.createServer(socket=>socket.destroy());await new Promise(resolve=>occupied.listen(0,'127.0.0.1',resolve));
   const port=occupied.address().port;expect(port).toBeLessThanOrEqual(65525);

@@ -8,7 +8,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SHELL = ['index.html','manifest.webmanifest','assets/icon-192.png','assets/icon-512.png',
          'assets/library.css','assets/library.js','assets/academy.css','assets/academy.js',
          'assets/editor-tools.js','assets/assessment.js','assets/platform.js','assets/python-worker.js',
-         'assets/runtime-manifest.js','assets/coding-data.js','assets/python-data.js','assets/practice-data.js',
+         'assets/runtime-manifest.js','assets/coding-data.js','assets/advanced-coding.js','assets/python-data.js','assets/practice-data.js',
+         'assets/learning.css','assets/study-data.js','assets/study.js','assets/navigation.js','assets/persistence.js','assets/learning.js',
          'vendor/marked.umd.js','vendor/purify.min.js','offline/catalog.js']
 
 def build():

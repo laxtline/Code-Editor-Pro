@@ -2,19 +2,26 @@
 
 A static coding and placement practice app with an editor, judged exercises, contests, mock exams, theory lessons and a bundled offline study library. No build step is needed to use or deploy the generated app.
 
-## Version 2.3.2 upgrades
+## Version 3.0 upgrades
 
+- **Study Material**: separate DSA, Python, Web Development, AI/ML, Core CS, App, Desktop and Placement/Projects subject pages. A course strip, topic sidebar, Previous/Next links, search, editable worked examples, exercises, lesson quizzes, personal notes and interview answers follow a familiar tutorial layout with original CodeLab content. **30 courses, 145 lessons, 446 interview answers** are bundled. All **276 technical skill rows** in the AI engineer PDF link to lessons; the supplied mobile/desktop/full-stack/project topics are also included. Lesson checkboxes represent self-assessment, not a certificate or a claim of mastery.
+- **Smart revision & daily dashboard**: mistakes/unanswered items and weak-topic items enter a 1/3/7/14-day schedule. Correct reviews when due advance the schedule; early reviews do not postpone it; mistakes reset it. MCQs, lesson quizzes and graded coding attempts contribute to daily goals, accuracy, streaks and recommended practice.
+- **Exam analysis**: topic accuracy, unanswered counts, measured active time, slowest questions and a targeted next drill. Background periods are excluded. Older reports without measurements show an em dash. Coding feedback keeps per-problem active time.
+- **Question variety**: 12 rule-based SVG reasoning items, 12 questions across four original reading passages, and 12 chart/table DI items. The 18 newest DSA tasks include KMP, inversions, shortest paths, SCC/bridges, segment/Fenwick trees, interval DP, matching, binary lifting and digit DP. Counts include existing parameter families and are not claims of unique exam patterns.
+- **Realtime online/offline saving**: browser autosave works on GitHub Pages, localhost and the offline edition; editor/lesson notes save immediately. The launcher additionally writes a private **`.codelab-data/progress.json`** backup with per-item clocks and deletion records. Matching legacy browser/folder conflicts offer an explicit choice. Compiler credentials are excluded. **Export/Import** transfers between online/local origins and devices; no cloud account or automatic cross-device sync is configured.
+- **Back/Forward**: app buttons and browser history navigate lessons, subject pages, practice/results, library and other main screens. Active assessments save when leaving, retain their deadlines and automatically resume at their session URL after reload.
+- **Offline native execution**: the loopback-only launcher detects GCC/Clang and a Java JDK. Native programs use your account permissions, with time/output limits; they are not OS-sandboxed. Java programs use `public class Main`. Install a compiler separately if absent, restart the launcher and inspect **Saving & local tools**. `--no-local-tools` disables native execution while retaining folder backup.
 - **Update controls**: Online / Offline shows when a new app revision is waiting. Check manually and apply after finishing or saving/leaving your session. Running code, active modern/Classic exams and another CodeLab tab prevent the update reload. Drafts save before applying; the updated app needs a fresh full offline save. Folder copies update by downloading and extracting the latest ZIP.
 - **Progress transfer**: JSON backups capture immediate editor changes, carry format/date/revision metadata and exclude compiler API credentials. Imports still accept older CodeLab files, validate allowed storage keys and field types, preserve existing credentials and restore previous imported values if browser storage runs out. Finish or save/leave a session before importing. Import replaces matching items, so export your current work first.
 
-- **1,102 explained MCQs across 75 topics**: 758 original items, 308 reviewed Classic written questions and 36 reviewed sectional questions. Practice covers quantitative aptitude, reasoning, verbal ability, data interpretation, static awareness/CS and programming output. Numerical families include parameter variations; these counts are questions, not separate question types or official past papers.
+- **1,138 explained MCQs across 78 topics**: 794 original items, 308 reviewed Classic written questions and 36 reviewed sectional questions. Practice covers quantitative aptitude, reasoning, verbal ability, data interpretation, static awareness/CS and programming output. Numerical families include parameter variations; these counts are questions, not separate question types or official past papers.
 - **Theory & formulas**: topic notes, formulas/rules, shortcuts, common traps, worked examples and direct practice links. Learn mode reveals an explanation after answering; timed tests reveal it after submission.
 - **Exam workflow**: section deadlines, answer palette, visited/answered/review states, clear response, locked submitted sections, saved-session resume, scoring and topic-wise review. Deadlines continue across reloads and while away. Original exam templates and contests remain accessible.
 - **Source-linked exam profiles**: TCS timing follows the linked official hiring page; the RRB profile follows the named CEN 05/2024 structure and subject quotas. Other company, banking, government and entrance profiles are explicitly independent training configurations. Practice counts are distinguished from verified official timings.
-- **66 additional judged JSON-I/O tasks**, with Python and JavaScript references checked against explicit sample and edge-case outputs. Problems now has language/basic coding and DSA categories, plus an all-problems view.
+- **84 additional judged JSON-I/O tasks**, with Python and JavaScript references checked against explicit sample and edge-case outputs. Problems now has language/basic coding and DSA categories, plus an all-problems view.
 - **Three PDF roadmaps** retain all 34 steps, their suggested 140/200/240-question targets and indicative company tags. Stage 1/2/3 group the steps for progressive training. Each step shows its actual linked judged/reference resources separately; targets do not imply that every target has a unique built-in problem. Stage mocks draw from relevant added tasks.
 - **Coding exam feedback**: mark coding questions for review, switch instantly between saved per-question drafts/languages/custom cases, and save/leave while the original deadline continues. The latest 20 coding evaluations retain submitted code, per-case input/expected/actual results, errors, timing and worked references. Open these from **Coding exam history**; JSON reports and Export All Progress include this history. Unavailable runtime evaluations retain a null final score and can be retried without duplicating the saved report. Contest resumes retain leaderboard completion. Mobile coding keeps the timer visible and reserves space for exam controls.
-- **Online + full offline**: GitHub Pages deployment workflow, installable app metadata, a full offline save covering Python/SQL/Monaco and the study library, and a downloadable ZIP with a loopback-only local launcher. Bundled engines total 25.77 MiB; no CDN is required for the hosted/saved/local-server edition. Python runs in a worker so timeout/Stop can terminate an infinite loop, and both `input()` and `sys.stdin` work. C/C++/Java cloud compilation still needs internet.
+- **Online + full offline**: GitHub Pages deployment workflow, installable app metadata, a full offline save covering Python/SQL/Monaco and the study library, and a downloadable ZIP with a loopback-only local launcher. Bundled engines total 25.77 MiB; no CDN is required for the hosted/saved/local-server edition. Python runs in a worker so timeout/Stop can terminate an infinite loop, and both `input()` and `sys.stdin` work. C/C++/Java execute offline through the local launcher when GCC/Clang or a Java JDK is installed; the hosted website and Live Server retain cloud execution.
 - **Editor**: immediate local text editing with line numbers, indentation, comments, cursor position, file open/download and focus mode. Bundled Monaco upgrades the local editor when available, preserving drafts and web-tab models; the text editor is immediately usable while it loads. JavaScript runs in a stoppable worker with a timeout. Coding exam drafts, language and custom cases can resume after reload. Missing runtime/compiler access is shown as an incomplete evaluation with saved code, rather than a wrong-answer verdict.
 - **Portable single HTML**: `CodeLab-Offline.html` embeds the application, question bank, library packs, diagrams and source license notices. Move this file by itself and open it directly; the complete reading collection and local editor work without sibling files.
 
@@ -24,7 +31,9 @@ Mixed practice spreads selection across sections and topics. Answer choices shuf
 
 Research sources, official-pattern distinctions and attribution are visible in the app’s Sources screen. The new bank is independently authored teaching material informed by IndiaBIX, CareerRide, GeeksforGeeks, official exam pages and GitHub topic coverage; it does not reproduce those sites’ question banks.
 
-Coverage is a broad foundation, not an exhaustive replacement for every exam syllabus. Current affairs, visual non-verbal puzzles, descriptive writing, MSQ/NAT formats and complete entrance technical subjects need additional material. Company formats can change.
+Coverage is a broad foundation, not an exhaustive replacement for every exam syllabus. Current affairs, additional non-verbal puzzle families, descriptive writing, MSQ/NAT formats and complete entrance technical subjects need additional material. Company formats can change.
+
+Study notes are independently written from the supplied syllabus and primary documentation; source links are included per course. They do not embed third-party tutorial pages. Framework, GUI, backend and model-service examples need a suitable project/desktop environment and dependencies; the browser runner supports the explicitly runnable examples. Browser Python includes bundled modules, not desktop `sqlite3`/GUI modules or arbitrary ML packages. Optional external reference links need internet.
 
 ## Open the app
 
@@ -42,7 +51,7 @@ Open `CodeLab-Offline.html` for the self-contained edition, or open `index.html`
 For a local server:
 
 ```powershell
-python -m http.server 4173 --bind 127.0.0.1
+python Start-CodeLab.py --no-browser
 ```
 
 Visit [localhost:4173](http://127.0.0.1:4173/#library). Node.js is only needed for development tools and browser tests.
@@ -70,7 +79,7 @@ When using localhost or an HTTPS deployment, click **Save for offline** and wait
 | Bundled library, diagrams, source code, workspace | No, with the project folder or after Save for offline |
 | Local text editor and JavaScript execution | No |
 | Monaco, Python/Pyodide core, SQLite/sql.js | No, in the full saved website or ZIP through localhost; single HTML uses online engines |
-| C, C++, Java execution | Cloud compiler access required |
+| C, C++, Java execution | No with the launcher + installed compiler; cloud access otherwise |
 | External reference links | Yes |
 
 Pyodide 0.26.2, SQL.js 1.14.0 and Monaco 0.45.0 are pinned; runtime notices are in `vendor/runtimes/`.
@@ -120,7 +129,7 @@ npm run build:site
 
 Other static HTTPS hosts can serve the same `_site/` artifact.
 
-Also publish `CodeLab-Offline.html` to enable the **Download single HTML** link. It is approximately 11.61 MiB. The local and hosted editions have separate browser storage origins; use Export/Import Progress to transfer work.
+Also publish `CodeLab-Offline.html` to enable the **Download single HTML** link. It is approximately 12.3 MiB. The local and hosted editions have separate browser storage origins; use Export/Import Progress to transfer work.
 
 ## Rebuild the application
 
@@ -149,8 +158,12 @@ npm run build:site
 npm test
 ```
 
-The browser checks cover saved coding feedback, rapid draft switching, incomplete-evaluation retries, contest resume, mobile exam controls, the corrected Classic banks, topic-balanced sampling, stable shuffled choices and keyboard scoring, worked-answer review, pack consistency, filtering/pagination, bookmarks/review marks, direct file opening, progress export/import, sanitization, offline reload with unread entries/diagrams, practice scoring/mistakes, section quotas and locking, deadlines, staged coding resume, legacy controls, Monaco draft/model preservation, runtime-unavailable handling and a standalone HTML copied away from all project assets. The packaged app is additionally checked under `/Code-Editor-Pro/`, after offline reopening with real Python/SQL/Monaco engines, and after extracting its ZIP away from the source. Python timeout/restart, full-cache readiness, runtime hashes and manifest icons are verified. All 66 Python/JavaScript references are checked against explicit expected outputs. The 12 latest coding tasks also run deterministic small-input checks against independent brute-force or simpler oracles (linked lists, heaps, subset sum, trees, palindromes, topological ordering and spanning forests). Tests block external requests; the Monaco tests use local bundled/dev files.
+The browser checks cover saved coding feedback, rapid draft switching, incomplete-evaluation retries, contest resume, mobile exam controls, the corrected Classic banks, topic-balanced sampling, stable shuffled choices and keyboard scoring, worked-answer review, pack consistency, filtering/pagination, bookmarks/review marks, direct file opening, progress export/import, sanitization, offline reload with unread entries/diagrams, practice scoring/mistakes, section quotas and locking, deadlines, staged coding resume, legacy controls, Monaco draft/model preservation, runtime-unavailable handling and a standalone HTML copied away from all project assets. The packaged app is additionally checked under `/Code-Editor-Pro/`, after offline reopening with real Python/SQL/Monaco engines, and after extracting its ZIP away from the source. Python timeout/restart, full-cache readiness, runtime hashes and manifest icons are verified. All 84 added Python/JavaScript references are checked against explicit expected outputs. The previous 12 data-structure tasks also run deterministic small-input checks against independent brute-force or simpler oracles (linked lists, heaps, subset sum, trees, palindromes, topological ordering and spanning forests). Tests block external requests; the Monaco tests use local bundled/dev files.
 
 The Windows launcher also has an integration check for a folder with spaces/brackets, an occupied port, server reuse, Live Server opening mode and verified stop. It runs without opening the browser during testing.
 
 Update integration checks serve two actual worker revisions and verify session protection, multiple-window protection, draft preservation, cache activation and offline reopening. Backup checks cover immediate drafts, legacy imports, credential exclusion, invalid storage keys and rollback after a simulated quota failure.
+
+Study curriculum sources are maintained in `scripts/curriculum/`; `python scripts/build_study.py` checks all skill mappings and rebuilds `assets/study-data.js` without the private originals. To deliberately reimport an updated technical PDF, install pypdf and run `python scripts/import_study_syllabus.py --help`. Source document basenames and hashes are recorded in `data/study-syllabus.json`; the personal PDFs/DOCX are not published.
+
+New checks also exercise calendar revision intervals, tutorial navigation and mobile layout, immediate lesson notes, HTML preview, all runnable Python/JavaScript/SQL examples (including async), Classic autosave/timing, visual sets, and two real localhost origins sharing a private temporary-folder backup. API token/origin checks, private-path blocking, tombstones, credential exclusion, restarted-server tokens and process time/output limits are verified. Available native compilers are tested with real programs and compile errors; absent compilers are reported explicitly. The 18 newest algorithms additionally run deterministic exhaustive/simpler small-input oracles in both reference languages.

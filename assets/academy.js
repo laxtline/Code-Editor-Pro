@@ -98,7 +98,7 @@ const PracticeSession = {
   question(id){return Academy.data.questions.find(q=>q.id===id);},
   current(){return this.session.sections[this.session.sectionIndex];},
   begin(config){
-    const begin=()=>{const started=Date.now();this.session={...config,started,sectionIndex:0,sections:config.sections.map((s,index)=>({...s,answers:{},flags:{},visited:{},index:0,orders:s.ids.map((_,i)=>seededShuffle([0,1,2,3],started%1000000+index*1009+i*7919))})),deadline:config.sections[0].duration?started+config.sections[0].duration*1000:null};this.launch();};
+    const begin=()=>{const started=Date.now();this.session={...config,started,sectionIndex:0,sections:config.sections.map((s,index)=>({...s,answers:{},flags:{},visited:{},times:{},index:0,orders:s.ids.map((_,i)=>seededShuffle([0,1,2,3],started%1000000+index*1009+i*7919))})),deadline:config.sections[0].duration?started+config.sections[0].duration*1000:null};this.launch();};
     if(Store.get('practice_session',null))Confirm.show('Replace saved session?','Your existing saved session will be replaced. Completed attempt history is retained.','Replace',begin);else begin();
   },
   launch(){Timer.stop();clearInterval(this.interval);Academy.activate('written');document.body.dataset.practiceActive='true';this.persist();this.interval=setInterval(()=>this.tick(),250);this.render();this.tick();},
@@ -132,7 +132,7 @@ const PracticeSession = {
   leave(){const exam=this.session.kind==='exam';this.persist();clearInterval(this.interval);this.session=null;document.body.dataset.practiceActive='false';if(exam)Academy.examHome();else Academy.home();},
   explanation(q){return `<div class="session-explanation"><h3>Answer: ${Academy.h(q.options[q.answer])}</h3><p>${Academy.h(q.explanation)}</p><div class="academy-formula">${Academy.h(q.formula)}</div><p><strong>Shortcut:</strong> ${Academy.h(q.trick)}</p><p class="academy-subtitle">${Academy.h(q.origin)}</p></div>`;},
   complete(){
-    clearInterval(this.interval);const s=this.session;const rows=s.sections.flatMap(sec=>sec.ids.map((id,i)=>({id,chosen:sec.answers[i]??null,flag:!!sec.flags[i],section:sec.label})));const correct=rows.filter(r=>r.chosen===this.question(r.id).answer).length,attempted=rows.filter(r=>r.chosen!==null).length;
+    clearInterval(this.interval);const s=this.session;const rows=s.sections.flatMap(sec=>sec.ids.map((id,i)=>({id,chosen:sec.answers[i]??null,flag:!!sec.flags[i],section:sec.label,...(sec.times?{timeMs:sec.times[i]||0}:{})})));const correct=rows.filter(r=>r.chosen===this.question(r.id).answer).length,attempted=rows.filter(r=>r.chosen!==null).length;
     const result={title:s.title,candidate:s.candidate,started:s.started,finished:Date.now(),rows,correct,total:rows.length,attempted,score:correct*s.marks-(attempted-correct)*s.penalty,max:rows.length*s.marks,marks:s.marks,penalty:s.penalty};
     const stats=Store.get('question_stats',{});rows.forEach(r=>{const old=stats[r.id]||{attempts:0,correct:0};if(r.chosen!==null)stats[r.id]={attempts:old.attempts+1,correct:old.correct+(r.chosen===this.question(r.id).answer?1:0),lastCorrect:r.chosen===this.question(r.id).answer,last:Date.now()};});Store.set('question_stats',stats);
     const history=Store.get('practice_history',[]);history.unshift(result);Store.set('practice_history',history.slice(0,50));Store.del('practice_session');document.body.dataset.practiceActive='false';this.session=null;

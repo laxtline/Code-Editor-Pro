@@ -11,8 +11,8 @@ test.beforeEach(async({context})=>{
 test('every classic item is explicitly reviewed and known faulty entries are corrected',async({page})=>{
   const box={window:{}};vm.runInNewContext(fs.readFileSync('assets/practice-data.js','utf8'),box);
   const data=box.window.CODELAB_PRACTICE;
-  expect(data.questions).toHaveLength(1102);
-  expect(data.counts).toMatchObject({original:758,reviewedLegacy:308,reviewedSectional:36,correctedLegacy:32});
+  expect(data.questions).toHaveLength(1138);
+  expect(data.counts).toMatchObject({original:794,reviewedLegacy:308,reviewedSectional:36,correctedLegacy:32});
   for(const q of [...data.questions.filter(q=>q.legacyOrdinal),...data.aptitudeReviewed]){
     expect(q.explanation.length).toBeGreaterThan(20);expect(q.formula).toBeTruthy();expect(q.options[q.answer]).toBeDefined();
   }
@@ -54,9 +54,9 @@ test('displayed choice order, numeric shortcuts and answer scoring survive reloa
   expect(new Set(positions).size).toBeGreaterThan(1);
   const before=await page.locator('.session-option').allTextContents();
   const displayed=await page.evaluate(()=>PracticeSession.order().indexOf(PracticeSession.question(PracticeSession.current().ids[0]).answer));
-  await page.locator('h1').click();await page.keyboard.press(String(displayed+1));
+  await page.locator('#view-written h1').click();await page.keyboard.press(String(displayed+1));
   await expect(page.locator('.session-option').nth(displayed)).toHaveAttribute('aria-pressed','true');
-  await page.reload();await page.getByRole('button',{name:'Resume saved session',exact:true}).click();
+  await page.reload();await page.waitForFunction(()=>!!PracticeSession.session);
   expect(await page.locator('.session-option').allTextContents()).toEqual(before);
   await expect(page.locator('.session-option').nth(displayed)).toHaveAttribute('aria-pressed','true');
   await page.evaluate(()=>PracticeSession.advance(false));
@@ -81,7 +81,7 @@ test('classic written and sectional review screens contain worked answers',async
   await page.getByRole('button',{name:'Review worked answers',exact:true}).click();
   expect(await page.evaluate(()=>PracticeSession.result.correct)).toBe(1);
   await expect(page.getByRole('heading',{name:'Session complete',exact:true})).toBeVisible();
-  await page.locator('details').first().click();await expect(page.locator('.session-explanation').first()).toBeVisible();
+  await page.locator('.academy-reviews details').first().click();await expect(page.locator('.session-explanation').first()).toBeVisible();
 });
 
 test('corrections are readable in the app',async({page})=>{

@@ -4,7 +4,7 @@ import shutil
 import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
-STATIC=['index.html','sw.js','manifest.webmanifest','CodeLab-Offline.html','Start-CodeLab.py','Start-CodeLab.cmd','Start-CodeLab-Vivaldi.ps1','OFFLINE-START-HERE.md','README.md','.vscode/extensions.json','.vscode/tasks.json']
+STATIC=['index.html','sw.js','manifest.webmanifest','CodeLab-Offline.html','Start-CodeLab.py','local_tools.py','Start-CodeLab.cmd','Start-CodeLab-Vivaldi.ps1','OFFLINE-START-HERE.md','README.md','.vscode/extensions.json','.vscode/tasks.json']
 
 def build():
     target=(ROOT/'_site').resolve()
@@ -31,9 +31,12 @@ Any system with Python 3: python Start-CodeLab.py
 Keep the server window open while using the app. It binds to 127.0.0.1 only.
 Python (standard library), JavaScript, HTML/CSS preview, SQLite, Monaco, MCQs,
 theory and the entire study library work without internet through this local server.
-C/C++/Java execution uses an online cloud compiler. Extra Python packages are not included.
+C/C++/Java run offline through this launcher if GCC/Clang or a JDK is installed.
+Live Server and hosted Pages use cloud compilation for those languages.
+Extra Python packages and desktop sqlite3/GUI modules are not included in browser Python.
 Open CodeLab-Offline.html directly for the lightweight reading/MCQ/JavaScript edition.
-Progress is saved per browser and origin. Export/Import All Progress transfers your work.
+Progress saves immediately in this browser, online or offline. The launcher also writes
+private .codelab-data/progress.json backups. Export/Import transfers between origins/devices.
 On the hosted website, choose Online / Offline -> Save full app for offline.
 Wait for Ready offline before disconnecting. Use the browser's Install app option if available.
 Source and runtime license notices are included in offline/licenses and vendor.
@@ -43,7 +46,7 @@ Source and runtime license notices are included in offline/licenses and vendor.
     output=downloads/'CodeLab-Offline.zip'
     with zipfile.ZipFile(output,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=7) as archive:
         # Portable workspace defaults omit this computer's private Vivaldi installation path.
-        archive.writestr('CodeLab/.vscode/settings.json','{"liveServer.settings.host":"127.0.0.1","liveServer.settings.port":5500,"liveServer.settings.root":"/"}\n')
+        archive.writestr('CodeLab/.vscode/settings.json','{"liveServer.settings.host":"127.0.0.1","liveServer.settings.port":5500,"liveServer.settings.root":"/","liveServer.settings.ignoreFiles":["**/.git/**","**/.codelab-data/**","**/.codelab-server*"]}\n')
         for path in sorted(target.rglob('*')):
             if path.is_file():archive.write(path,'CodeLab/'+path.relative_to(target).as_posix())
     (target/'downloads').mkdir();shutil.copy2(output,target/'downloads'/output.name)

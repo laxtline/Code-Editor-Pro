@@ -13,14 +13,14 @@ test.beforeEach(async({context})=>{
 
 test('original explained bank, roadmap targets and cross-language references are consistent',async()=>{
   const box={window:{}};box.window=box;
-  for(const file of ['practice-data','coding-data','python-data'])vm.runInNewContext(fs.readFileSync(`assets/${file}.js`,'utf8'),box);
+  for(const file of ['practice-data','coding-data','advanced-coding','python-data'])vm.runInNewContext(fs.readFileSync(`assets/${file}.js`,'utf8'),box);
   const data=box.CODELAB_PRACTICE;
   expect(data.questions.length).toBeGreaterThanOrEqual(700);
   expect(new Set(data.questions.map(q=>q.q)).size).toBe(data.questions.length);
   for(const q of data.questions){expect(new Set(q.options).size).toBe(4);expect(q.options[q.answer]).toBeDefined();expect(q.explanation.length).toBeGreaterThan(20);expect(q.formula.length).toBeGreaterThan(10);}
   expect(data.roadmaps.map(t=>t.steps.length)).toEqual([10,12,12]);
   expect(data.roadmaps.map(t=>t.steps.reduce((n,s)=>n+s.target,0))).toEqual([140,200,240]);
-  expect(box.CODELAB_CODING).toHaveLength(66);
+  expect(box.CODELAB_CODING).toHaveLength(84);
   for(const q of box.CODELAB_CODING){expect(q.referenceCode.python,q.title).toBeTruthy();for(const t of q.testCases){let out;new Function('readline','console',q.referenceCode.javascript)(()=>t.input,{log:x=>{out=x;}});expect(JSON.parse(out),q.title).toEqual(JSON.parse(t.expectedOutput));}}
   const result=execFileSync('python',['tests/verify_python_references.py'],{input:JSON.stringify(box.CODELAB_CODING),encoding:'utf8',maxBuffer:8*1024*1024});
   expect(result).toContain('All Python reference cases passed');
@@ -56,7 +56,7 @@ test('timed session resumes the same answers and deadline after reload',async({p
   await page.selectOption('#prep-mode','timed');await page.fill('#prep-count','2');await page.fill('#prep-minutes','2');
   await page.getByRole('button',{name:'Start practice',exact:true}).click();await page.locator('.session-option').nth(2).click();
   const deadline=await page.evaluate(()=>PracticeSession.session.deadline);
-  await page.reload();await page.getByRole('button',{name:'Resume saved session',exact:true}).click();
+  await page.reload();await page.waitForFunction(()=>!!PracticeSession.session);
   expect(await page.evaluate(()=>PracticeSession.session.deadline)).toBe(deadline);
   await expect(page.locator('.session-option').nth(2)).toHaveAttribute('aria-pressed','true');
   await page.evaluate(()=>{PracticeSession.session.deadline=Date.now()-10;PracticeSession.tick();});
@@ -116,8 +116,7 @@ test('all PDF tracks, staged coding resume, and classic tools stay available',as
   await page.getByRole('button',{name:'Stage 1 coding mock',exact:true}).click();
   await page.selectOption('#lang-select','javascript');await page.locator('#monaco-container .local-code-input').fill('// exam draft');
   await page.evaluate(()=>Academy.snapshotCoding());const deadline=await page.evaluate(()=>Exam.deadline);
-  await page.reload();await page.locator('.mode-btn[data-mode="exam"]').click();
-  await page.getByRole('button',{name:'Resume coding round',exact:true}).click();
+  await page.reload();await page.waitForFunction(()=>Exam.active);
   await expect(page.locator('#monaco-container .local-code-input')).toHaveValue('// exam draft');
   expect(await page.evaluate(()=>Exam.deadline)).toBe(deadline);
 });

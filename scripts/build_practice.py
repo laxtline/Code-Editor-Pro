@@ -430,6 +430,8 @@ if __name__ == '__main__':
     from audit_legacy import review_bank,review_aptitude
     numeric_topics(); reasoning(); interpretation(); verbal_and_technical(); advanced_and_awareness()
     extend(topic,add)
+    from variety_questions import extend as extend_variety
+    extend_variety(topic,add,QUESTIONS)
     original_count=len(QUESTIONS)
     legacy,audit=review_bank(TOPICS)
     QUESTIONS.extend(legacy)

@@ -44,8 +44,8 @@ test('backup captures immediate drafts, omits credentials, and restores legacy f
   const backup=JSON.parse(fs.readFileSync(await (await downloadPromise).path(),'utf8'));
   expect(backup._codelab.format).toBe(1);expect(backup._raw.cl_pg_code_python).toBe('print("last keystroke")');expect(backup.settings).not.toHaveProperty('jdoodleSecret');expect(backup.settings).not.toHaveProperty('jdoodleId');
   const fullStorage=await page.evaluate(()=>{
-    Playground.instance.setValue('print("recover even with full storage")');const set=Storage.prototype.setItem;Storage.prototype.setItem=()=>{throw new DOMException('Full','QuotaExceededError');};
-    try{const raw=ProgressBackup.create()._raw;let refused=false;try{ProgressBackup.flush(true);}catch{refused=true;}return {draft:raw.cl_pg_code_python,refused};}finally{Storage.prototype.setItem=set;}
+    const set=Storage.prototype.setItem;Storage.prototype.setItem=()=>{throw new DOMException('Full','QuotaExceededError');};
+    try{Playground.instance.setValue('print("recover even with full storage")');const raw=ProgressBackup.create()._raw;let refused=false;try{ProgressBackup.flush(true);}catch{refused=true;}return {draft:raw.cl_pg_code_python,refused};}finally{Storage.prototype.setItem=set;}
   });
   expect(fullStorage).toEqual({draft:'print("recover even with full storage")',refused:true});
   const legacy={solved:[10002],settings:{theme:'light',jdoodleSecret:'never-overwrite'},_raw:{cl_pg_code_python:'print("restored backup")',cl_library_notes_lc1:'review'}};

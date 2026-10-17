@@ -1,0 +1,1716 @@
+{
+  "stages": [
+    {
+      "id": 1,
+      "title": "01 - Python"
+    },
+    {
+      "id": 2,
+      "title": "02 - Web Foundations"
+    },
+    {
+      "id": 3,
+      "title": "03 - Frontend Engineering"
+    },
+    {
+      "id": 4,
+      "title": "04 - Backend Engineering"
+    },
+    {
+      "id": 5,
+      "title": "05 - Databases & DBMS"
+    },
+    {
+      "id": 6,
+      "title": "06 - Operating Systems"
+    },
+    {
+      "id": 7,
+      "title": "07 - Computer Networks"
+    },
+    {
+      "id": 8,
+      "title": "08 - DevOps, Cloud & Security"
+    },
+    {
+      "id": 9,
+      "title": "09 - AI Foundations & Model APIs"
+    },
+    {
+      "id": 10,
+      "title": "10 - Retrieval & Evaluation"
+    },
+    {
+      "id": 11,
+      "title": "11 - Agents & AI-Native Products"
+    }
+  ],
+  "skills": [
+    {
+      "number": 1,
+      "stage": 1,
+      "page": 5,
+      "text": "Syntax and semantics Indentation blocks, dynamic typing, truthiness, and the places Python behaves differently from JavaScript"
+    },
+    {
+      "number": 2,
+      "stage": 1,
+      "page": 5,
+      "text": "Types and mutability int, float, str, bool, None; mutable vs immutable objects and the bugs that come from confusing them"
+    },
+    {
+      "number": 3,
+      "stage": 1,
+      "page": 5,
+      "text": "Collections list, tuple, dict and set, and choosing the right one for the job"
+    },
+    {
+      "number": 4,
+      "stage": 1,
+      "page": 5,
+      "text": "Comprehensions List, dict and set comprehensions and generator expressions as idiomatic transforms"
+    },
+    {
+      "number": 5,
+      "stage": 1,
+      "page": 5,
+      "text": "Functions Default and keyword arguments, *args and **kwargs, closures, functions as values"
+    },
+    {
+      "number": 6,
+      "stage": 1,
+      "page": 5,
+      "text": "Type hints Annotations, Optional, unions and generics, checked by mypy or pyright the way tsc checks TypeScript"
+    },
+    {
+      "number": 7,
+      "stage": 1,
+      "page": 5,
+      "text": "Environments and packaging venv, pip or uv, pyproject.toml: the Python equivalent of package.json"
+    },
+    {
+      "number": 8,
+      "stage": 1,
+      "page": 5,
+      "text": "Classes and OOP __init__, inheritance vs composition, properties, the dunder methods worth knowing"
+    },
+    {
+      "number": 9,
+      "stage": 1,
+      "page": 5,
+      "text": "Dataclasses Lightweight typed records; the default for internal data structures"
+    },
+    {
+      "number": 10,
+      "stage": 1,
+      "page": 5,
+      "text": "Modules and packages Imports, package layout, and the __name__ == '__main__' entry point"
+    },
+    {
+      "number": 11,
+      "stage": 1,
+      "page": 5,
+      "text": "Exceptions try / except / else / finally, custom exception classes, raising with context"
+    },
+    {
+      "number": 12,
+      "stage": 1,
+      "page": 5,
+      "text": "Context managers with-blocks for files, database sessions and API clients; writing your own"
+    },
+    {
+      "number": 13,
+      "stage": 1,
+      "page": 5,
+      "text": "Decorators How they work, and why FastAPI and pytest are built on them"
+    },
+    {
+      "number": 14,
+      "stage": 1,
+      "page": 5,
+      "text": "Iterators and generators yield and lazy pipelines for data too large to hold in memory, and for streaming"
+    },
+    {
+      "number": 15,
+      "stage": 1,
+      "page": 5,
+      "text": "Async Python async / await, asyncio.gather and semaphores for calling many model APIs concurrently"
+    },
+    {
+      "number": 16,
+      "stage": 1,
+      "page": 6,
+      "text": "Logging The logging module, levels and structured output instead of print"
+    },
+    {
+      "number": 17,
+      "stage": 1,
+      "page": 6,
+      "text": "Concurrency models Threads vs processes vs asyncio, and what the GIL means for real workloads"
+    },
+    {
+      "number": 18,
+      "stage": 1,
+      "page": 6,
+      "text": "Files and formats Text, JSON, CSV and YAML with pathlib; configuration from environment variables"
+    },
+    {
+      "number": 19,
+      "stage": 1,
+      "page": 6,
+      "text": "Pydantic Validated models and settings, used throughout FastAPI and modern model SDKs"
+    },
+    {
+      "number": 20,
+      "stage": 1,
+      "page": 6,
+      "text": "HTTP clients httpx or requests: headers, auth, timeouts, retries, streaming responses"
+    },
+    {
+      "number": 21,
+      "stage": 1,
+      "page": 6,
+      "text": "NumPy Arrays, shapes and vectorised maths: the vocabulary behind embeddings"
+    },
+    {
+      "number": 22,
+      "stage": 1,
+      "page": 6,
+      "text": "Pandas DataFrames, filtering, groupby, joins and cleaning messy real-world data"
+    },
+    {
+      "number": 23,
+      "stage": 1,
+      "page": 6,
+      "text": "Testing with pytest Fixtures, parametrised tests, mocking external APIs"
+    },
+    {
+      "number": 24,
+      "stage": 1,
+      "page": 6,
+      "text": "Lint and format ruff and pre-commit hooks: your ESLint and Prettier habits, carried over"
+    },
+    {
+      "number": 25,
+      "stage": 1,
+      "page": 6,
+      "text": "Scripts and CLIs argparse or Typer for automating repetitive work"
+    },
+    {
+      "number": 26,
+      "stage": 1,
+      "page": 6,
+      "text": "Notebooks Jupyter for exploration, and knowing when code should leave the notebook"
+    },
+    {
+      "number": 27,
+      "stage": 2,
+      "page": 6,
+      "text": "Semantic HTML Landmarks, headings, lists, tables and forms: meaning first, divs last"
+    },
+    {
+      "number": 28,
+      "stage": 2,
+      "page": 6,
+      "text": "Layout Box model, flexbox, grid, positioning and stacking context"
+    },
+    {
+      "number": 29,
+      "stage": 2,
+      "page": 6,
+      "text": "Responsive design Mobile-first layouts, media and container queries, fluid sizing"
+    },
+    {
+      "number": 30,
+      "stage": 2,
+      "page": 6,
+      "text": "Tailwind CSS Utility-first workflow, design tokens, theming"
+    },
+    {
+      "number": 31,
+      "stage": 2,
+      "page": 6,
+      "text": "Accessibility Keyboard paths, focus order, labels, contrast, ARIA only where native HTML falls short, screen-reader testing"
+    },
+    {
+      "number": 32,
+      "stage": 2,
+      "page": 6,
+      "text": "Modern CSS Custom properties, :has(), container queries, cascade layers"
+    },
+    {
+      "number": 33,
+      "stage": 2,
+      "page": 7,
+      "text": "Language core Scope, closures, this, prototypes, ES modules"
+    },
+    {
+      "number": 34,
+      "stage": 2,
+      "page": 7,
+      "text": "Promises and async / await Composing asynchronous work and handling its errors"
+    },
+    {
+      "number": 35,
+      "stage": 2,
+      "page": 7,
+      "text": "The event loop in depth Call stack, microtasks vs macrotasks, and why one blocking loop freezes a whole server"
+    },
+    {
+      "number": 36,
+      "stage": 2,
+      "page": 7,
+      "text": "TypeScript Generics, narrowing, utility types, discriminated unions"
+    },
+    {
+      "number": 37,
+      "stage": 2,
+      "page": 7,
+      "text": "Shared types in a monorepo One source of truth for API contracts across frontend and backend"
+    },
+    {
+      "number": 38,
+      "stage": 2,
+      "page": 7,
+      "text": "Runtime validation Zod or similar, so types are enforced at the boundaries and not only at compile time"
+    },
+    {
+      "number": 39,
+      "stage": 2,
+      "page": 7,
+      "text": "Error handling patterns Typed errors and result types instead of swallowed exceptions"
+    },
+    {
+      "number": 40,
+      "stage": 2,
+      "page": 7,
+      "text": "How a page loads Parsing, the critical rendering path, render-blocking resources"
+    },
+    {
+      "number": 41,
+      "stage": 2,
+      "page": 7,
+      "text": "DevTools Network waterfall, performance profiles, memory snapshots"
+    },
+    {
+      "number": 42,
+      "stage": 2,
+      "page": 7,
+      "text": "Browser storage Cookies vs localStorage vs IndexedDB, and the security consequences of each"
+    },
+    {
+      "number": 43,
+      "stage": 2,
+      "page": 7,
+      "text": "Browser APIs fetch, AbortController, streams and Web Workers: the parts a streaming AI interface is built from"
+    },
+    {
+      "number": 44,
+      "stage": 2,
+      "page": 7,
+      "text": "Build tooling Vite, bundling, tree-shaking, source maps"
+    },
+    {
+      "number": 45,
+      "stage": 2,
+      "page": 7,
+      "text": "Git Branching, rebase vs merge, conflict resolution, readable history"
+    },
+    {
+      "number": 46,
+      "stage": 2,
+      "page": 7,
+      "text": "Code quality ESLint, Prettier and shared conventions"
+    },
+    {
+      "number": 47,
+      "stage": 3,
+      "page": 8,
+      "text": "Components and composition Props, children, composition over configuration"
+    },
+    {
+      "number": 48,
+      "stage": 3,
+      "page": 8,
+      "text": "Hooks State, effects, refs and memoisation, and the effect mistakes that cause bugs"
+    },
+    {
+      "number": 49,
+      "stage": 3,
+      "page": 8,
+      "text": "Custom hooks Extracting reusable logic and testing it in isolation"
+    },
+    {
+      "number": 50,
+      "stage": 3,
+      "page": 8,
+      "text": "Rendering model Reconciliation, keys, why components re-render, what changed in React 19"
+    },
+    {
+      "number": 51,
+      "stage": 3,
+      "page": 8,
+      "text": "Error boundaries and Suspense Isolating failures and designing loading states"
+    },
+    {
+      "number": 52,
+      "stage": 3,
+      "page": 8,
+      "text": "Forms at scale React Hook Form with schema validation, server errors, optimistic updates"
+    },
+    {
+      "number": 53,
+      "stage": 3,
+      "page": 8,
+      "text": "Component testing Testing Library: test behaviour, not implementation"
+    },
+    {
+      "number": 54,
+      "stage": 3,
+      "page": 8,
+      "text": "App Router Layouts, route groups, loading and error files"
+    },
+    {
+      "number": 55,
+      "stage": 3,
+      "page": 8,
+      "text": "Server and client components What runs where, and what can cross the serialisation boundary"
+    },
+    {
+      "number": 56,
+      "stage": 3,
+      "page": 8,
+      "text": "Rendering strategies SSR, SSG, ISR and client rendering, chosen per route"
+    },
+    {
+      "number": 57,
+      "stage": 3,
+      "page": 8,
+      "text": "Data fetching and caching Fetch caching, revalidation and tags, and avoiding stale-data bugs"
+    },
+    {
+      "number": 58,
+      "stage": 3,
+      "page": 8,
+      "text": "Server actions and route handlers Mutations without a separate API, and when you still want one"
+    },
+    {
+      "number": 59,
+      "stage": 3,
+      "page": 8,
+      "text": "Streaming UI Streaming server components and Suspense boundaries; the base for AI interfaces"
+    },
+    {
+      "number": 60,
+      "stage": 3,
+      "page": 8,
+      "text": "Middleware and the edge Auth redirects, edge runtime limits"
+    },
+    {
+      "number": 61,
+      "stage": 3,
+      "page": 8,
+      "text": "Client state useState, context and Redux Toolkit, and when global state is a mistake"
+    },
+    {
+      "number": 62,
+      "stage": 3,
+      "page": 8,
+      "text": "Server state TanStack Query or SWR: caching, refetching, mutations, invalidation"
+    },
+    {
+      "number": 63,
+      "stage": 3,
+      "page": 8,
+      "text": "URL as state Filters, sorting and pagination kept in the query string so views are shareable"
+    },
+    {
+      "number": 64,
+      "stage": 3,
+      "page": 8,
+      "text": "Realtime UI Socket.io client, reconnection, merging live events into cached data"
+    },
+    {
+      "number": 65,
+      "stage": 3,
+      "page": 8,
+      "text": "Design systems Component variants, tokens, accessible primitives such as Radix or shadcn/ui"
+    },
+    {
+      "number": 66,
+      "stage": 3,
+      "page": 8,
+      "text": "Data visualisation Recharts dashboards that answer a specific question"
+    },
+    {
+      "number": 67,
+      "stage": 3,
+      "page": 8,
+      "text": "Performance Core Web Vitals, bundle analysis, code splitting, image optimisation"
+    },
+    {
+      "number": 68,
+      "stage": 3,
+      "page": 8,
+      "text": "End-to-end testing Playwright for critical user journeys, run in CI"
+    },
+    {
+      "number": 69,
+      "stage": 3,
+      "page": 8,
+      "text": "Internationalisation Locale-aware dates, numbers and currency"
+    },
+    {
+      "number": 70,
+      "stage": 4,
+      "page": 9,
+      "text": "REST resource design Resources, nesting, filtering, sorting, pagination"
+    },
+    {
+      "number": 71,
+      "stage": 4,
+      "page": 9,
+      "text": "Error contracts One consistent error shape across every endpoint, for example RFC 9457 problem details"
+    },
+    {
+      "number": 72,
+      "stage": 4,
+      "page": 9,
+      "text": "Idempotency Idempotency keys so a retried request never charges or creates twice"
+    },
+    {
+      "number": 73,
+      "stage": 4,
+      "page": 9,
+      "text": "Contracts and versioning OpenAPI specs, generated typed clients, a breaking-change policy"
+    },
+    {
+      "number": 74,
+      "stage": 4,
+      "page": 9,
+      "text": "Cursor pagination Offset vs cursor, and staying consistent while data changes"
+    },
+    {
+      "number": 75,
+      "stage": 4,
+      "page": 9,
+      "text": "Application structure Middleware order, routers, controller and service layers"
+    },
+    {
+      "number": 76,
+      "stage": 4,
+      "page": 9,
+      "text": "API hardening Helmet, CORS policy, two-tier rate limiting"
+    },
+    {
+      "number": 77,
+      "stage": 4,
+      "page": 9,
+      "text": "API testing Vitest, in-memory databases, end-to-end smoke suites"
+    },
+    {
+      "number": 78,
+      "stage": 4,
+      "page": 9,
+      "text": "Centralised error handling Async errors, error middleware, never leaking stack traces"
+    },
+    {
+      "number": 79,
+      "stage": 4,
+      "page": 9,
+      "text": "Node runtime behaviour Blocking the event loop, worker threads, streams, memory limits"
+    },
+    {
+      "number": 80,
+      "stage": 4,
+      "page": 9,
+      "text": "Routing Routers and path, query and body parameters"
+    },
+    {
+      "number": 81,
+      "stage": 4,
+      "page": 9,
+      "text": "Pydantic schemas Request and response models, validation errors, serialisation"
+    },
+    {
+      "number": 82,
+      "stage": 4,
+      "page": 9,
+      "text": "Dependency injection Depends() for database sessions, auth and settings"
+    },
+    {
+      "number": 83,
+      "stage": 4,
+      "page": 9,
+      "text": "Async endpoints Async database drivers, and never blocking the event loop"
+    },
+    {
+      "number": 84,
+      "stage": 4,
+      "page": 9,
+      "text": "SQLAlchemy and Alembic The Python ORM layer and its migrations"
+    },
+    {
+      "number": 85,
+      "stage": 4,
+      "page": 9,
+      "text": "Generated docs OpenAPI and Swagger UI produced from your code"
+    },
+    {
+      "number": 86,
+      "stage": 4,
+      "page": 10,
+      "text": "Authentication JWT, sessions, refresh strategy, httpOnly cookies"
+    },
+    {
+      "number": 87,
+      "stage": 4,
+      "page": 10,
+      "text": "OAuth 2.0 and OpenID Connect Authorisation-code flow, PKCE, Google sign-in"
+    },
+    {
+      "number": 88,
+      "stage": 4,
+      "page": 10,
+      "text": "Authorisation RBAC with checks enforced at the query layer, not only at the route"
+    },
+    {
+      "number": 89,
+      "stage": 4,
+      "page": 10,
+      "text": "Payments Razorpay orders and webhook signature verification"
+    },
+    {
+      "number": 90,
+      "stage": 4,
+      "page": 10,
+      "text": "Email and notifications Transactional email, and fallbacks when realtime delivery fails"
+    },
+    {
+      "number": 91,
+      "stage": 4,
+      "page": 10,
+      "text": "Document generation Server-side PDF invoices and reports"
+    },
+    {
+      "number": 92,
+      "stage": 4,
+      "page": 10,
+      "text": "Outgoing webhooks Signing, retries and delivery logs for events you send"
+    },
+    {
+      "number": 93,
+      "stage": 4,
+      "page": 10,
+      "text": "Job queues BullMQ or Celery: workers, retries, dead-letter queues"
+    },
+    {
+      "number": 94,
+      "stage": 4,
+      "page": 10,
+      "text": "Scheduled work Recurring jobs such as a weekly report, safe against double and missed runs"
+    },
+    {
+      "number": 95,
+      "stage": 4,
+      "page": 10,
+      "text": "WebSockets Socket.io rooms, authenticating the connection, fallbacks"
+    },
+    {
+      "number": 96,
+      "stage": 4,
+      "page": 10,
+      "text": "Server-Sent Events One-way streaming over HTTP; how model tokens reach the browser"
+    },
+    {
+      "number": 97,
+      "stage": 4,
+      "page": 10,
+      "text": "State machines Explicit, enforced status transitions such as an order lifecycle"
+    },
+    {
+      "number": 98,
+      "stage": 5,
+      "page": 10,
+      "text": "SQL essentials Joins, aggregates, grouping, subqueries"
+    },
+    {
+      "number": 99,
+      "stage": 5,
+      "page": 10,
+      "text": "Advanced SQL CTEs, window functions, upserts, recursive queries"
+    },
+    {
+      "number": 100,
+      "stage": 5,
+      "page": 10,
+      "text": "Schema design Entities, relationships and constraints across a multi-table schema"
+    },
+    {
+      "number": 101,
+      "stage": 5,
+      "page": 10,
+      "text": "Normalisation 1NF to BCNF, functional dependencies, and denormalising on purpose"
+    },
+    {
+      "number": 102,
+      "stage": 5,
+      "page": 10,
+      "text": "ER modelling Cardinality and optionality worked out before any code is written"
+    },
+    {
+      "number": 103,
+      "stage": 5,
+      "page": 10,
+      "text": "Prisma Schema, migrations, relations, and when to drop down to raw SQL"
+    },
+    {
+      "number": 104,
+      "stage": 5,
+      "page": 10,
+      "text": "Database-enforced rules Foreign keys, unique and check constraints instead of application-only checks"
+    },
+    {
+      "number": 105,
+      "stage": 5,
+      "page": 11,
+      "text": "Storage Pages and heap files: how a row physically lives on disk"
+    },
+    {
+      "number": 106,
+      "stage": 5,
+      "page": 11,
+      "text": "Indexes B-tree structure, composite index order, covering and partial indexes, the write cost"
+    },
+    {
+      "number": 107,
+      "stage": 5,
+      "page": 11,
+      "text": "Query planning EXPLAIN ANALYZE, cost estimates, reading a plan top to bottom"
+    },
+    {
+      "number": 108,
+      "stage": 5,
+      "page": 11,
+      "text": "Transactions and ACID What atomicity, consistency, isolation and durability guarantee in practice"
+    },
+    {
+      "number": 109,
+      "stage": 5,
+      "page": 11,
+      "text": "Atomic updates Race-free conditional updates such as a stock decrement"
+    },
+    {
+      "number": 110,
+      "stage": 5,
+      "page": 11,
+      "text": "Isolation levels Read committed to serialisable; dirty reads, phantoms, write skew"
+    },
+    {
+      "number": 111,
+      "stage": 5,
+      "page": 11,
+      "text": "Locking and deadlock Row and table locks, lock ordering, deadlock detection"
+    },
+    {
+      "number": 112,
+      "stage": 5,
+      "page": 11,
+      "text": "MVCC Multi-version concurrency, and why readers do not block writers in Postgres"
+    },
+    {
+      "number": 113,
+      "stage": 5,
+      "page": 11,
+      "text": "Join algorithms Nested loop, hash and merge joins, and why the planner picks one"
+    },
+    {
+      "number": 114,
+      "stage": 5,
+      "page": 11,
+      "text": "WAL, vacuum and statistics Write-ahead logging, table bloat, stale statistics causing bad plans"
+    },
+    {
+      "number": 115,
+      "stage": 5,
+      "page": 11,
+      "text": "Connection pooling Pool sizing, PgBouncer, connection limits on serverless platforms"
+    },
+    {
+      "number": 116,
+      "stage": 5,
+      "page": 11,
+      "text": "Zero-downtime migrations Expand and contract, backfills, safe column changes"
+    },
+    {
+      "number": 117,
+      "stage": 5,
+      "page": 11,
+      "text": "Backups and restore Logical vs physical backups, point-in-time recovery, rehearsed restores"
+    },
+    {
+      "number": 118,
+      "stage": 5,
+      "page": 11,
+      "text": "Replication Primary and replicas, read scaling, replication lag"
+    },
+    {
+      "number": 119,
+      "stage": 5,
+      "page": 11,
+      "text": "Partitioning and sharding Range and hash partitioning, and when sharding is worth the pain"
+    },
+    {
+      "number": 120,
+      "stage": 5,
+      "page": 11,
+      "text": "Document modelling MongoDB embedding vs referencing, aggregation pipelines"
+    },
+    {
+      "number": 121,
+      "stage": 5,
+      "page": 11,
+      "text": "Choosing a data model Relational, document or key-value, decided by access patterns"
+    },
+    {
+      "number": 122,
+      "stage": 5,
+      "page": 11,
+      "text": "Redis Cache-aside, TTLs, invalidation, counters for rate limits"
+    },
+    {
+      "number": 123,
+      "stage": 5,
+      "page": 11,
+      "text": "Search engines Postgres full-text search first, then Meilisearch, Typesense or Elasticsearch"
+    },
+    {
+      "number": 124,
+      "stage": 5,
+      "page": 11,
+      "text": "Vector storage pgvector and vector indexes: the bridge into Stage 10"
+    },
+    {
+      "number": 125,
+      "stage": 5,
+      "page": 11,
+      "text": "OLTP vs OLAP Transactional vs analytical workloads, columnar storage at concept level"
+    },
+    {
+      "number": 126,
+      "stage": 6,
+      "page": 12,
+      "text": "Processes vs threads Address spaces, shared memory, why threads are cheaper"
+    },
+    {
+      "number": 127,
+      "stage": 6,
+      "page": 12,
+      "text": "Process lifecycle and signals fork and exec, SIGTERM vs SIGKILL, graceful shutdown"
+    },
+    {
+      "number": 128,
+      "stage": 6,
+      "page": 12,
+      "text": "Scheduling Preemption, priorities, CPU-bound vs I/O-bound work"
+    },
+    {
+      "number": 129,
+      "stage": 6,
+      "page": 12,
+      "text": "Concurrency vs parallelism The difference, and why async is not the same as threads"
+    },
+    {
+      "number": 130,
+      "stage": 6,
+      "page": 12,
+      "text": "Race conditions Interleavings, lost updates, and reproducing them reliably"
+    },
+    {
+      "number": 131,
+      "stage": 6,
+      "page": 12,
+      "text": "Locks and semaphores Mutexes, semaphores, read-write locks, lock granularity"
+    },
+    {
+      "number": 132,
+      "stage": 6,
+      "page": 12,
+      "text": "Deadlock The four conditions, prevention by lock ordering, detection"
+    },
+    {
+      "number": 133,
+      "stage": 6,
+      "page": 12,
+      "text": "Context switching What it costs and how it shows up as latency"
+    },
+    {
+      "number": 134,
+      "stage": 6,
+      "page": 12,
+      "text": "Virtual memory and paging Address translation, page faults, thrashing"
+    },
+    {
+      "number": 135,
+      "stage": 6,
+      "page": 12,
+      "text": "Stack vs heap Allocation, lifetimes, what a stack overflow really is"
+    },
+    {
+      "number": 136,
+      "stage": 6,
+      "page": 12,
+      "text": "Memory leaks Heap snapshots, retained objects, common leak patterns in Node and Python"
+    },
+    {
+      "number": 137,
+      "stage": 6,
+      "page": 12,
+      "text": "Container memory limits cgroup limits, the OOM killer, sizing the Node heap"
+    },
+    {
+      "number": 138,
+      "stage": 6,
+      "page": 12,
+      "text": "Garbage collection Generational GC in V8, reference counting in CPython"
+    },
+    {
+      "number": 139,
+      "stage": 6,
+      "page": 12,
+      "text": "File descriptors The descriptor table, ulimits, 'too many open files'"
+    },
+    {
+      "number": 140,
+      "stage": 6,
+      "page": 12,
+      "text": "Blocking vs non-blocking I/O Event loops, epoll and kqueue, why Node scales on one thread"
+    },
+    {
+      "number": 141,
+      "stage": 6,
+      "page": 12,
+      "text": "File systems inodes, permissions, links, mounts and volumes in containers"
+    },
+    {
+      "number": 142,
+      "stage": 6,
+      "page": 12,
+      "text": "Buffering and fsync Why data is not safely on disk when write() returns"
+    },
+    {
+      "number": 143,
+      "stage": 6,
+      "page": 13,
+      "text": "Shell fluency Pipes, redirection, grep, sed, awk, find, xargs"
+    },
+    {
+      "number": 144,
+      "stage": 6,
+      "page": 13,
+      "text": "Process inspection ps, top or htop, lsof, strace"
+    },
+    {
+      "number": 145,
+      "stage": 6,
+      "page": 13,
+      "text": "Users and permissions chmod, chown, service accounts, least privilege"
+    },
+    {
+      "number": 146,
+      "stage": 6,
+      "page": 13,
+      "text": "What a container is Namespaces and cgroups: a container as an ordinary process with limits"
+    },
+    {
+      "number": 147,
+      "stage": 6,
+      "page": 13,
+      "text": "Docker Images, layers, multi-stage builds, Compose"
+    },
+    {
+      "number": 148,
+      "stage": 6,
+      "page": 13,
+      "text": "systemd and logs Service units, restart policies, journalctl"
+    },
+    {
+      "number": 149,
+      "stage": 7,
+      "page": 13,
+      "text": "Layered models OSI and TCP/IP used as a debugging map: which layer is failing?"
+    },
+    {
+      "number": 150,
+      "stage": 7,
+      "page": 13,
+      "text": "IP and routing Addresses, subnets, NAT, public vs private networks"
+    },
+    {
+      "number": 151,
+      "stage": 7,
+      "page": 13,
+      "text": "TCP Handshake, reliability, congestion control, head-of-line blocking"
+    },
+    {
+      "number": 152,
+      "stage": 7,
+      "page": 13,
+      "text": "UDP Connectionless delivery and where it wins"
+    },
+    {
+      "number": 153,
+      "stage": 7,
+      "page": 13,
+      "text": "DNS The resolution chain, record types, TTLs and propagation"
+    },
+    {
+      "number": 154,
+      "stage": 7,
+      "page": 13,
+      "text": "TLS The handshake, certificate chains, and what the padlock actually proves"
+    },
+    {
+      "number": 155,
+      "stage": 7,
+      "page": 13,
+      "text": "HTTP methods and status codes Semantics you already use every day in your REST APIs"
+    },
+    {
+      "number": 156,
+      "stage": 7,
+      "page": 13,
+      "text": "HTTP caching Cache-Control, ETag, conditional requests"
+    },
+    {
+      "number": 157,
+      "stage": 7,
+      "page": 13,
+      "text": "CORS Preflight and credentials, and why CORS is a browser rule rather than server security"
+    },
+    {
+      "number": 158,
+      "stage": 7,
+      "page": 13,
+      "text": "Cookies on the wire SameSite, Secure, HttpOnly, domain scoping"
+    },
+    {
+      "number": 159,
+      "stage": 7,
+      "page": 13,
+      "text": "WebSockets The upgrade handshake, keep-alive, proxies that break long connections"
+    },
+    {
+      "number": 160,
+      "stage": 7,
+      "page": 13,
+      "text": "Server-Sent Events Streaming over plain HTTP; the transport behind token streaming"
+    },
+    {
+      "number": 161,
+      "stage": 7,
+      "page": 13,
+      "text": "HTTP/2 and HTTP/3 Multiplexing, QUIC, and when they matter"
+    },
+    {
+      "number": 162,
+      "stage": 7,
+      "page": 14,
+      "text": "Latency anatomy DNS, connect, TLS, server time and transfer, each measured separately"
+    },
+    {
+      "number": 163,
+      "stage": 7,
+      "page": 14,
+      "text": "Timeouts and retries Exponential backoff, jitter, retry budgets, idempotency"
+    },
+    {
+      "number": 164,
+      "stage": 7,
+      "page": 14,
+      "text": "Circuit breakers Failing fast, half-open probes, graceful degradation"
+    },
+    {
+      "number": 165,
+      "stage": 7,
+      "page": 14,
+      "text": "Rate limits Reading 429 and Retry-After, throttling yourself before a provider does"
+    },
+    {
+      "number": 166,
+      "stage": 7,
+      "page": 14,
+      "text": "Load balancers and proxies Nginx, health checks, layer 4 vs layer 7"
+    },
+    {
+      "number": 167,
+      "stage": 7,
+      "page": 14,
+      "text": "Network tooling curl -v, dig, ss, nc, traceroute, the browser network tab"
+    },
+    {
+      "number": 168,
+      "stage": 7,
+      "page": 14,
+      "text": "CDNs and the edge Caching static and dynamic content, invalidation"
+    },
+    {
+      "number": 169,
+      "stage": 7,
+      "page": 14,
+      "text": "Network security Firewalls, private subnets, DDoS basics"
+    },
+    {
+      "number": 170,
+      "stage": 8,
+      "page": 14,
+      "text": "Containers Multi-stage builds, small images, Compose for local parity"
+    },
+    {
+      "number": 171,
+      "stage": 8,
+      "page": 14,
+      "text": "Continuous integration Lint, test and build gates on every push"
+    },
+    {
+      "number": 172,
+      "stage": 8,
+      "page": 14,
+      "text": "Environments and deployment Preview, staging and production, promoting the same build"
+    },
+    {
+      "number": 173,
+      "stage": 8,
+      "page": 14,
+      "text": "Infrastructure as code Terraform or Pulumi for reproducible environments"
+    },
+    {
+      "number": 174,
+      "stage": 8,
+      "page": 14,
+      "text": "Secrets management Nothing in git, per-environment keys, rotation"
+    },
+    {
+      "number": 175,
+      "stage": 8,
+      "page": 14,
+      "text": "Release safety Feature flags, canary releases, fast rollback"
+    },
+    {
+      "number": 176,
+      "stage": 8,
+      "page": 15,
+      "text": "Cloud fundamentals Compute, managed databases, object storage and IAM on one provider"
+    },
+    {
+      "number": 177,
+      "stage": 8,
+      "page": 15,
+      "text": "Object storage S3-compatible buckets, presigned URLs, user uploads"
+    },
+    {
+      "number": 178,
+      "stage": 8,
+      "page": 15,
+      "text": "Serverless vs containers Functions vs long-running services, cold starts, limits"
+    },
+    {
+      "number": 179,
+      "stage": 8,
+      "page": 15,
+      "text": "Cost awareness Cost per user, and what makes a bill spike"
+    },
+    {
+      "number": 180,
+      "stage": 8,
+      "page": 15,
+      "text": "Cloud networking VPCs, subnets, security groups"
+    },
+    {
+      "number": 181,
+      "stage": 8,
+      "page": 15,
+      "text": "Kubernetes Pods, deployments and services, at concept level"
+    },
+    {
+      "number": 182,
+      "stage": 8,
+      "page": 15,
+      "text": "Structured logging JSON logs with correlation IDs across services"
+    },
+    {
+      "number": 183,
+      "stage": 8,
+      "page": 15,
+      "text": "Metrics Latency percentiles, error rates, saturation"
+    },
+    {
+      "number": 184,
+      "stage": 8,
+      "page": 15,
+      "text": "Distributed tracing OpenTelemetry spans across Node, Python and model calls"
+    },
+    {
+      "number": 185,
+      "stage": 8,
+      "page": 15,
+      "text": "Error tracking Sentry, release tagging, source maps"
+    },
+    {
+      "number": 186,
+      "stage": 8,
+      "page": 15,
+      "text": "Alerting Alert on symptoms, and keep every alert actionable"
+    },
+    {
+      "number": 187,
+      "stage": 8,
+      "page": 15,
+      "text": "OWASP Top 10 Each class of flaw, an example, and the fix in your own stack"
+    },
+    {
+      "number": 188,
+      "stage": 8,
+      "page": 15,
+      "text": "Injection SQL and NoSQL injection, command injection, ORM pitfalls"
+    },
+    {
+      "number": 189,
+      "stage": 8,
+      "page": 15,
+      "text": "XSS and CSP Output encoding and a Content-Security-Policy"
+    },
+    {
+      "number": 190,
+      "stage": 8,
+      "page": 15,
+      "text": "CSRF What SameSite defaults solve, and when tokens are still needed"
+    },
+    {
+      "number": 191,
+      "stage": 8,
+      "page": 15,
+      "text": "Broken access control IDOR and object-level checks: attacking your own RBAC"
+    },
+    {
+      "number": 192,
+      "stage": 8,
+      "page": 15,
+      "text": "Tenant isolation Guaranteeing one tenant can never read another tenant's data"
+    },
+    {
+      "number": 193,
+      "stage": 8,
+      "page": 15,
+      "text": "Webhook security Signature verification and replay protection"
+    },
+    {
+      "number": 194,
+      "stage": 8,
+      "page": 15,
+      "text": "API hardening Security headers, CORS policy, rate limiting"
+    },
+    {
+      "number": 195,
+      "stage": 8,
+      "page": 15,
+      "text": "Supply chain Lockfiles, dependency audits, pinned versions"
+    },
+    {
+      "number": 196,
+      "stage": 9,
+      "page": 16,
+      "text": "The landscape AI, machine learning, deep learning and generative AI, defined precisely"
+    },
+    {
+      "number": 197,
+      "stage": 9,
+      "page": 16,
+      "text": "Learning paradigms Supervised, unsupervised, self-supervised and reinforcement learning"
+    },
+    {
+      "number": 198,
+      "stage": 9,
+      "page": 16,
+      "text": "Training vs inference What happens at each step, and which one you pay for"
+    },
+    {
+      "number": 199,
+      "stage": 9,
+      "page": 16,
+      "text": "Generalisation Overfitting; train, validation and test splits; data leakage"
+    },
+    {
+      "number": 200,
+      "stage": 9,
+      "page": 16,
+      "text": "Classification metrics Precision, recall, F1 and the confusion matrix, reused directly in evals"
+    },
+    {
+      "number": 201,
+      "stage": 9,
+      "page": 16,
+      "text": "Neural network intuition Layers, weights, loss and gradient descent, conceptually"
+    },
+    {
+      "number": 202,
+      "stage": 9,
+      "page": 16,
+      "text": "A classic ML baseline One end-to-end scikit-learn model, so you know when an LLM is overkill"
+    },
+    {
+      "number": 203,
+      "stage": 9,
+      "page": 16,
+      "text": "Tokens and context windows Tokenisation, and why token count is both cost and latency"
+    },
+    {
+      "number": 204,
+      "stage": 9,
+      "page": 16,
+      "text": "Transformers and attention The intuition, not the maths"
+    },
+    {
+      "number": 205,
+      "stage": 9,
+      "page": 16,
+      "text": "Generation Next-token sampling, temperature, top-p, the limits of determinism"
+    },
+    {
+      "number": 206,
+      "stage": 9,
+      "page": 16,
+      "text": "From base model to assistant Pre-training, instruction tuning and preference alignment"
+    },
+    {
+      "number": 207,
+      "stage": 9,
+      "page": 16,
+      "text": "Failure modes Hallucination, knowledge cut-offs, sensitivity to phrasing"
+    },
+    {
+      "number": 208,
+      "stage": 9,
+      "page": 16,
+      "text": "Embeddings Text as vectors, semantic similarity, choosing an embedding model"
+    },
+    {
+      "number": 209,
+      "stage": 9,
+      "page": 16,
+      "text": "Model selection Frontier, small and open-weight models compared on quality, latency and cost"
+    },
+    {
+      "number": 210,
+      "stage": 9,
+      "page": 16,
+      "text": "Local models Running open-weight models with Ollama or similar, for privacy and offline work"
+    },
+    {
+      "number": 211,
+      "stage": 9,
+      "page": 16,
+      "text": "Model API integration Messages, system prompts and multi-turn context with the Claude API"
+    },
+    {
+      "number": 212,
+      "stage": 9,
+      "page": 16,
+      "text": "Deterministic fallback A non-AI path that keeps the feature working when the model fails"
+    },
+    {
+      "number": 213,
+      "stage": 9,
+      "page": 16,
+      "text": "Prompt design Clear instructions, examples, delimiters, explicit output formats"
+    },
+    {
+      "number": 214,
+      "stage": 9,
+      "page": 16,
+      "text": "Streaming Tokens streamed end to end: provider to server to browser"
+    },
+    {
+      "number": 215,
+      "stage": 9,
+      "page": 17,
+      "text": "Structured output JSON schemas, validated parsing with Pydantic or Zod, recovery from bad output"
+    },
+    {
+      "number": 216,
+      "stage": 9,
+      "page": 17,
+      "text": "Tool use Defining tools, executing calls, feeding results back to the model"
+    },
+    {
+      "number": 217,
+      "stage": 9,
+      "page": 17,
+      "text": "Prompt management Versioned prompt templates, changes reviewed and tested like code"
+    },
+    {
+      "number": 218,
+      "stage": 9,
+      "page": 17,
+      "text": "Cost and latency budgets Token accounting, prompt caching, the smallest model that does the job"
+    },
+    {
+      "number": 219,
+      "stage": 9,
+      "page": 17,
+      "text": "Provider abstraction A thin internal interface so a model can be swapped without a rewrite"
+    },
+    {
+      "number": 220,
+      "stage": 9,
+      "page": 17,
+      "text": "Multimodal input Images and documents as model input"
+    },
+    {
+      "number": 221,
+      "stage": 9,
+      "page": 17,
+      "text": "Coding assistants Using AI tools to plan, write, refactor and debug your own code"
+    },
+    {
+      "number": 222,
+      "stage": 9,
+      "page": 17,
+      "text": "Reviewing generated code Reading every line; catching code that looks right and is not"
+    },
+    {
+      "number": 223,
+      "stage": 9,
+      "page": 17,
+      "text": "Specs and tests first Giving an assistant constraints: types, tests, acceptance criteria"
+    },
+    {
+      "number": 224,
+      "stage": 9,
+      "page": 17,
+      "text": "Knowing the limits Security-critical code, secrets, licences, and when to write it yourself"
+    },
+    {
+      "number": 225,
+      "stage": 10,
+      "page": 17,
+      "text": "The RAG pipeline Ingest, chunk, embed, index, retrieve, rerank, generate, cite"
+    },
+    {
+      "number": 226,
+      "stage": 10,
+      "page": 17,
+      "text": "Document ingestion Parsing PDFs, HTML and office files; cleaning; keeping metadata"
+    },
+    {
+      "number": 227,
+      "stage": 10,
+      "page": 17,
+      "text": "Chunking Size, overlap, structure-aware splitting; the most common point of failure"
+    },
+    {
+      "number": 228,
+      "stage": 10,
+      "page": 17,
+      "text": "Vector databases pgvector or MongoDB Atlas Vector Search first; Qdrant, Pinecone or Weaviate when you outgrow them"
+    },
+    {
+      "number": 229,
+      "stage": 10,
+      "page": 17,
+      "text": "Similarity and indexes Cosine vs dot product, approximate nearest neighbour, HNSW and IVF"
+    },
+    {
+      "number": 230,
+      "stage": 10,
+      "page": 17,
+      "text": "Hybrid search Keyword (BM25) and vector results, combined"
+    },
+    {
+      "number": 231,
+      "stage": 10,
+      "page": 17,
+      "text": "Reranking Cross-encoder rerankers, and the quality gained per millisecond spent"
+    },
+    {
+      "number": 232,
+      "stage": 10,
+      "page": 17,
+      "text": "Context assembly Fitting passages into a token budget; ordering; lost-in-the-middle"
+    },
+    {
+      "number": 233,
+      "stage": 10,
+      "page": 18,
+      "text": "Grounding and citations Answers traceable to their sources; refusing when evidence is missing"
+    },
+    {
+      "number": 234,
+      "stage": 10,
+      "page": 18,
+      "text": "Access-aware retrieval Metadata filters so users only retrieve what they are allowed to see"
+    },
+    {
+      "number": 235,
+      "stage": 10,
+      "page": 18,
+      "text": "Index freshness Re-indexing on change, re-embedding when the embedding model changes"
+    },
+    {
+      "number": 236,
+      "stage": 10,
+      "page": 18,
+      "text": "Query transformation Rewriting, decomposing and expanding the user's question"
+    },
+    {
+      "number": 237,
+      "stage": 10,
+      "page": 18,
+      "text": "Advanced patterns GraphRAG, agentic retrieval, long context vs retrieval trade-offs"
+    },
+    {
+      "number": 238,
+      "stage": 10,
+      "page": 18,
+      "text": "Evals before features You cannot improve what you do not measure"
+    },
+    {
+      "number": 239,
+      "stage": 10,
+      "page": 18,
+      "text": "Golden datasets Representative questions, edge cases and adversarial inputs, versioned"
+    },
+    {
+      "number": 240,
+      "stage": 10,
+      "page": 18,
+      "text": "Retrieval metrics recall@k, precision@k, MRR: is the right context being found?"
+    },
+    {
+      "number": 241,
+      "stage": 10,
+      "page": 18,
+      "text": "Answer quality Faithfulness, relevance, completeness"
+    },
+    {
+      "number": 242,
+      "stage": 10,
+      "page": 18,
+      "text": "Scoring methods Exact match, rubrics, LLM-as-judge and its biases"
+    },
+    {
+      "number": 243,
+      "stage": 10,
+      "page": 18,
+      "text": "Human review Sampling outputs, labelling, calibrating automated judges"
+    },
+    {
+      "number": 244,
+      "stage": 10,
+      "page": 18,
+      "text": "Regression gates Evals in CI, so a prompt change cannot silently make things worse"
+    },
+    {
+      "number": 245,
+      "stage": 10,
+      "page": 18,
+      "text": "Online signals Feedback, corrections and escalations turned into new eval cases"
+    },
+    {
+      "number": 246,
+      "stage": 10,
+      "page": 18,
+      "text": "Eval tooling Langfuse, LangSmith, Ragas or promptfoo, or a small harness of your own"
+    },
+    {
+      "number": 247,
+      "stage": 11,
+      "page": 18,
+      "text": "The agent loop The model decides, a tool executes, the result returns; explicit stopping conditions"
+    },
+    {
+      "number": 248,
+      "stage": 11,
+      "page": 18,
+      "text": "Tool design Narrow, well-described tools with validated inputs"
+    },
+    {
+      "number": 249,
+      "stage": 11,
+      "page": 18,
+      "text": "Workflows vs agents Fixed pipelines when the path is known, agents only when it is not"
+    },
+    {
+      "number": 250,
+      "stage": 11,
+      "page": 18,
+      "text": "Memory and state Conversation state, summaries, long-term stores"
+    },
+    {
+      "number": 251,
+      "stage": 11,
+      "page": 18,
+      "text": "Model Context Protocol MCP: the open standard for connecting models to tools and data"
+    },
+    {
+      "number": 252,
+      "stage": 11,
+      "page": 18,
+      "text": "Human in the loop Approval gates before any consequential action"
+    },
+    {
+      "number": 253,
+      "stage": 11,
+      "page": 19,
+      "text": "Guardrails Step limits, budgets, sandboxed side effects, kill switches"
+    },
+    {
+      "number": 254,
+      "stage": 11,
+      "page": 19,
+      "text": "Planning Decomposing multi-step tasks and re-planning after failure"
+    },
+    {
+      "number": 255,
+      "stage": 11,
+      "page": 19,
+      "text": "Agent frameworks LangGraph, LlamaIndex or provider agent SDKs, or none when plain code is simpler"
+    },
+    {
+      "number": 256,
+      "stage": 11,
+      "page": 19,
+      "text": "Prompt injection Direct and indirect; untrusted content reaching a model that has tools"
+    },
+    {
+      "number": 257,
+      "stage": 11,
+      "page": 19,
+      "text": "Output handling Never render or execute model output unvalidated; XSS through rendered markdown"
+    },
+    {
+      "number": 258,
+      "stage": 11,
+      "page": 19,
+      "text": "Tool abuse and SSRF Agents fetching URLs or taking actions on an attacker's behalf"
+    },
+    {
+      "number": 259,
+      "stage": 11,
+      "page": 19,
+      "text": "Data exposure What leaves your system, provider retention terms, PII redaction"
+    },
+    {
+      "number": 260,
+      "stage": 11,
+      "page": 19,
+      "text": "Audit trails Prompts, retrieved context, tool calls and decisions, all logged"
+    },
+    {
+      "number": 261,
+      "stage": 11,
+      "page": 19,
+      "text": "Bias and fairness Where bias enters: data, retrieval corpus, evaluation blind spots"
+    },
+    {
+      "number": 262,
+      "stage": 11,
+      "page": 19,
+      "text": "Assistant interfaces Streaming messages, stop and regenerate, conversation history"
+    },
+    {
+      "number": 263,
+      "stage": 11,
+      "page": 19,
+      "text": "Frontend AI SDKs The Vercel AI SDK or similar: streaming hooks, rendering tool calls"
+    },
+    {
+      "number": 264,
+      "stage": 11,
+      "page": 19,
+      "text": "Perceived latency Skeletons, partial results and optimistic UI around slow models"
+    },
+    {
+      "number": 265,
+      "stage": 11,
+      "page": 19,
+      "text": "Trust UX Visible sources, edit-before-send, easy correction"
+    },
+    {
+      "number": 266,
+      "stage": 11,
+      "page": 19,
+      "text": "Generative UI Models choosing interface components, not only text"
+    },
+    {
+      "number": 267,
+      "stage": 11,
+      "page": 19,
+      "text": "Voice and images Speech-to-text and image input in the browser"
+    },
+    {
+      "number": 268,
+      "stage": 11,
+      "page": 19,
+      "text": "Where AI sits in the system In the request path or behind a queue; sync vs async"
+    },
+    {
+      "number": 269,
+      "stage": 11,
+      "page": 19,
+      "text": "Graceful degradation The product still works when the model is down"
+    },
+    {
+      "number": 270,
+      "stage": 11,
+      "page": 19,
+      "text": "Cost control Caching, per-tenant budgets, trimmed prompts"
+    },
+    {
+      "number": 271,
+      "stage": 11,
+      "page": 19,
+      "text": "AI observability Traces of prompts, tokens, latency and cost per request"
+    },
+    {
+      "number": 272,
+      "stage": 11,
+      "page": 19,
+      "text": "Versioning Prompts, models and indexes as deployed artefacts with changelogs"
+    },
+    {
+      "number": 273,
+      "stage": 11,
+      "page": 19,
+      "text": "Model lifecycle Deprecations and migrations, with evals re-run on every switch"
+    },
+    {
+      "number": 274,
+      "stage": 11,
+      "page": 19,
+      "text": "Model routing A small model first, escalating when confidence is low"
+    },
+    {
+      "number": 275,
+      "stage": 11,
+      "page": 19,
+      "text": "Semantic caching Reusing answers to equivalent questions; hit rate vs correctness"
+    },
+    {
+      "number": 276,
+      "stage": 11,
+      "page": 19,
+      "text": "Load testing What ten times the traffic does when every request calls a model"
+    }
+  ],
+  "sources": [
+    {
+      "name": "AI_Full_Stack_Engineer_Path.pdf",
+      "sha256": "0a612820cad197dcac7a7b01bafdd2e9bbef8a01e081e348a4d11fc57aba6415"
+    },
+    {
+      "name": "Tech_Stack_ClientHub_and_Ramachandra_Traders.docx",
+      "sha256": "3c192bc890063f92053115a77e8d120d72c13fbb33298488ba2cbca9e3b8ba8e"
+    }
+  ]
+}

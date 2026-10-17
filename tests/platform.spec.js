@@ -40,6 +40,8 @@ test('saved full app boots offline from a new tab with Python, SQL, rich editor 
   await offline.waitForFunction(()=>Py.ready&&EditorTools.richReady);
   expect(await offline.evaluate(()=>Py.run('import json, sys\nprint(sum(json.load(sys.stdin)))','[20,22]',5000))).toEqual({stdout:'42\n',stderr:''});
   expect((await offline.evaluate(()=>SqlRun.run('SELECT 42 AS answer;'))).stdout).toContain('42');
+  await offline.evaluate(()=>Study.subject('ai'));await expect(offline.locator('#view-study h1')).toHaveText('AI / ML');
+  await offline.evaluate(()=>Study.show('python','py-strings'));await offline.fill('#study-personal-notes','Saved while offline');await offline.reload();await expect(offline.locator('#study-personal-notes')).toHaveValue('Saved while offline');
   await offline.getByRole('button',{name:'Online / Offline',exact:true}).click();
   await expect(offline.locator('#offline-readiness')).toContainText('Ready offline.');await expect(offline.locator('#connection-state')).toContainText('Offline');
 });

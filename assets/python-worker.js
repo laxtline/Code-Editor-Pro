@@ -9,14 +9,16 @@ self.onmessage=async({data})=>{
   if(data.type!=='run')return;
   try{
     python.globals.set('__cl_stdin',data.stdin);python.globals.set('__cl_code',data.code);
-    const value=await python.runPythonAsync(`import sys, io, traceback, contextlib
+    const value=await python.runPythonAsync(`import sys, io, traceback, contextlib, ast, inspect
 __cl_previous_stdin = sys.stdin
 __cl_output, __cl_error = io.StringIO(), io.StringIO()
 try:
     sys.stdin = io.StringIO(__cl_stdin)
     with contextlib.redirect_stdout(__cl_output), contextlib.redirect_stderr(__cl_error):
         try:
-            exec(compile(__cl_code, '<user>', 'exec'), {'__name__': '__main__'})
+            __cl_result = eval(compile(__cl_code, '<user>', 'exec', flags=ast.PyCF_ALLOW_TOP_LEVEL_AWAIT), {'__name__': '__main__'})
+            if inspect.isawaitable(__cl_result):
+                await __cl_result
         except SystemExit:
             pass
         except BaseException:

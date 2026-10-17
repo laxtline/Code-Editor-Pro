@@ -1,14 +1,14 @@
 {
   "name": "codelab-offline",
-  "version": "2.3.2",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "start": "python -m http.server 4173 --bind 127.0.0.1",
     "import:offline": "python scripts/import_offline.py",
-    "build": "python scripts/vendor_runtimes.py && python scripts/build_practice.py && python scripts/python_references.py && python scripts/import_offline.py && python scripts/build_standalone.py && python scripts/package_site.py",
+    "build": "python scripts/vendor_runtimes.py && python scripts/build_practice.py && python scripts/python_references.py && python scripts/build_study.py && python scripts/import_offline.py && python scripts/build_standalone.py && python scripts/package_site.py",
     "test": "playwright test",
     "bundle:runtimes": "python scripts/vendor_runtimes.py",
-    "build:site": "python scripts/vendor_runtimes.py && python scripts/refresh_cache.py && python scripts/build_standalone.py && python scripts/package_site.py"
+    "build:site": "python scripts/vendor_runtimes.py && python scripts/build_study.py && python scripts/refresh_cache.py && python scripts/build_standalone.py && python scripts/package_site.py"
   },
   "dependencies": {
     "dompurify": "^3.4.17",

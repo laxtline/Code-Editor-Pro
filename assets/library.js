@@ -18,7 +18,7 @@ const OfflineLibrary = {
       if (!button) return;
       const action = button.dataset.libAction;
       if (action === 'open') this.open(button.dataset.key);
-      else if (action === 'back') { history.replaceState(null, '', '#library'); this.render(); }
+      else if (action === 'back') { if(typeof Navigation!=='undefined')Navigation.open({view:'library'});else{history.replaceState(null, '', '#library');this.render();} }
       else if (action === 'page') { this.page += Number(button.dataset.delta); this.results(); this.root.scrollTop = 0; }
       else if (action === 'star') this.toggleStar(button.dataset.key);
       else if (action === 'tab') { this.tab = button.dataset.tab; this.reader(); }
@@ -123,7 +123,7 @@ const OfflineLibrary = {
       if (this.openToken !== token || Router.current !== 'library') return;
       this.selected = record; this.tab = record.documents.length ? 'statement' : 'solutions';
       this.solutionIndex = 0; this.documentIndex = 0;
-      history.replaceState(null, '', '#library/' + key);
+      if(typeof Navigation!=='undefined')Navigation.record({view:'library',arg:key});else history.replaceState(null, '', '#library/' + key);
       this.reader(); this.root.scrollTop = 0;
     } catch (error) {
       if (this.openToken !== token || Router.current !== 'library') return;

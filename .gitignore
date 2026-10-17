@@ -9,3 +9,5 @@ downloads/
 .vscode/settings.json
 .codelab-server.json
 .codelab-server.*.log
+.codelab-data/
+.codelab-tools.json
