@@ -109,4 +109,7 @@ test('normal judged DSA mistakes and accepted retries feed revision and daily pr
   await page.evaluate(()=>{Editor.instance.setValue(Questions.byId(10067).referenceCode.javascript);return Runner.submit();});
   expect(await page.evaluate(()=>Store.get('revision_state',{})['coding:10067'].due)).toBe(due);
   expect(await page.evaluate(()=>Learning.daily()[Learning.day()].questions)).toBe(2);
+  await page.evaluate(()=>{Learning.record({id:'coding:10067',eventId:'weak-coding-second',source:'coding',topic:Questions.byId(10067).tags[0],correct:false});Learning.dashboard();});
+  await page.getByRole('button',{name:'Start recommended practice',exact:true}).click();
+  expect(await page.evaluate(()=>Router.current)).toBe('problem');expect(await page.evaluate(()=>ProblemView.q.id)).toBe(10067);
 });

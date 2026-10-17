@@ -121,7 +121,7 @@ test('complete library survives offline reload including unread packs and diagra
   await expect(page.locator('#lib-cache-status')).toContainText('Ready offline.', {timeout:60000});
   await context.setOffline(true);
   const offline = await context.newPage();
-  await offline.goto('http://127.0.0.1:4173/#library/lc-156');
+  await offline.goto('http://127.0.0.1:4193/#library/lc-156');
   await expect(offline.getByRole('heading', {name:'156. Binary Tree Upside Down',exact:true})).toBeVisible();
   await expect(offline.locator('#lib-reading')).toContainText('Constraints:');
   const img = offline.locator('#lib-reading img').first();

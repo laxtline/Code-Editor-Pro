@@ -94,7 +94,7 @@ test('offline editor, worker timeout and a judged JSON task work without CDN',as
 });
 
 test('Monaco upgrade preserves local drafts and separate HTML/CSS/JS models',async({page,context})=>{
-  await context.addInitScript(()=>{window.CODELAB_MONACO_BASE='http://127.0.0.1:4173/node_modules/monaco-editor/min/vs';});
+  await context.addInitScript(()=>{window.CODELAB_MONACO_BASE='http://127.0.0.1:4193/node_modules/monaco-editor/min/vs';});
   await page.goto('/');await page.locator('.mode-btn[data-mode="normal"]').click();
   await page.selectOption('#pg-lang','javascript');await page.locator('#pg-monaco .local-code-input').fill('const typedBeforeUpgrade = 42;');
   await page.addScriptTag({url:'/node_modules/monaco-editor/min/vs/loader.js'});await page.evaluate(()=>{window.CODELAB_DISABLE_MONACO=false;EditorTools.initRich();});
