@@ -19,6 +19,20 @@ self.addEventListener('activate', event => {
     await self.clients.claim();
   })());
 });
+self.addEventListener('message', event => {
+  if (event.data?.type !== 'CODELAB_APPLY_UPDATE') return;
+  event.waitUntil((async () => {
+    const tabs = (await self.clients.matchAll({type:'window',includeUncontrolled:true}))
+      .filter(client => client.url.startsWith(self.registration.scope));
+    // Another tab may be running an exam, including one on an older app version.
+    if (tabs.length > 1) {
+      event.ports[0]?.postMessage({ok:false,message:'Close other CodeLab tabs and installed windows before applying the update.'});
+      return;
+    }
+    event.ports[0]?.postMessage({ok:true});
+    await self.skipWaiting();
+  })());
+});
 self.addEventListener('fetch', event => {
   const request = event.request;
   if (request.method !== 'GET') return;

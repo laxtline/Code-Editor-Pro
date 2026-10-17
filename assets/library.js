@@ -47,7 +47,7 @@ const OfflineLibrary = {
     new ResizeObserver(resize).observe(document.getElementById('navbar'));
     resize();
     if (!window.CODELAB_STANDALONE && 'serviceWorker' in navigator && ['http:', 'https:'].includes(location.protocol)) {
-      this.registrationPromise = navigator.serviceWorker.register('./sw.js').catch(() => null);
+      this.registrationPromise = navigator.serviceWorker.register('./sw.js', {updateViaCache:'none'}).catch(() => null);
     }
     if (location.hash.startsWith('#library')) this.routeHash();
     window.addEventListener('hashchange', () => {

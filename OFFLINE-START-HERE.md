@@ -73,10 +73,17 @@ Full offline Python/SQL/editor ke liye Live Server ya launcher use karo.
 Progress browser aur address/port ke hisaab se save hota hai. Vivaldi aur doosre browsers ka progress alag hai.
 `127.0.0.1:5500`, `127.0.0.1:4173`, `localhost` aur GitHub Pages alag storage origins hain.
 Ek method se doosre par move karte waqt **Export all progress**, phir **Import progress** use karo.
+Backup mein latest editor draft, notes aur reports aate hain; compiler API credentials export nahi hote.
+Import matching saved items replace karta hai. Pehle current work export kar lo, aur running test ko finish ya save/leave karo.
+Purane CodeLab JSON backups bhi import kar sakte ho.
 
 ## GitHub se online
 
 GitHub Pages deployment ke baad online app bhi same features use karegi.
 Deployment workflow `.github/workflows/pages.yml` aur instructions `README.md` mein hain.
 Online version mein **Online / Offline > Save full app for offline** bhi available hai.
+Naya version lene ke liye **Check for updates**, phir **Apply update & reload** use karo.
+Pehle active session finish/save-and-leave karo aur doosre CodeLab tabs/windows band karo.
+Update ke baad full app dobara offline save karo. Alag ZIP folder update karne ke liye latest ZIP download/extract karo.
+Purane version mein update button na ho to saare CodeLab tabs band karke online dobara kholo.
 GitHub deployment ka status repository ke Actions tab mein check karo. Local use independent hai.

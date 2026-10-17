@@ -3769,22 +3769,10 @@ const DataIO = {
     inp.click();
   },
   exportProgress(){
-    const data={};
-    ['settings','custom_questions','solved','attempted','submissions','liked','disliked','contest_leaderboard','progress','saved_snippets','library_progress','question_stats','practice_history','practice_session','coding_session','coding_history'].forEach(k=>data[k]=Store.get(k,null));
-    // include per-question code/notes
-    data._raw={}; for(let i=0;i<localStorage.length;i++){ const key=localStorage.key(i); if(key.startsWith('cl_code_')||key.startsWith('cl_notes_')||key.startsWith('cl_editorial_')||key.startsWith('cl_library_draft_')||key.startsWith('cl_library_notes_')||key.startsWith('cl_pg_')) data._raw[key]=localStorage.getItem(key); }
-    download('codelab_progress.json', JSON.stringify(data,null,2), 'application/json');
+    ProgressBackup.export();
   },
   importProgress(){
-    const inp=document.createElement('input'); inp.type='file'; inp.accept='.json';
-    inp.onchange=e=>{ const f=e.target.files[0]; if(!f) return; const r=new FileReader();
-      r.onload=()=>{ try{ const data=JSON.parse(r.result);
-        Object.keys(data).forEach(k=>{ if(k==='_raw'){ Object.entries(data._raw).forEach(([rk,rv])=>localStorage.setItem(rk,rv)); } else if(data[k]!==null) Store.set(k,data[k]); });
-        SETTINGS=Object.assign({},DEFAULT_SETTINGS,Store.get('settings',{})); UI.applyTheme(); Editor.applySettings();
-        Toast.show('Progress imported ✓','success'); Problems.render();
-      }catch(err){ Toast.show('Invalid progress file','error'); } };
-      r.readAsText(f); };
-    inp.click();
+    ProgressBackup.choose();
   }
 };
 function download(name, content, type){ const blob=new Blob([content],{type}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),1000); }
