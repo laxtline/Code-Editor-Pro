@@ -33,7 +33,7 @@ def build():
         css=(ROOT/match[1]).read_text(encoding='utf-8')
         return '<style>'+css+'</style>'
     html=re.sub(r'<link rel="stylesheet" href="([^"\s]+)"\s*/>',inline_style,html)
-    html=html.replace('<title>Study Lab —','<title>Study Lab Offline —')
+    html=html.replace('<title>StudyLab —','<title>StudyLab Offline —')
     output=ROOT/'CodeLab-Offline.html';output.write_text(html,encoding='utf-8')
     print(f'Built {output.name}: {output.stat().st_size/1024/1024:.2f} MiB; {len(images)} embedded diagrams.')
 

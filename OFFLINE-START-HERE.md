@@ -1,4 +1,4 @@
-# Study Lab - isi folder se online aur offline use
+# StudyLab - isi folder se online aur offline use
 
 App, questions, diagrams, Python/SQL engines aur editor isi folder mein hain.
 `assets/`, `vendor/` aur `offline/` ko saath rakho. Installed copy ko internet ki zarurat nahi hai for the supported offline features.
@@ -82,7 +82,7 @@ Live Server automatic folder backup nahi likhta. GitHub Pages, Live Server aur d
 Browser aur folder ke purane matching items different hon to Save status mein Keep browser / Restore folder choose kar sakte ho. Backup writing fail ho to browser copy retained rahegi aur folder retry hoga.
 Backup mein latest editor draft, notes aur reports aate hain; compiler API credentials export nahi hote.
 Import matching saved items replace karta hai. Pehle current work export kar lo, aur running test ko finish ya save/leave karo.
-Purane Study Lab JSON backups bhi import kar sakte ho.
+Purane StudyLab JSON backups bhi import kar sakte ho.
 
 ## GitHub se online
 
@@ -90,9 +90,9 @@ GitHub Pages deployment ke baad online app bhi same features use karegi.
 Deployment workflow `.github/workflows/pages.yml` aur instructions `README.md` mein hain.
 Online version mein **Online / Offline > Save full app for offline** bhi available hai.
 Naya version lene ke liye **Check for updates**, phir **Apply update & reload** use karo.
-Pehle active session finish/save-and-leave karo aur doosre Study Lab tabs/windows band karo.
+Pehle active session finish/save-and-leave karo aur doosre StudyLab tabs/windows band karo.
 Update ke baad full app dobara offline save karo. Alag ZIP folder update karne ke liye latest ZIP download/extract karo.
-Purane version mein update button na ho to saare Study Lab tabs band karke online dobara kholo.
+Purane version mein update button na ho to saare StudyLab tabs band karke online dobara kholo.
 GitHub deployment ka status repository ke Actions tab mein check karo. Local use independent hai.
 
 ## Navigation aur resume

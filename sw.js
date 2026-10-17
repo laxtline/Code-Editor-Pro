@@ -26,7 +26,7 @@ self.addEventListener('message', event => {
       .filter(client => client.url.startsWith(self.registration.scope));
     // Another tab may be running an exam, including one on an older app version.
     if (tabs.length > 1) {
-      event.ports[0]?.postMessage({ok:false,message:'Close other Study Lab tabs and installed windows before applying the update.'});
+      event.ports[0]?.postMessage({ok:false,message:'Close other StudyLab tabs and installed windows before applying the update.'});
       return;
     }
     event.ports[0]?.postMessage({ok:true});

@@ -1,7 +1,7 @@
 {
   "id": "./",
-  "name": "Study Lab — Coding & Placement Practice",
-  "short_name": "Study Lab",
+  "name": "StudyLab — Coding & Placement Practice",
+  "short_name": "StudyLab",
   "description": "Coding, aptitude, theory and your offline study collection.",
   "start_url": "./",
   "scope": "./",

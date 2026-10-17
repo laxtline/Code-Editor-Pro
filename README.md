@@ -1,18 +1,18 @@
-# Study Lab
+# StudyLab
 
 A static coding and placement practice app with an editor, judged exercises, contests, mock exams, theory lessons and a bundled offline study library. No build step is needed to use or deploy the generated app.
 
 ## Version 3.0 upgrades
 
-- **Study Material**: separate DSA, Python, Web Development, AI/ML, Core CS, App, Desktop and Placement/Projects subject pages. A course strip, topic sidebar, Previous/Next links, search, editable worked examples, exercises, lesson quizzes, personal notes and interview answers follow a familiar tutorial layout with original Study Lab content. **30 courses, 145 lessons, 446 interview answers** are bundled. All **276 technical skill rows** in the AI engineer PDF link to lessons; the supplied mobile/desktop/full-stack/project topics are also included. Lesson checkboxes represent self-assessment, not a certificate or a claim of mastery.
+- **Study Material**: separate DSA, Python, Web Development, AI/ML, Core CS, App, Desktop and Placement/Projects subject pages. A course strip, topic sidebar, Previous/Next links, search, editable worked examples, exercises, lesson quizzes, personal notes and interview answers follow a familiar tutorial layout with original StudyLab content. **30 courses, 145 lessons, 446 interview answers** are bundled. All **276 technical skill rows** in the AI engineer PDF link to lessons; the supplied mobile/desktop/full-stack/project topics are also included. Lesson checkboxes represent self-assessment, not a certificate or a claim of mastery.
 - **Smart revision & daily dashboard**: mistakes/unanswered items and weak-topic items enter a 1/3/7/14-day schedule. Correct reviews when due advance the schedule; early reviews do not postpone it; mistakes reset it. MCQs, lesson quizzes and graded coding attempts contribute to daily goals, accuracy, streaks and recommended practice.
 - **Exam analysis**: topic accuracy, unanswered counts, measured active time, slowest questions and a targeted next drill. Background periods are excluded. Older reports without measurements show an em dash. Coding feedback keeps per-problem active time.
 - **Question variety**: 12 rule-based SVG reasoning items, 12 questions across four original reading passages, and 12 chart/table DI items. The 18 newest DSA tasks include KMP, inversions, shortest paths, SCC/bridges, segment/Fenwick trees, interval DP, matching, binary lifting and digit DP. Counts include existing parameter families and are not claims of unique exam patterns.
 - **Realtime online/offline saving**: browser autosave works on GitHub Pages, localhost and the offline edition; editor/lesson notes save immediately. The launcher additionally writes a private **`.codelab-data/progress.json`** backup with per-item clocks and deletion records. Matching legacy browser/folder conflicts offer an explicit choice. Compiler credentials are excluded. **Export/Import** transfers between online/local origins and devices; no cloud account or automatic cross-device sync is configured.
 - **Back/Forward**: app buttons and browser history navigate lessons, subject pages, practice/results, library and other main screens. Active assessments save when leaving, retain their deadlines and automatically resume at their session URL after reload.
 - **Offline native execution**: the loopback-only launcher detects GCC/Clang and a Java JDK. Native programs use your account permissions, with time/output limits; they are not OS-sandboxed. Java programs use `public class Main`. Install a compiler separately if absent, restart the launcher and inspect **Saving & local tools**. `--no-local-tools` disables native execution while retaining folder backup.
-- **Update controls**: Online / Offline shows when a new app revision is waiting. Check manually and apply after finishing or saving/leaving your session. Running code, active modern/Classic exams and another Study Lab tab prevent the update reload. Drafts save before applying; the updated app needs a fresh full offline save. Folder copies update by downloading and extracting the latest ZIP.
-- **Progress transfer**: JSON backups capture immediate editor changes, carry format/date/revision metadata and exclude compiler API credentials. Imports still accept older Study Lab files, validate allowed storage keys and field types, preserve existing credentials and restore previous imported values if browser storage runs out. Finish or save/leave a session before importing. Import replaces matching items, so export your current work first.
+- **Update controls**: Online / Offline shows when a new app revision is waiting. Check manually and apply after finishing or saving/leaving your session. Running code, active modern/Classic exams and another StudyLab tab prevent the update reload. Drafts save before applying; the updated app needs a fresh full offline save. Folder copies update by downloading and extracting the latest ZIP.
+- **Progress transfer**: JSON backups capture immediate editor changes, carry format/date/revision metadata and exclude compiler API credentials. Imports still accept older StudyLab files, validate allowed storage keys and field types, preserve existing credentials and restore previous imported values if browser storage runs out. Finish or save/leave a session before importing. Import replaces matching items, so export your current work first.
 
 - **1,138 explained MCQs across 78 topics**: 794 original items, 308 reviewed Classic written questions and 36 reviewed sectional questions. Practice covers quantitative aptitude, reasoning, verbal ability, data interpretation, static awareness/CS and programming output. Numerical families include parameter variations; these counts are questions, not separate question types or official past papers.
 - **Theory & formulas**: topic notes, formulas/rules, shortcuts, common traps, worked examples and direct practice links. Learn mode reveals an explanation after answering; timed tests reveal it after submission.
@@ -108,7 +108,7 @@ The importer uses Python's standard library. It reads sources without modifying 
 python scripts/import_offline.py --source-root "C:\Users\surya\Downloads" --download-images
 ```
 
-`--download-images` retrieves supported diagrams from `assets.leetcode.com`. Existing downloaded images are reused. Omit the flag for a fully local rebuild. Re-run the importer after changing app assets: it fingerprints the pack and application files to version the offline cache. Use **Online / Offline > Check for updates**, then **Apply update & reload** when ready. Close other Study Lab tabs/windows and finish or save/leave the current session first. Click **Save full app for offline** again after updating. Older copies without update controls must first close all app tabs and reopen online.
+`--download-images` retrieves supported diagrams from `assets.leetcode.com`. Existing downloaded images are reused. Omit the flag for a fully local rebuild. Re-run the importer after changing app assets: it fingerprints the pack and application files to version the offline cache. Use **Online / Offline > Check for updates**, then **Apply update & reload** when ready. Close other StudyLab tabs/windows and finish or save/leave the current session first. Click **Save full app for offline** again after updating. Older copies without update controls must first close all app tabs and reopen online.
 
 ## Deploy to GitHub Pages
 
@@ -116,7 +116,7 @@ The repository includes `.github/workflows/pages.yml`. It builds a clean static 
 
 1. Push the completed project to `main` in `laxtline/Code-Editor-Pro`.
 2. In repository **Settings > Pages > Build and deployment**, choose **GitHub Actions** as Source.
-3. Run **Publish Study Lab online and offline** under Actions, or push another change to `main`.
+3. Run **Publish StudyLab online and offline** under Actions, or push another change to `main`.
 4. Use the deployment URL reported by GitHub. For this repository, the expected default URL is `https://laxtline.github.io/Code-Editor-Pro/`; it is live only after a successful deployment.
 
 ```powershell

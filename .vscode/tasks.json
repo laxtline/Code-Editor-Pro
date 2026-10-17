@@ -2,14 +2,14 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Study Lab: Start in Vivaldi",
+      "label": "StudyLab: Start in Vivaldi",
       "type": "process",
       "command": "powershell.exe",
       "args": ["-NoProfile", "-File", "${workspaceFolder}\\Start-CodeLab-Vivaldi.ps1"],
       "problemMatcher": []
     },
     {
-      "label": "Study Lab: Stop background server",
+      "label": "StudyLab: Stop background server",
       "type": "process",
       "command": "powershell.exe",
       "args": ["-NoProfile", "-File", "${workspaceFolder}\\Start-CodeLab-Vivaldi.ps1", "-Stop"],

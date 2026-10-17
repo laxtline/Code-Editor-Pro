@@ -25,7 +25,7 @@ test('real waiting worker respects active sessions and other tabs, then reloads 
   expect(await page.evaluate(()=>OfflineLibrary.catalog.revision)).toBe('test-before');
   await page.evaluate(()=>{UI.close();PracticeSession.leave();});
   await page.getByRole('button',{name:/Online \/ Offline/}).click();await page.getByRole('button',{name:'Apply update & reload',exact:true}).click();
-  await expect(page.locator('#offline-update-status')).toContainText('Close other Study Lab tabs');
+  await expect(page.locator('#offline-update-status')).toContainText('Close other StudyLab tabs');
   await other.close();
   await page.evaluate(()=>{UI.close();App.setMode('normal');Playground.instance.setValue('print("draft just before update")');});
   await page.getByRole('button',{name:/Online \/ Offline/}).click();
