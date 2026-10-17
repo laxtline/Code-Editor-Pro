@@ -1,0 +1,502 @@
+[
+  {
+    "id": "service",
+    "label": "Service-company foundations",
+    "source": "DSA_Study_Steps.pdf",
+    "target": 140,
+    "steps": [
+      {
+        "number": 1,
+        "title": "Numbers & Basic Mathematics",
+        "target": 20,
+        "topics": "Prime, Armstrong number, number palindrome, factorial, Fibonacci, GCD/LCM, factors, digit sum, reverse number, perfect number, number series.",
+        "companies": [
+          "TCS NQT",
+          "Accenture",
+          "Wipro",
+          "Capgemini",
+          "Tech Mahindra"
+        ],
+        "stage": 1
+      },
+      {
+        "number": 2,
+        "title": "Arrays",
+        "target": 24,
+        "topics": "Largest / second largest, reverse, rotation, move zeroes, remove duplicates, missing number, frequency, pair sum, min/max, subarray basics.",
+        "companies": [
+          "TCS NQT",
+          "Wipro",
+          "Cognizant GenC",
+          "Accenture",
+          "Capgemini",
+          "Infosys",
+          "LTIMindtree"
+        ],
+        "stage": 1
+      },
+      {
+        "number": 3,
+        "title": "Strings",
+        "target": 18,
+        "topics": "String palindrome, reverse words, anagram, vowels/consonants, character frequency, first non-repeating character, substring, string compression.",
+        "companies": [
+          "TCS NQT",
+          "Wipro",
+          "Cognizant GenC",
+          "Accenture",
+          "Infosys",
+          "LTIMindtree"
+        ],
+        "stage": 1
+      },
+      {
+        "number": 4,
+        "title": "Sorting & Searching",
+        "target": 15,
+        "topics": "Linear search, binary search, bubble sort, selection sort, insertion sort, merge sort, quick sort, merge two sorted arrays.",
+        "companies": [
+          "TCS NQT",
+          "Wipro",
+          "Infosys",
+          "Cognizant",
+          "Capgemini"
+        ],
+        "stage": 2
+      },
+      {
+        "number": 5,
+        "title": "Hashing & Two Pointers",
+        "target": 18,
+        "topics": "Dictionary and set, frequency map, Two Sum, distinct elements, pair counting, two pointers, sliding-window basics.",
+        "companies": [
+          "TCS NQT",
+          "Wipro",
+          "Infosys",
+          "Accenture",
+          "Cognizant"
+        ],
+        "stage": 2
+      },
+      {
+        "number": 6,
+        "title": "Matrices, Bits & Prefix Sum",
+        "target": 15,
+        "topics": "Matrix addition, transpose, diagonal sum, matrix traversal, binary/decimal conversion, XOR, count set bits, prefix sums, Kadane algorithm.",
+        "companies": [
+          "TCS NQT",
+          "Wipro",
+          "Accenture",
+          "LTIMindtree",
+          "Infosys SP/DSE"
+        ],
+        "stage": 2
+      },
+      {
+        "number": 7,
+        "title": "Recursion & Basic Data Structures",
+        "target": 12,
+        "topics": "Recursive factorial/Fibonacci, recursive array reversal, basic backtracking, stack, queue, linked-list operations, elementary greedy.",
+        "companies": [
+          "Wipro",
+          "Infosys",
+          "TCS Digital/Prime",
+          "Cognizant higher-tier roles"
+        ],
+        "stage": 2
+      },
+      {
+        "number": 8,
+        "title": "Medium Algorithm Patterns",
+        "target": 8,
+        "topics": "Subarray sum equals K, longest unique substring, maximum subarray, stock-profit pattern, Jump Game, introductory dynamic programming.",
+        "companies": [
+          "TCS Digital/Prime",
+          "Infosys DSE/SP",
+          "Cognizant higher-tier roles"
+        ],
+        "stage": 3
+      },
+      {
+        "number": 9,
+        "title": "Advanced DSA (Optional)",
+        "target": 6,
+        "topics": "Binary trees, tree traversal, BFS/DFS, graph basics, backtracking, 0/1 Knapsack, LCS, Coin Change, LIS basics.",
+        "companies": [
+          "Mainly Infosys SP/DSE",
+          "TCS Digital/Prime",
+          "harder coding rounds"
+        ],
+        "stage": 3
+      },
+      {
+        "number": 10,
+        "title": "Timed PYQ Revision",
+        "target": 4,
+        "topics": "Mixed practice questions, timed coding mocks, edge cases, custom input/output, time and space complexity, weak-topic revision.",
+        "companies": [
+          "TCS",
+          "Infosys",
+          "Wipro",
+          "Accenture",
+          "Cognizant",
+          "Capgemini",
+          "LTIMindtree"
+        ],
+        "stage": 3
+      }
+    ]
+  },
+  {
+    "id": "finance",
+    "label": "Product & finance technology",
+    "source": "Product_Finance_DSA_Steps.pdf",
+    "target": 200,
+    "steps": [
+      {
+        "number": 1,
+        "title": "Python DSA Foundations & Math",
+        "target": 10,
+        "topics": "Time/space complexity; lists, dicts, sets; prime/GCD; bit operators; math patterns; edge-case handling.",
+        "companies": [
+          "JPMorgan Chase",
+          "Wells Fargo",
+          "American Express",
+          "Ola"
+        ],
+        "stage": 1
+      },
+      {
+        "number": 2,
+        "title": "Arrays & Matrices",
+        "target": 22,
+        "topics": "Two Sum, missing number, maximum subarray, rotate array, product except self, spiral matrix, matrix traversal.",
+        "companies": [
+          "Walmart Global Tech",
+          "Flipkart",
+          "Myntra",
+          "Swiggy",
+          "Goldman Sachs",
+          "OYO"
+        ],
+        "stage": 1
+      },
+      {
+        "number": 3,
+        "title": "Strings, Hashing & Prefix Sum",
+        "target": 18,
+        "topics": "Anagrams, character frequency, first unique, string compression, longest common prefix, HashMap, prefix sum, subarray sum K.",
+        "companies": [
+          "JPMorgan Chase",
+          "Goldman Sachs",
+          "Expedia",
+          "American Express",
+          "Razorpay"
+        ],
+        "stage": 1
+      },
+      {
+        "number": 4,
+        "title": "Two Pointers & Sliding Window",
+        "target": 18,
+        "topics": "3Sum, trapping rainwater, two-pointer partition, fixed/variable window, longest unique substring, minimum window.",
+        "companies": [
+          "Swiggy",
+          "Ola",
+          "Walmart Global Tech",
+          "Flipkart",
+          "Paytm",
+          "Goldman Sachs"
+        ],
+        "stage": 1
+      },
+      {
+        "number": 5,
+        "title": "Sorting, Binary Search & Intervals",
+        "target": 18,
+        "topics": "Merge/quick sort, rotated-array search, lower/upper bound, search on answer, merge intervals, meeting intervals.",
+        "companies": [
+          "Walmart Global Tech",
+          "Flipkart",
+          "American Express",
+          "Myntra",
+          "BookMyShow"
+        ],
+        "stage": 2
+      },
+      {
+        "number": 6,
+        "title": "Stacks, Queues & Linked Lists",
+        "target": 18,
+        "topics": "Valid parentheses, monotonic stack, next greater, deque, linked-list reversal/cycle, merge lists, LRU cache basics.",
+        "companies": [
+          "Myntra",
+          "Razorpay",
+          "OYO",
+          "Expedia",
+          "BookMyShow"
+        ],
+        "stage": 2
+      },
+      {
+        "number": 7,
+        "title": "Trees & Binary Search Trees",
+        "target": 18,
+        "topics": "DFS/BFS traversal, tree views, diameter/height, lowest common ancestor, BST operations/validation, level order.",
+        "companies": [
+          "Flipkart",
+          "Walmart Global Tech",
+          "Paytm",
+          "OYO",
+          "Expedia",
+          "Myntra"
+        ],
+        "stage": 2
+      },
+      {
+        "number": 8,
+        "title": "Heaps, Greedy & Intervals",
+        "target": 12,
+        "topics": "Min/max heap, top K, kth largest, merge K lists, activity selection, meeting rooms, job scheduling.",
+        "companies": [
+          "OYO",
+          "Flipkart",
+          "Razorpay",
+          "Swiggy",
+          "BookMyShow"
+        ],
+        "stage": 2
+      },
+      {
+        "number": 9,
+        "title": "Graphs & Disjoint Set Union",
+        "target": 20,
+        "topics": "Adjacency lists, BFS/DFS, number of islands, connected components, cycle detection, topological sort, shortest paths, DSU.",
+        "companies": [
+          "Flipkart",
+          "Wells Fargo",
+          "Goldman Sachs",
+          "JPMorgan Chase",
+          "Swiggy",
+          "Paytm"
+        ],
+        "stage": 3
+      },
+      {
+        "number": 10,
+        "title": "Recursion & Backtracking",
+        "target": 16,
+        "topics": "Subsets, permutations, combination sum, N-Queens, word search, pruning, recursion tree, bitmask enumeration.",
+        "companies": [
+          "Swiggy",
+          "OYO",
+          "Flipkart",
+          "Goldman Sachs",
+          "Myntra"
+        ],
+        "stage": 3
+      },
+      {
+        "number": 11,
+        "title": "Dynamic Programming",
+        "target": 20,
+        "topics": "Memoization/tabulation, climbing stairs, coin change, 0/1 knapsack, LIS/LCS, grid DP, stock DP, palindrome partition.",
+        "companies": [
+          "Flipkart",
+          "Expedia",
+          "Goldman Sachs",
+          "Walmart Global Tech",
+          "OYO",
+          "Paytm"
+        ],
+        "stage": 3
+      },
+      {
+        "number": 12,
+        "title": "Advanced Patterns & Timed Mocks",
+        "target": 10,
+        "topics": "Trie basics, bitmasking, DSU review, greedy vs DP, optimized solutions, timed OA mocks, test cases, complexity.",
+        "companies": [
+          "All 14 listed companies",
+          "Product-tech and finance-tech coding rounds"
+        ],
+        "stage": 3
+      }
+    ]
+  },
+  {
+    "id": "tech",
+    "label": "Top technology companies",
+    "source": "Top_Tech_Python_DSA_Steps.pdf",
+    "target": 240,
+    "steps": [
+      {
+        "number": 1,
+        "title": "Python DSA Fundamentals & Bit Basics",
+        "target": 10,
+        "topics": "Time/space complexity, lists, sets, dicts, recursion basics, GCD/prime, binary representation, XOR, shifts, bit masking.",
+        "companies": [
+          "Texas Instruments",
+          "Apple",
+          "Microsoft",
+          "Amazon"
+        ],
+        "stage": 1
+      },
+      {
+        "number": 2,
+        "title": "Arrays, Matrices & Prefix Sums",
+        "target": 22,
+        "topics": "Two Sum, max subarray, product except self, rotate array, merge arrays, 2D grid traversal, spiral matrix, prefix/suffix sums.",
+        "companies": [
+          "Meta",
+          "Amazon",
+          "Apple",
+          "Adobe",
+          "Salesforce"
+        ],
+        "stage": 1
+      },
+      {
+        "number": 3,
+        "title": "Strings, Hash Maps & Sets",
+        "target": 22,
+        "topics": "Anagrams, frequency maps, longest consecutive sequence, string parsing, group anagrams, substrings, first unique character.",
+        "companies": [
+          "Meta",
+          "LinkedIn",
+          "Atlassian",
+          "Adobe",
+          "X (Twitter)"
+        ],
+        "stage": 1
+      },
+      {
+        "number": 4,
+        "title": "Two Pointers & Sliding Windows",
+        "target": 20,
+        "topics": "3Sum, container with most water, trapping rain water, longest unique substring, minimum window, variable/fixed windows.",
+        "companies": [
+          "Meta",
+          "Amazon",
+          "Uber",
+          "Netflix",
+          "Microsoft"
+        ],
+        "stage": 1
+      },
+      {
+        "number": 5,
+        "title": "Sorting, Binary Search & Intervals",
+        "target": 18,
+        "topics": "Merge/quick sort, rotated-array search, lower/upper bound, binary search on answer, merge intervals, meeting rooms.",
+        "companies": [
+          "Google",
+          "Microsoft",
+          "Salesforce",
+          "Atlassian",
+          "Uber"
+        ],
+        "stage": 2
+      },
+      {
+        "number": 6,
+        "title": "Linked Lists, Stacks & Queues",
+        "target": 20,
+        "topics": "Reverse/merge/cycle lists, fast/slow pointers, valid parentheses, monotonic stack, next greater element, deque, LRU basics.",
+        "companies": [
+          "Microsoft",
+          "Amazon",
+          "Apple",
+          "Texas Instruments",
+          "Adobe"
+        ],
+        "stage": 2
+      },
+      {
+        "number": 7,
+        "title": "Binary Trees, BSTs & Recursion",
+        "target": 22,
+        "topics": "DFS/BFS traversals, tree depth, diameter, level order, path sum, LCA, BST validation, serialize/deserialize basics.",
+        "companies": [
+          "Google",
+          "Meta",
+          "Microsoft",
+          "LinkedIn",
+          "Sprinklr"
+        ],
+        "stage": 2
+      },
+      {
+        "number": 8,
+        "title": "Heaps, Tries & Data Structure Design",
+        "target": 14,
+        "topics": "Min/max heap, top K, running median, merge K lists, trie insert/search, design hash-based cache and stream structures.",
+        "companies": [
+          "Amazon",
+          "Uber",
+          "LinkedIn",
+          "Sprinklr",
+          "Atlassian"
+        ],
+        "stage": 2
+      },
+      {
+        "number": 9,
+        "title": "Graphs, Grids & Connectivity",
+        "target": 24,
+        "topics": "BFS/DFS, islands, shortest paths, Dijkstra, topological sort, cycle detection, union-find, bipartite check, graph clone.",
+        "companies": [
+          "Google",
+          "Uber",
+          "Sprinklr",
+          "Atlassian",
+          "Microsoft"
+        ],
+        "stage": 3
+      },
+      {
+        "number": 10,
+        "title": "Backtracking, Greedy & Bit Tricks",
+        "target": 20,
+        "topics": "Subsets, permutations, combination sum, N-Queens, word search, jump game, interval greedy, bit tricks and masks.",
+        "companies": [
+          "Google",
+          "Meta",
+          "Apple",
+          "Texas Instruments",
+          "Sprinklr"
+        ],
+        "stage": 3
+      },
+      {
+        "number": 11,
+        "title": "Dynamic Programming",
+        "target": 26,
+        "topics": "1D/2D DP, memoization/tabulation, climbing stairs, knapsack, coin change, LIS, LCS, grid paths, edit distance.",
+        "companies": [
+          "Google",
+          "Uber",
+          "Sprinklr",
+          "Salesforce",
+          "Atlassian"
+        ],
+        "stage": 3
+      },
+      {
+        "number": 12,
+        "title": "Advanced Patterns & Timed Revision",
+        "target": 22,
+        "topics": "Monotonic deque, DSU variations, binary search + DP, segment tree/Fenwick basics, mixed medium-hard problems, timed mocks.",
+        "companies": [
+          "Google",
+          "Netflix",
+          "LinkedIn",
+          "X (Twitter)",
+          "Meta"
+        ],
+        "stage": 3
+      }
+    ]
+  }
+]

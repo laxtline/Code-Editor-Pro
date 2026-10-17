@@ -1,0 +1,398 @@
+[
+  {
+    "section": "Quant",
+    "q": "A train 120 m long runs at 54 km/h. Time to cross a pole?",
+    "options": [
+      "8 s",
+      "6 s",
+      "10 s",
+      "12 s"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "If 5 workers build a wall in 18 days, how many days for 9 workers?",
+    "options": [
+      "10",
+      "12",
+      "9",
+      "8"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "The average of 5 consecutive even numbers is 16. The largest is?",
+    "options": [
+      "20",
+      "18",
+      "22",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A sum doubles in 8 years at simple interest. The rate is?",
+    "options": [
+      "12.5%",
+      "10%",
+      "8%",
+      "15%"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "25% of a number is 80. The number is?",
+    "options": [
+      "320",
+      "400",
+      "200",
+      "160"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Ratio 3:5, sum 64. The larger part is?",
+    "options": [
+      "40",
+      "24",
+      "35",
+      "30"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A shopkeeper marks up 40% then gives 25% discount. Net profit %?",
+    "options": [
+      "5%",
+      "10%",
+      "15%",
+      "0%"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "LCM of 12, 15, 20?",
+    "options": [
+      "60",
+      "120",
+      "180",
+      "240"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A car covers 240 km in 4 h. Speed to cover it in 3 h?",
+    "options": [
+      "80 km/h",
+      "60 km/h",
+      "90 km/h",
+      "75 km/h"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Compound interest on 1000 at 10% for 2 years?",
+    "options": [
+      "210",
+      "200",
+      "220",
+      "100"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "If x + 1/x = 3, then x² + 1/x² = ?",
+    "options": [
+      "7",
+      "9",
+      "11",
+      "5"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A bag has 4 red and 6 blue balls. P(red) on one draw?",
+    "options": [
+      "2/5",
+      "3/5",
+      "1/2",
+      "4/6"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next term: 2, 6, 12, 20, 30, ?",
+    "options": [
+      "42",
+      "40",
+      "36",
+      "45"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "If CAT = 24, DOG = 26, then PIG = ?",
+    "options": [
+      "32",
+      "30",
+      "28",
+      "34"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Odd one out: 3, 5, 11, 14, 17, 23",
+    "options": [
+      "14",
+      "11",
+      "5",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "A is the brother of B. B is the sister of C. How is A related to C?",
+    "options": [
+      "Brother",
+      "Sister",
+      "Uncle",
+      "Cannot say"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Series: AZ, BY, CX, ?",
+    "options": [
+      "DW",
+      "DV",
+      "EW",
+      "DX"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "If MONDAY is coded as NPOEBZ, how is FRIDAY coded?",
+    "options": [
+      "GSJEBZ",
+      "GSJEAZ",
+      "GSJFBZ",
+      "GTJEBZ"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Pointing to a photo, a man says \"She is my mother's only daughter\". Who is she?",
+    "options": [
+      "His sister",
+      "His mother",
+      "His daughter",
+      "His aunt"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Next in series: 1, 4, 9, 16, 25, ?",
+    "options": [
+      "36",
+      "30",
+      "49",
+      "35"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find missing: 7, 14, 28, 56, ?",
+    "options": [
+      "112",
+      "98",
+      "84",
+      "100"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Which is the odd word out?",
+    "options": [
+      "Apple",
+      "Mango",
+      "Carrot",
+      "Banana"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Logical",
+    "q": "If \"+\" means ÷, \"÷\" means −, \"−\" means ×, then 6 + 2 ÷ 4 − 2 = ?",
+    "options": [
+      "-5",
+      "5",
+      "7",
+      "-7"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Statements: All pens are books. Some books are red. Conclusion: Some pens are red?",
+    "options": [
+      "Does not follow",
+      "Follows",
+      "Definitely true",
+      "Both"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of \"ABUNDANT\"?",
+    "options": [
+      "Plentiful",
+      "Scarce",
+      "Tiny",
+      "Empty"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Antonym of \"BENEVOLENT\"?",
+    "options": [
+      "Cruel",
+      "Kind",
+      "Generous",
+      "Gentle"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Choose the correctly spelled word:",
+    "options": [
+      "Accommodate",
+      "Acommodate",
+      "Accomodate",
+      "Acomodate"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Fill the blank: She is good ___ mathematics.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "with"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Pick the correct sentence:",
+    "options": [
+      "He has been working since 5 years",
+      "He has been working for 5 years",
+      "He works since 5 years",
+      "He working for 5 years"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Verbal",
+    "q": "One word for \"a person who eats everything\":",
+    "options": [
+      "Omnivore",
+      "Carnivore",
+      "Herbivore",
+      "Insectivore"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of \"CANDID\"?",
+    "options": [
+      "Frank",
+      "Sly",
+      "Rude",
+      "Secret"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Antonym of \"TRANSPARENT\"?",
+    "options": [
+      "Opaque",
+      "Clear",
+      "Glassy",
+      "Bright"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Choose the correct plural of \"Crisis\":",
+    "options": [
+      "Crises",
+      "Crisises",
+      "Crisis",
+      "Crisi"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Idiom \"to bite the bullet\" means:",
+    "options": [
+      "Endure a hardship",
+      "Eat fast",
+      "Get angry",
+      "Run away"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Fill: Neither the players ___ the coach was present.",
+    "options": [
+      "nor",
+      "or",
+      "and",
+      "but"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of \"METICULOUS\"?",
+    "options": [
+      "Careful",
+      "Careless",
+      "Lazy",
+      "Quick"
+    ],
+    "answer": 0
+  }
+]

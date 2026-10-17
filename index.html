@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <!--
   CodeLab — Free LeetCode + TCS NQT Practice Platform
-  Deploy: Just upload index.html to GitHub Pages or Netlify
+  Deploy: Upload this entire folder to GitHub Pages or Netlify
   GitHub Pages: Push to repo → Settings → Pages → main branch → /root
   Netlify: Drag & Drop index.html at netlify.com/drop
-  No build step. No dependencies. Works offline (except C/C++/Java which use Wandbox cloud compiler).
+  No build step. Offline Library includes local reading assets and a scratchpad.
+  Monaco/Python/SQL require CDN access; C/C++/Java use cloud compilers.
 -->
 <html lang="en">
 <head>
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="icon" href="assets/icon-192.png" type="image/png" />
+<meta name="theme-color" content="#17213a" />
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CodeLab — Free LeetCode + TCS NQT Practice</title>
@@ -427,6 +431,8 @@ button:focus-visible, a.nav-link:focus-visible, input:focus-visible, select:focu
 .welcome-feat { display: flex; flex-direction: column; gap: 6px; margin: 16px 0; font-size: 13.5px; }
 .welcome-feat div { color: var(--text-secondary); }
 </style>
+<link rel="stylesheet" href="assets/library.css" />
+<link rel="stylesheet" href="assets/academy.css" />
 </head>
 <body data-theme="dark">
 
@@ -444,6 +450,7 @@ button:focus-visible, a.nav-link:focus-visible, input:focus-visible, select:focu
       <a class="nav-link" data-nav="list" onclick="Router.go('list')">Problems</a>
       <a class="nav-link" data-nav="contest" onclick="Router.go('contest')">Contest</a>
     </span>
+    <button class="nav-link" data-nav="library" onclick="if(!Exam.active) Router.go('library'); else Toast.show('Finish the current exam to open the reference library.')">📚 Offline Library</button>
     <span class="mode-nav m-exam">
       <a class="nav-link" data-nav="exam" onclick="Router.go('exam')">New Exam</a>
     </span>
@@ -471,6 +478,9 @@ button:focus-visible, a.nav-link:focus-visible, input:focus-visible, select:focu
 </div>
 
 <div id="app">
+  <div class="view" id="view-library"></div>
+  <div class="view academy-view" id="view-theory"></div>
+  <div class="view academy-view" id="view-sources"></div>
   <!-- ============================== PROBLEMS LIST VIEW ============================== -->
   <div class="view" id="view-list">
     <div class="list-header">
@@ -631,8 +641,6 @@ button:focus-visible, a.nav-link:focus-visible, input:focus-visible, select:focu
 <!-- ============================== CDN SCRIPTS ============================== -->
 <!-- async so a slow/blocked CDN never blanks the app — the UI renders immediately and
      Monaco/Pyodide are wired up whenever they finish loading (see Editor.init / Py.load). -->
-<script async src="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js"></script>
-<script async src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js" onerror="window.__pyodideFailed=true"></script>
 
 <script>
 /* =====================================================================================
@@ -2016,6 +2024,7 @@ const Router = {
     else if(view==='playground'){ document.getElementById('view-playground').classList.add('active'); Playground.init(); }
     else if(view==='written'){ document.getElementById('view-written').classList.add('active'); WrittenTest.home(); markNav('written'); }
     else if(view==='mycode'){ document.getElementById('view-mycode').classList.add('active'); SavedCode.list(); markNav('mycode'); }
+    else if(view==='library'){ document.getElementById('view-library').classList.add('active'); OfflineLibrary.render(); markNav('library'); }
   }
 };
 function markNav(v){ const el = document.querySelector('.nav-link[data-nav="'+v+'"]'); if(el) el.classList.add('active'); }
@@ -2127,27 +2136,10 @@ function registerSnippets(){
 const Editor = {
   instance:null, ready:false, currentLang:'python', _initRetries:0,
   init(){
-    // Monaco's loader.js loads async — poll until it's available instead of giving up,
-    // so a slow CDN delays only the editor, never the rest of the app.
-    if(typeof require === 'undefined'){
-      if(this._initRetries++ < 100){ setTimeout(()=>this.init(), 150); }
-      else console.error('Monaco loader.js failed to load (CDN unreachable)');
-      return;
-    }
-    this._initRetries=0;
-    require.config({ paths: { vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs' }});
-    require(['vs/editor/editor.main'], ()=>{
-      registerSnippets();
-      this.instance = monaco.editor.create(document.getElementById('monaco-container'), Object.assign(monacoOptions(), {
-        value:'', language:'python'
-      }));
-      this.ready = true;
-      this.instance.onDidChangeModelContent(()=>{ if(SETTINGS.autoSave) this.saveDebounced(); });
-      // shortcuts inside editor
-      this.instance.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter, ()=>Runner.run());
-      this.instance.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyMod.Shift | monaco.KeyCode.Enter, ()=>Runner.submit());
-      this.instance.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyS, ()=>{ this.save(); Toast.show('Saved ✓','success',1200); });
-    });
+    if(this.instance) return;
+    this.instance=EditorTools.create(document.getElementById('monaco-container'), {...monacoOptions(),value:'',language:'python'});
+    this.ready=true;
+    this.instance.onDidChangeModelContent(()=>{if(SETTINGS.autoSave)this.saveDebounced();});
   },
   format(){ formatEditor(this.instance); },
   langMap(l){ return ({python:'python',javascript:'javascript',c:'c',cpp:'cpp',java:'java',html:'html',css:'css',sql:'sql',mongodb:'javascript'})[l]||'plaintext'; },
@@ -2166,7 +2158,7 @@ const Editor = {
     this._loadRetries=0;
     this.currentLang = lang;
     document.getElementById('lang-select').value = lang;
-    monaco.editor.setModelLanguage(this.instance.getModel(), this.langMap(lang));
+    EditorTools.language(this.instance.getModel(), this.langMap(lang));
     const saved = Store.getRaw('code_'+q.id+'_'+lang, null);
     const code = saved!==null ? saved : (q.starterCode && q.starterCode[lang]) || '';
     this.instance.setValue(code);
@@ -2189,7 +2181,7 @@ const Editor = {
   },
   copy(){ if(this.instance){ copyText(this.instance.getValue(),'Code copied to clipboard'); } },
   getValue(){ return this.ready ? this.instance.getValue() : ''; },
-  applyTheme(){ if(this.ready) monaco.editor.setTheme(SETTINGS.theme==='light'?'vs':'vs-dark'); },
+  applyTheme(){ if(this.ready) EditorTools.theme(); },
   applySettings(){
     if(!this.ready) return;
     this.instance.updateOptions({
@@ -2505,7 +2497,7 @@ const Runner = {
         const hasErr = r.stderr && r.stderr.trim();
         results.push({
           idx:i, actual, expected, time:r.time, stderr:r.stderr,
-          pass: !hasErr && norm(actual)===norm(expected),
+          pass: !hasErr && judgeEqual(actual,expected,q),
           error: hasErr ? r.stderr : null, compileError: r.compileError
         });
       }
@@ -2557,7 +2549,7 @@ const Runner = {
         }
         totalTime += r.time||0;
         if(r.stderr && r.stderr.trim()){ verdict = r.compileError?'Compile Error':'Runtime Error'; errMsg=r.stderr; firstFail={i,input:judge[i].input,expected:judge[i].expected,actual:r.stdout}; break; }
-        if(norm((r.stdout||'').replace(/\s+$/,''))===norm(judge[i].expected.replace(/\s+$/,''))){ passed++; }
+        if(judgeEqual(r.stdout||'',judge[i].expected,q)){ passed++; }
         else { verdict='Wrong Answer'; firstFail={i,input:judge[i].input,expected:judge[i].expected,actual:(r.stdout||'').replace(/\s+$/,'')}; break; }
       }
       if(passed===judge.length) verdict='Accepted';
@@ -2589,6 +2581,10 @@ const Runner = {
   }
 };
 function norm(s){ return (s||'').split('\n').map(l=>l.replace(/\s+$/,'')).join('\n').replace(/\s+$/,''); }
+function judgeEqual(actual, expected, q){
+  if(q?.referenceCode){try{return JSON.stringify(JSON.parse(actual))===JSON.stringify(JSON.parse(expected));}catch(_){return false;}}
+  return norm(actual)===norm(expected);
+}
 function esc(s){ return (s===undefined||s===null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 /* Seeded Fisher-Yates shuffle — deterministic-ish per session but well-mixed (unlike a plain modulo sort,
    which clusters when the source array is grouped by category, e.g. WRITTEN_BANK grouped by section). */
@@ -2849,7 +2845,7 @@ const EXAM_TEMPLATES = {
   },
   sectional: {
     label:'📚 Sectional', tagline:'Aptitude (MCQ) + Coding',
-    desc:'Real-NQT style: an aptitude MCQ section (Quant/Logical/Verbal) followed by coding.',
+    desc:'Short practice drill: reviewed Quant/Logical/Verbal MCQs followed by coding. Use updated profiles for source-linked timing.',
     companies:['TCS NQT','Infosys','Wipro','Cognizant'],
     set:'Mixed', n:2, dur:45, aptN:10, aptDur:15, sectional:true
   },
@@ -3358,22 +3354,28 @@ const Exam = {
     for(const id of this.qids){
       const q=Questions.byId(id);
       const sub=this.codes[id];
-      let passed=0; const total=q.testCases.length;
+      let passed=0, evaluationError=null, failureVerdict=null; const total=q.testCases.length;
+      const caseResults=q.testCases.map((tc,i)=>({number:i+1,input:tc.input,expected:tc.expectedOutput,actual:'',status:sub?.code.trim()?'Not run':'Not attempted',time:0}));
+      if(!total) evaluationError='No judging cases are available for this problem.';
       if(sub && sub.code.trim()){
-        for(const tc of q.testCases){
+        for(const [i,tc] of q.testCases.entries()){
+          const result=caseResults[i];
           try {
             let r;
             const lang=sub.lang;
-            if(lang==='python'&&!Py.ready){ break; }
+            if(lang==='python'&&!Py.ready){ evaluationError='Python runtime is unavailable. Load it online before retrying this saved evaluation.'; result.status='Not evaluated';result.error=evaluationError;break; }
             r = await Runner.execOne(lang, sub.code, tc.input);
-            if(!(r.stderr&&r.stderr.trim()) && norm((r.stdout||'').replace(/\s+$/,''))===norm(tc.expectedOutput.replace(/\s+$/,''))) passed++;
-          } catch(e){}
+            result.actual=r.stdout||'';result.time=r.time||0;
+            if(r.stderr?.trim()){ failureVerdict=r.compileError?'🔨 Compile Error':'💥 Runtime Error';result.status=r.compileError?'Compile Error':'Runtime Error';result.error=r.stderr;break; }
+            result.status=judgeEqual(r.stdout||'',tc.expectedOutput,q)?'Passed':'Wrong Answer';
+            if(result.status==='Passed') passed++;
+          } catch(e){ if(e?.kind==='tle'){failureVerdict='⏰ Time Limit Exceeded';result.status='Time Limit Exceeded';}else{evaluationError=e?.message||'Compiler/runtime unavailable';result.status='Not evaluated';result.error=evaluationError;} break; }
         }
       }
-      const score=(passed/total)*per; totalScore+=score;
-      const status = passed===total?'✅ AC':passed===0?'❌ WA':'⚠️ Partial';
-      rows.push({id, title:q.title, status, passed, total});
-      if(passed===total) Progress.markSolved(id); else if(passed>0) Progress.markAttempted(id);
+      const score=total?(passed/total)*per:0; totalScore+=score;
+      const status = evaluationError?'⚪ Not evaluated':failureVerdict||(!sub?.code.trim()?'— Not attempted':passed===total?'✅ AC':passed===0?'❌ WA':'⚠️ Partial');
+      rows.push({id, title:q.title, status, passed, total, evaluationError,caseResults});
+      if(total&&passed===total) Progress.markSolved(id); else if(sub?.code.trim()) Progress.markAttempted(id);
     }
     this.active=false;
     document.querySelectorAll('.nav-link').forEach(l=>l.style.pointerEvents='');
@@ -3436,7 +3438,7 @@ const Aptitude = {
     // The default TCS/Wipro-style sectional round keeps using the original APTITUDE_BANK for continuity.
     const sourcePool = sections ? WRITTEN_BANK.filter(q=>sections.includes(q.section)) : APTITUDE_BANK;
     const pool=seededShuffle(sourcePool, Date.now()%100000);
-    this.qs=pool.slice(0, Math.min(n, pool.length));
+    this.qs=pool.slice(0, Math.min(n, pool.length)).map((q,i)=>Academy.shuffleItem(q,Date.now()%1000000+i*7919));
     this.index=0; this.answers={}; this.active=true;
     document.querySelectorAll('.nav-link').forEach(l=>l.style.pointerEvents='none');
     // activate exam view WITHOUT triggering Exam.setupScreen() (which would reset the timer)
@@ -3533,7 +3535,7 @@ const WrittenTest = {
     const pool=WRITTEN_BANK.filter(q=>this.sections.includes(q.section));
     if(!pool.length){ Toast.show('No questions available for the selected sections','error'); return; }
     const shuffled=seededShuffle(pool, Date.now()%10000);
-    this.qs=shuffled.slice(0, Math.min(this.count, shuffled.length));
+    this.qs=shuffled.slice(0, Math.min(this.count, shuffled.length)).map((q,i)=>Academy.shuffleItem(q,Date.now()%1000000+i*7919));
     this.index=0; this.answers={}; this.active=true; this.reviewMode=false;
     document.querySelectorAll('.nav-link').forEach(l=>l.style.pointerEvents='none');
     this.render();
@@ -3603,7 +3605,7 @@ const WrittenTest = {
       }).join('');
       return '<div class="review-card '+(correct?'pass':'fail')+'"><div class="rc-head">'+(correct?'✅':'❌')+' Q'+(i+1)+' · '+m.icon+' '+esc(m.label)+'</div>'+
         '<div class="mcq-q" style="margin-top:8px;">'+esc(q.q)+'</div>'+opts+
-        (chosen==null?'<div style="font-size:12.5px;color:var(--text-secondary);margin-top:6px;">Not attempted</div>':'')+'</div>';
+        (chosen==null?'<div style="font-size:12.5px;color:var(--text-secondary);margin-top:6px;">Not attempted</div>':'')+(q.explanation?PracticeSession.explanation(q):'')+'</div>';
     }).join('');
     document.getElementById('view-written').innerHTML=
       '<div class="center-card wide"><button class="btn-ghost" style="margin-bottom:14px;" onclick="WrittenTest.showResults()">← Back to Results</button>'+
@@ -3618,7 +3620,7 @@ const WrittenTest = {
     txt+='\nDETAILED ANSWERS\n----------------\n';
     this.qs.forEach((q,i)=>{
       const chosen=this.answers[i];
-      txt+='Q'+(i+1)+'. ['+q.section+'] '+q.q+'\n  Your answer: '+(chosen!=null?q.options[chosen]:'(not attempted)')+'\n  Correct answer: '+q.options[q.answer]+'\n  '+(chosen===q.answer?'CORRECT':'INCORRECT')+'\n\n';
+      txt+='Q'+(i+1)+'. ['+q.section+'] '+q.q+'\n  Your answer: '+(chosen!=null?q.options[chosen]:'(not attempted)')+'\n  Correct answer: '+q.options[q.answer]+'\n  '+(chosen===q.answer?'CORRECT':'INCORRECT')+'\n  Explanation: '+(q.explanation||'')+'\n  Formula/rule: '+(q.formula||'')+'\n  Shortcut: '+(q.trick||'')+'\n\n';
     });
     download('written_test_report.txt', txt, 'text/plain');
   }
@@ -3768,9 +3770,9 @@ const DataIO = {
   },
   exportProgress(){
     const data={};
-    ['settings','custom_questions','solved','attempted','submissions','liked','disliked','contest_leaderboard','progress','saved_snippets'].forEach(k=>data[k]=Store.get(k,null));
+    ['settings','custom_questions','solved','attempted','submissions','liked','disliked','contest_leaderboard','progress','saved_snippets','library_progress','question_stats','practice_history','practice_session','coding_session','coding_history'].forEach(k=>data[k]=Store.get(k,null));
     // include per-question code/notes
-    data._raw={}; for(let i=0;i<localStorage.length;i++){ const key=localStorage.key(i); if(key.startsWith('cl_code_')||key.startsWith('cl_notes_')||key.startsWith('cl_editorial_')) data._raw[key]=localStorage.getItem(key); }
+    data._raw={}; for(let i=0;i<localStorage.length;i++){ const key=localStorage.key(i); if(key.startsWith('cl_code_')||key.startsWith('cl_notes_')||key.startsWith('cl_editorial_')||key.startsWith('cl_library_draft_')||key.startsWith('cl_library_notes_')||key.startsWith('cl_pg_')) data._raw[key]=localStorage.getItem(key); }
     download('codelab_progress.json', JSON.stringify(data,null,2), 'application/json');
   },
   importProgress(){
@@ -3883,35 +3885,21 @@ const Playground = {
   instance:null, ready:false, lang:'python', busy:false,
   webTabActive:'html', webModels:{},  // monaco models for html/css/js
   init(){
-    if(this.instance){ Zoom.renderLabels(); return; }
-    if(typeof require === 'undefined'){ setTimeout(()=>this.init(), 300); return; }
-    // Ensure config is set (in case Editor.init hasn't run yet)
-    require.config({ paths: { vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs' }});
-    require(['vs/editor/editor.main'], ()=>{
-      this.lang = SETTINGS.defaultLang || 'python';
-      if(this.lang==='html') this.lang='python'; // never start in web mode by default
-      document.getElementById('pg-lang').value = this.lang;
-      const saved = Store.getRaw('pg_code_'+this.lang, null);
-      registerSnippets();
-      this.instance = monaco.editor.create(document.getElementById('pg-monaco'), Object.assign(monacoOptions(), {
-        value: saved!==null ? saved : PG_TEMPLATES[this.lang],
-        language: Editor.langMap(this.lang)
-      }));
-      this.ready = true;
-      this.instance.onDidChangeModelContent(()=>{
-        clearTimeout(this._t); this._t=setTimeout(()=>this.save(),600);
-        if(this.lang==='html'){ clearTimeout(this._pv); this._pv=setTimeout(()=>this.renderPreview(),400); }
-      });
-      this.instance.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter, ()=>this.run());
-      Zoom.renderLabels();
-    });
+    if(this.instance){Zoom.renderLabels();return;}
+    this.lang=SETTINGS.defaultLang||'python';if(this.lang==='html')this.lang='python';
+    document.getElementById('pg-lang').value=this.lang;
+    const saved=Store.getRaw('pg_code_'+this.lang,null);
+    this.instance=EditorTools.create(document.getElementById('pg-monaco'),{...monacoOptions(),value:saved!==null?saved:PG_TEMPLATES[this.lang],language:Editor.langMap(this.lang)});
+    this.ready=true;
+    this.instance.onDidChangeModelContent(()=>{clearTimeout(this._t);this._t=setTimeout(()=>this.save(),600);if(this.lang==='html'){clearTimeout(this._pv);this._pv=setTimeout(()=>this.renderPreview(),400);}});
+    Zoom.renderLabels();
   },
   isWeb(){ return this.lang==='html'; },
   // build/reuse a monaco model per web tab
   webModel(tab){
     if(!this.webModels[tab]){
       const saved = Store.getRaw('pg_'+tab, null);
-      this.webModels[tab] = monaco.editor.createModel(
+      this.webModels[tab] = EditorTools.model(
         saved!==null ? saved : PG_WEB_TEMPLATES[tab],
         Editor.langMap(tab==='js'?'javascript':tab));
     }
@@ -3953,7 +3941,7 @@ const Playground = {
       // restore a normal single-language model (dispose old model to avoid leak)
       const saved = Store.getRaw('pg_code_'+lang, null);
       const oldModel = this.instance.getModel();
-      const model = monaco.editor.createModel(saved!==null?saved:(PG_TEMPLATES[lang]||''), Editor.langMap(lang));
+      const model = EditorTools.model(saved!==null?saved:(PG_TEMPLATES[lang]||''), Editor.langMap(lang));
       this.instance.setModel(model);
       if(oldModel && !Object.values(this.webModels).includes(oldModel)) oldModel.dispose();
     }
@@ -3979,7 +3967,7 @@ const Playground = {
   copyOut(){ if(!this.lastOutput.trim()){ Toast.show('No output to copy yet','info',1200); return; } copyText(this.lastOutput,'Output copied'); },
   downloadOut(){ if(!this.lastOutput.trim()){ Toast.show('No output to download yet','info',1200); return; } download('output.txt', this.lastOutput, 'text/plain'); },
   clearOut(){ document.getElementById('pg-output').innerHTML='<span class="pg-placeholder">Output cleared. Run again. ▶</span>'; document.getElementById('pg-status-lbl').textContent=''; this.lastOutput=''; },
-  applyTheme(){ if(this.ready) monaco.editor.setTheme(SETTINGS.theme==='light'?'vs':'vs-dark'); },
+  applyTheme(){ if(this.ready) EditorTools.theme(); },
   applySettings(){ if(this.ready) this.instance.updateOptions({ fontSize:SETTINGS.fontSize, tabSize:SETTINGS.tabSize, lineNumbers:SETTINGS.lineNumbers?'on':'off', minimap:{enabled:SETTINGS.minimap}, wordWrap:SETTINGS.wordWrap?'on':'off' }); },
   async run(){
     if(!this.ready){ Toast.show('Editor still loading…'); return; }
@@ -4350,8 +4338,20 @@ window.addEventListener('DOMContentLoaded', ()=>{
     else { App.mode='advanced'; document.body.setAttribute('data-mode','advanced'); document.querySelector('.mode-btn[data-mode="advanced"]')?.classList.add('active'); Router.go('list'); Timer.start('up',0); }
   } catch(e){ console.error('mode init:', e); }
   try { UI.welcome(); } catch(e){ console.error('welcome:', e); }
-  Py.load(); // background — errors handled inside
+  if(!window.CODELAB_DISABLE_PYTHON)Py.load();
 });
 </script>
+<script src="vendor/marked.umd.js"></script>
+<script src="vendor/purify.min.js"></script>
+<script src="offline/catalog.js"></script>
+<script src="assets/library.js"></script>
+<script src="assets/practice-data.js"></script>
+<script src="assets/coding-data.js"></script>
+<script src="assets/python-data.js"></script>
+<script src="assets/editor-tools.js"></script>
+<script src="assets/academy.js"></script>
+<script src="assets/assessment.js"></script>
+<script src="assets/runtime-manifest.js"></script>
+<script src="assets/platform.js"></script>
 </body>
 </html>

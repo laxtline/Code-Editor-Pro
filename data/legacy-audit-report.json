@@ -1,0 +1,501 @@
+{
+  "snapshotSha256": "d5cd54c2f0687976b6556a33c306274d88f8130e698c5cf3be4411fd0fca4f0a",
+  "reviewed": 308,
+  "changed": 32,
+  "changes": [
+    {
+      "ordinal": 34,
+      "changes": {
+        "options": {
+          "before": [
+            "6 days",
+            "5 days",
+            "4 days",
+            "8 days"
+          ],
+          "after": [
+            "3 days",
+            "5 days",
+            "4 days",
+            "8 days"
+          ]
+        }
+      },
+      "reason": "Five men finish 1/12 job per day, so ten men finish 1/6. Similarly sixteen women finish 1/6. Combined rate=1/3 job/day, giving 3 days."
+    },
+    {
+      "ordinal": 47,
+      "changes": {
+        "q": {
+          "before": "The average of 10 numbers is 25. If one number 35 is removed, find the new average.",
+          "after": "The average of 10 numbers is 25. If the number 35 is removed, find the new average rounded to two decimal places."
+        },
+        "options": {
+          "before": [
+            "23.33",
+            "24",
+            "22.5",
+            "23"
+          ],
+          "after": [
+            "23.89",
+            "24",
+            "22.5",
+            "23"
+          ]
+        }
+      },
+      "reason": "Original sum=10×25=250. Removing 35 leaves sum 215 and count 9. Average=215/9=23.888…, which rounds to 23.89."
+    },
+    {
+      "ordinal": 48,
+      "changes": {
+        "q": {
+          "before": "The average age of a class of 30 students is 12 years. If the teacher's age (40) is included, find the new average.",
+          "after": "The average age of 30 students is 12 years. Including a 40-year-old teacher, find the new average rounded to one decimal place."
+        }
+      },
+      "reason": "The 30 students total 30×12=360 years. Including the 40-year-old teacher gives 400/31=12.903… years, or 12.9 to one decimal place."
+    },
+    {
+      "ordinal": 64,
+      "changes": {
+        "q": {
+          "before": "A coin is tossed twice. What is the probability of getting at least one head?",
+          "after": "A fair coin is tossed independently twice. What is the probability of getting at least one head?"
+        }
+      },
+      "reason": "For a fair coin the equally likely sequences are HH,HT,TH,TT. Three contain at least one head, giving 3/4."
+    },
+    {
+      "ordinal": 83,
+      "changes": {
+        "q": {
+          "before": "If '+' means '×', '×' means '−', '−' means '÷' and '÷' means '+', evaluate: 10 + 2 × 3 − 4",
+          "after": "If '+' means '×', '×' means '−', '−' means '÷' and '÷' means '+', evaluate 10 + 2 × 3 − 4 after replacing the operators, using standard arithmetic precedence."
+        },
+        "options": {
+          "before": [
+            "20",
+            "18",
+            "16",
+            "22"
+          ],
+          "after": [
+            "19.25",
+            "18",
+            "16",
+            "22"
+          ]
+        }
+      },
+      "reason": "Replace the operator symbols first: 10×2−3÷4. Under standard precedence this is 20−0.75=19.25."
+    },
+    {
+      "ordinal": 86,
+      "changes": {
+        "options": {
+          "before": [
+            "Q",
+            "R",
+            "S",
+            "P"
+          ],
+          "after": [
+            "Q",
+            "R",
+            "S",
+            "Cannot be determined"
+          ]
+        },
+        "answer": {
+          "before": 0,
+          "after": 3
+        }
+      },
+      "reason": "The constraints imply R<P<Q<S, but T is unrestricted. R,P,Q,S,T places Q in the middle; T,R,P,Q,S places P there. A unique middle person cannot be inferred."
+    },
+    {
+      "ordinal": 92,
+      "changes": {
+        "q": {
+          "before": "Six people sit around a circular table. A is opposite to D. B is to the right of A. Who is to the left of D?",
+          "after": "Six people A,B,C,D,E,F sit around a circular table facing the centre. A is opposite D and B is immediately right of A. Who is immediately left of D?"
+        },
+        "answer": {
+          "before": 0,
+          "after": 3
+        }
+      },
+      "reason": "Even with everyone facing the centre and B immediately right of A, the seat immediately left of D is not fixed by these constraints. Unspecified people can occupy it."
+    },
+    {
+      "ordinal": 93,
+      "changes": {
+        "q": {
+          "before": "If P is the father of Q, and Q is the sister of R, how is P related to R?",
+          "after": "P is Q’s father. Q and R are full siblings sharing both parents. How is P related to R?"
+        }
+      },
+      "reason": "Q and R share the same parents. Since P is Q’s father, P is also R’s father."
+    },
+    {
+      "ordinal": 96,
+      "changes": {
+        "q": {
+          "before": "A is the son of B. B is the mother of C. C is the father of D. How is A related to D?",
+          "after": "A is B’s son. A and C are distinct full siblings, and C is D’s father. How is A related to D?"
+        }
+      },
+      "reason": "A and C are distinct full siblings. C is D’s father and A is male, so A is D’s paternal uncle."
+    },
+    {
+      "ordinal": 99,
+      "changes": {
+        "q": {
+          "before": "In a code, 'GO' is '57' and 'SO' is '67'. What is the code for 'SOAP'?",
+          "after": "A letter code explicitly maps G→5, S→6, O→7, A→1 and P→5. Concatenate the digit codes to encode SOAP."
+        }
+      },
+      "reason": "Use the explicitly supplied letter mapping S=6,O=7,A=1,P=5. Concatenating in SOAP order gives6715."
+    },
+    {
+      "ordinal": 100,
+      "changes": {
+        "q": {
+          "before": "Pointing to a girl, Rohan said, 'She is the daughter of my grandfather's only son.' How is the girl related to Rohan?",
+          "after": "Pointing to a girl, Rohan says: “She is the daughter of my paternal grandfather’s only son.” Assuming the usual stated biological relationships, how is the girl related to Rohan?"
+        }
+      },
+      "reason": "The paternal grandfather’s only son is Rohan’s father. His daughter, distinct from Rohan, is Rohan’s sister."
+    },
+    {
+      "ordinal": 101,
+      "changes": {
+        "q": {
+          "before": "A's father is B's brother and C is B's mother. If D is C's husband, how is D related to A?",
+          "after": "C and D are the mother and father of B and his brother. A is the child of B’s brother. How is D related to A?"
+        }
+      },
+      "reason": "C and D are parents of B and A’s father. Thus D is the father of A’s father, or A’s paternal grandfather."
+    },
+    {
+      "ordinal": 134,
+      "changes": {
+        "q": {
+          "before": "Antonym of 'TRANSPARENT':",
+          "after": "In the sense of a material transmitting light, choose the antonym of 'TRANSPARENT':"
+        }
+      },
+      "reason": "Transparent means allowing light through, opposed in the material sense to opaque. The requested opposite among the options is opaque."
+    },
+    {
+      "ordinal": 136,
+      "changes": {
+        "q": {
+          "before": "Fill in the blank: The committee ___ yet to decide.",
+          "after": "Treating the committee as a single unit, fill the blank: The committee ___ yet to decide."
+        }
+      },
+      "reason": "The revised stem treats the committee as one unit, so singular is is appropriate. Notional plural agreement can occur in other contexts, especially British English."
+    },
+    {
+      "ordinal": 143,
+      "changes": {
+        "q": {
+          "before": "What is the time complexity of binary search?",
+          "after": "What is the worst-case comparison count order of binary search on a sorted random-access array of n elements?"
+        }
+      },
+      "reason": "Binary search halves a sorted search interval at each step, requiring logarithmically many comparisons in the worst case."
+    },
+    {
+      "ordinal": 145,
+      "changes": {
+        "q": {
+          "before": "Which HTTP method is used to update a resource?",
+          "after": "Which listed HTTP method requests creation or complete replacement of a target resource’s state using the supplied representation?"
+        }
+      },
+      "reason": "PUT requests create or replace the target resource’s state using the enclosed representation. The revised question distinguishes this from a partial update."
+    },
+    {
+      "ordinal": 147,
+      "changes": {
+        "q": {
+          "before": "In SQL, which command is used to remove all rows from a table without deleting the table itself?",
+          "after": "Which SQL keyword specifically performs table truncation while retaining the table definition?"
+        }
+      },
+      "reason": "TRUNCATE TABLE performs table truncation while retaining the table definition. DELETE can also remove all rows, which is why the original broader wording was ambiguous."
+    },
+    {
+      "ordinal": 152,
+      "changes": {
+        "q": {
+          "before": "Which sorting algorithm has the best average time complexity?",
+          "after": "Among the listed comparison-sorting choices on arbitrary unsorted input, which has the best average time-complexity order?"
+        }
+      },
+      "reason": "For arbitrary input among these comparison sorts, merge sort and average-case quicksort are O(n log n); bubble, selection and insertion sorts have quadratic average behaviour. Quicksort’s worst case can be quadratic."
+    },
+    {
+      "ordinal": 158,
+      "changes": {
+        "q": {
+          "before": "Which keyword is used to define a constant in JavaScript (ES6)?",
+          "after": "Which ES6 keyword declares a block-scoped binding that cannot be reassigned?"
+        }
+      },
+      "reason": "const declares a block-scoped binding that cannot be reassigned. It does not make the contents of an object deeply immutable."
+    },
+    {
+      "ordinal": 240,
+      "changes": {
+        "q": {
+          "before": "What does the 'this' keyword refer to inside a regular JavaScript object method?",
+          "after": "When a regular unbound JavaScript method is called as obj.method() (without call, apply, bind or a proxy), what is this inside that invocation?"
+        },
+        "options": {
+          "before": [
+            "The object the method belongs to",
+            "The global window object always",
+            "The parent function",
+            "undefined"
+          ],
+          "after": [
+            "obj, the call’s receiver",
+            "Always the global window",
+            "The parent function",
+            "Always undefined"
+          ]
+        }
+      },
+      "reason": "For an ordinary unbound function called as obj.method(), this is the receiver obj. Detaching the function or using bind/call/apply can change the receiver."
+    },
+    {
+      "ordinal": 254,
+      "changes": {
+        "q": {
+          "before": "If 'X is the brother of Y' and 'Y is the daughter of Z', how is X related to Z?",
+          "after": "X is Y’s brother. X and Y are full siblings sharing both parents, and Y is Z’s daughter. How is X related to Z?"
+        },
+        "options": {
+          "before": [
+            "Son (or daughter)",
+            "Father",
+            "Brother",
+            "Cannot be determined — X's gender unknown, but X is Z's child"
+          ],
+          "after": [
+            "Son",
+            "Father",
+            "Brother",
+            "Cannot be determined"
+          ]
+        },
+        "answer": {
+          "before": 3,
+          "after": 0
+        }
+      },
+      "reason": "The revised question states full siblings. Brother identifies X as male; since Y is Z’s child and shares both parents with X, X is Z’s son."
+    },
+    {
+      "ordinal": 274,
+      "changes": {
+        "q": {
+          "before": "What is a primary key in a database?",
+          "after": "Which description correctly identifies a single-column primary key?"
+        },
+        "options": {
+          "before": [
+            "A column that uniquely identifies each row",
+            "A column that can have duplicate values",
+            "A foreign reference to another table",
+            "A column used only for sorting"
+          ],
+          "after": [
+            "A non-null column that uniquely identifies each row",
+            "A column that can have duplicates",
+            "A column used only for sorting",
+            "A backup field"
+          ]
+        }
+      },
+      "reason": "For the revised single-column case, a primary key enforces both uniqueness and non-nullability. A primary key may instead contain multiple columns."
+    },
+    {
+      "ordinal": 277,
+      "changes": {
+        "options": {
+          "before": [
+            "A field that references the primary key of another table",
+            "A key used to encrypt data",
+            "A unique key with no relation to other tables",
+            "A backup key"
+          ],
+          "after": [
+            "A column or column set referencing a candidate key in a referenced table",
+            "An encryption key",
+            "An unrelated unique key",
+            "A backup key"
+          ]
+        }
+      },
+      "reason": "A foreign key establishes a referential constraint. The referenced key need not be the primary key, and a table may reference itself."
+    },
+    {
+      "ordinal": 285,
+      "changes": {
+        "q": {
+          "before": "Which MongoDB method is used to insert a single document?",
+          "after": "Which explicitly named modern MongoDB method inserts exactly one document?"
+        }
+      },
+      "reason": "insertOne explicitly names the operation for one document. Older generic insert methods could also insert one, so the revised stem asks for the explicit single-document method."
+    },
+    {
+      "ordinal": 288,
+      "changes": {
+        "options": {
+          "before": [
+            "A situation where two transactions wait for each other indefinitely",
+            "A failed transaction commit",
+            "A type of database backup",
+            "A corrupted index"
+          ],
+          "after": [
+            "A cycle of transactions waiting on one another’s held resources",
+            "A failed commit only",
+            "A database backup type",
+            "A corrupted index"
+          ]
+        }
+      },
+      "reason": "A deadlock is a circular wait involving two or more transactions/resources. The original two-transaction example was narrower than the full concept."
+    },
+    {
+      "ordinal": 290,
+      "changes": {
+        "q": {
+          "before": "What is the difference between DELETE and TRUNCATE in SQL?",
+          "after": "Which DELETE/TRUNCATE comparison avoids incorrect database-independent claims about logging and rollback?"
+        },
+        "options": {
+          "before": [
+            "DELETE removes rows with logging and can use WHERE; TRUNCATE removes all rows without logging",
+            "They are identical",
+            "TRUNCATE can use WHERE but DELETE cannot",
+            "DELETE removes the table structure"
+          ],
+          "after": [
+            "DELETE can use WHERE; TRUNCATE removes all rows without WHERE; logging and rollback details depend on the database",
+            "They are identical in every database",
+            "TRUNCATE can use WHERE but DELETE cannot",
+            "DELETE removes the table definition"
+          ]
+        }
+      },
+      "reason": "DELETE can selectively remove rows. TRUNCATE has no row predicate. It is incorrect to claim universally that TRUNCATE is unlogged or cannot roll back; PostgreSQL documents transactional rollback support."
+    },
+    {
+      "ordinal": 294,
+      "changes": {
+        "options": {
+          "before": [
+            "3-4-1-2-5 (The sun rises every morning)",
+            "1-2-3-4-5",
+            "5-1-2-3-4",
+            "2-3-4-1-5"
+          ],
+          "after": [
+            "1-3-4-5-2 (The sun rises every morning)",
+            "1-2-3-4-5",
+            "5-1-2-3-4",
+            "2-3-4-1-5"
+          ]
+        }
+      },
+      "reason": "Place subject the sun first(1,3), then verb rises(4), followed by the time expression every morning(5,2)."
+    },
+    {
+      "ordinal": 295,
+      "changes": {
+        "q": {
+          "before": "Choose the word that best completes: 'Despite the rain, the match ___ on schedule.'",
+          "after": "Complete the past-time sentence: “Yesterday, despite the rain, the match ___ on schedule.”"
+        }
+      },
+      "reason": "The added marker yesterday establishes a finished past event, requiring the simple past went. Without a time context, goes could also be grammatical."
+    },
+    {
+      "ordinal": 298,
+      "changes": {
+        "q": {
+          "before": "Choose the correct word: 'Neither the manager nor the employees ___ aware of the change.'",
+          "after": "Complete the past-time sentence using the conventional proximity agreement rule: “Yesterday, neither the manager nor the employees ___ aware of the change.”"
+        }
+      },
+      "reason": "Under the conventional proximity rule for neither…nor, the verb agrees with the nearer plural subject employees, giving were in this past-time context."
+    },
+    {
+      "ordinal": 304,
+      "changes": {
+        "answer": {
+          "before": 0,
+          "after": 1
+        }
+      },
+      "reason": "If the day before yesterday was Friday, yesterday was Saturday and today is Sunday. Tomorrow is Monday."
+    },
+    {
+      "ordinal": 307,
+      "changes": {
+        "q": {
+          "before": "Complete the analogy: Author is to Book as Composer is to ?",
+          "after": "Complete the creator-to-general-medium analogy: Author : Book :: Composer : ?"
+        },
+        "options": {
+          "before": [
+            "Music",
+            "Orchestra",
+            "Instrument",
+            "Song"
+          ],
+          "after": [
+            "Music",
+            "Orchestra",
+            "Instrument",
+            "Conductor"
+          ]
+        }
+      },
+      "reason": "The revised stem asks for the general created medium: an author creates a book and a composer creates music. A song is one example, so it is removed as an overlapping alternative."
+    },
+    {
+      "ordinal": 308,
+      "changes": {
+        "q": {
+          "before": "If all squares are rectangles and all rectangles are parallelograms, then all squares are definitely:",
+          "after": "Using only these premises — all squares are rectangles; all rectangles are parallelograms — all squares are definitely members of which stated class?"
+        },
+        "options": {
+          "before": [
+            "Parallelograms",
+            "Circles",
+            "Triangles",
+            "Trapeziums"
+          ],
+          "after": [
+            "Parallelograms",
+            "Circles",
+            "Triangles",
+            "None of the stated classes"
+          ]
+        }
+      },
+      "reason": "By transitivity of the stated class inclusions, square⊆rectangle⊆parallelogram. The conclusion follows without introducing other shape definitions."
+    }
+  ]
+}

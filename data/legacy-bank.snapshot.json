@@ -1,0 +1,3390 @@
+[
+  {
+    "section": "Quant",
+    "q": "What is 20% of 50?",
+    "options": [
+      "5",
+      "1",
+      "15",
+      "10"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "What is 25% of 80?",
+    "options": [
+      "25",
+      "15",
+      "20",
+      "10"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "What is 40% of 150?",
+    "options": [
+      "50",
+      "65",
+      "55",
+      "60"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "What is 15% of 200?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "What is 60% of 250?",
+    "options": [
+      "140",
+      "145",
+      "155",
+      "150"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "What is 35% of 120?",
+    "options": [
+      "32",
+      "47",
+      "37",
+      "42"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "What is 45% of 180?",
+    "options": [
+      "76",
+      "71",
+      "81",
+      "86"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "What is 12% of 350?",
+    "options": [
+      "32",
+      "47",
+      "42",
+      "37"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "What is 75% of 80?",
+    "options": [
+      "60",
+      "55",
+      "50",
+      "65"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "What is 90% of 150?",
+    "options": [
+      "130",
+      "140",
+      "135",
+      "125"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹1000 at 5% per annum for 2 year(s).",
+    "options": [
+      "50",
+      "150",
+      "200",
+      "100"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹2000 at 4% per annum for 3 year(s).",
+    "options": [
+      "340",
+      "190",
+      "290",
+      "240"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹5000 at 6% per annum for 2 year(s).",
+    "options": [
+      "700",
+      "650",
+      "600",
+      "550"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹1500 at 8% per annum for 1 year(s).",
+    "options": [
+      "70",
+      "220",
+      "170",
+      "120"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹3000 at 10% per annum for 2 year(s).",
+    "options": [
+      "600",
+      "650",
+      "700",
+      "550"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹4000 at 5% per annum for 3 year(s).",
+    "options": [
+      "700",
+      "600",
+      "550",
+      "650"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹2500 at 12% per annum for 1 year(s).",
+    "options": [
+      "350",
+      "400",
+      "250",
+      "300"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹6000 at 4% per annum for 2 year(s).",
+    "options": [
+      "530",
+      "580",
+      "480",
+      "430"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "A train 100 m long crosses a pole in 10 seconds. Find its speed in km/h.",
+    "options": [
+      "36 km/h",
+      "30 km/h",
+      "40 km/h",
+      "45 km/h"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A car travels 180 km in 3 hours. What is its average speed?",
+    "options": [
+      "60 km/h",
+      "50 km/h",
+      "70 km/h",
+      "65 km/h"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A man walks at 5 km/h. How long will he take to walk 20 km?",
+    "options": [
+      "4 hours",
+      "3 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Two trains start from the same point in opposite directions at 40 km/h and 60 km/h. After how long will they be 200 km apart?",
+    "options": [
+      "2 hours",
+      "2.5 hours",
+      "1.5 hours",
+      "3 hours"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A boat travels 24 km downstream in 2 hours. What is its downstream speed?",
+    "options": [
+      "12 km/h",
+      "10 km/h",
+      "14 km/h",
+      "16 km/h"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A cyclist covers 90 km in 6 hours. Find the speed.",
+    "options": [
+      "15 km/h",
+      "12 km/h",
+      "18 km/h",
+      "20 km/h"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A train 150 m long crosses a platform 350 m long in 25 seconds. Find its speed in m/s.",
+    "options": [
+      "20 m/s",
+      "18 m/s",
+      "22 m/s",
+      "16 m/s"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "If a man covers a distance in 50 minutes at 6 km/h, what is the distance?",
+    "options": [
+      "5 km",
+      "4 km",
+      "6 km",
+      "4.5 km"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A car covers a distance at 60 km/h in 5 hours. At what speed should it travel to cover it in 4 hours?",
+    "options": [
+      "75 km/h",
+      "70 km/h",
+      "80 km/h",
+      "65 km/h"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Speed of 36 km/h is equal to how many m/s?",
+    "options": [
+      "10 m/s",
+      "12 m/s",
+      "8 m/s",
+      "6 m/s"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A can do a piece of work in 10 days, B in 15 days. Working together, how many days will they take?",
+    "options": [
+      "6 days",
+      "5 days",
+      "8 days",
+      "7 days"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "If 6 men can complete a job in 12 days, how many days will 8 men take?",
+    "options": [
+      "9 days",
+      "10 days",
+      "8 days",
+      "11 days"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A does a work in 20 days. He works for 5 days and leaves. What fraction is left?",
+    "options": [
+      "3/4",
+      "1/4",
+      "1/2",
+      "2/3"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "12 workers can finish a job in 8 days. How many workers are needed to finish it in 6 days?",
+    "options": [
+      "16",
+      "14",
+      "18",
+      "20"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A and B together can do a work in 6 days. A alone can do it in 10 days. In how many days can B alone do it?",
+    "options": [
+      "15 days",
+      "12 days",
+      "18 days",
+      "20 days"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "If 5 men or 8 women can do a work in 12 days, how many days will 10 men and 16 women take together?",
+    "options": [
+      "6 days",
+      "5 days",
+      "4 days",
+      "8 days"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A pipe can fill a tank in 6 hours and another can empty it in 10 hours. If both are opened, how long to fill?",
+    "options": [
+      "15 hours",
+      "12 hours",
+      "10 hours",
+      "18 hours"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "X can finish a work in 18 days and Y in 15 days. Y worked for 10 days and left. In how many days will X finish the remaining work?",
+    "options": [
+      "6 days",
+      "5 days",
+      "4 days",
+      "8 days"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A man buys an item for ₹500 and sells it for ₹600. Find his profit percentage.",
+    "options": [
+      "20%",
+      "15%",
+      "25%",
+      "10%"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A shopkeeper sells an article at a loss of 10%. If the cost price is ₹400, what is the selling price?",
+    "options": [
+      "₹360",
+      "₹380",
+      "₹340",
+      "₹400"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "By selling an item for ₹720, a man gains 20%. Find the cost price.",
+    "options": [
+      "₹600",
+      "₹650",
+      "₹580",
+      "₹620"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A trader marks his goods 50% above cost and allows a discount of 20%. Find his profit percentage.",
+    "options": [
+      "20%",
+      "15%",
+      "25%",
+      "30%"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "An article is sold at a loss of 15%. If sold for ₹85 more, there would be a profit of 10%. Find the cost price.",
+    "options": [
+      "₹340",
+      "₹320",
+      "₹360",
+      "₹300"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A man buys two items at ₹400 each. He sells one at 10% profit and the other at 10% loss. Find his overall result.",
+    "options": [
+      "No profit no loss",
+      "4% profit",
+      "4% loss",
+      "Profit ₹8"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "If the cost price of 12 articles equals the selling price of 10 articles, find the profit percent.",
+    "options": [
+      "20%",
+      "18%",
+      "22%",
+      "25%"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Divide ₹720 between A and B in the ratio 5:7. Find B's share.",
+    "options": [
+      "₹420",
+      "₹400",
+      "₹440",
+      "₹380"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "The ratio of two numbers is 3:4 and their sum is 84. Find the larger number.",
+    "options": [
+      "48",
+      "42",
+      "36",
+      "45"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "If a:b = 2:3 and b:c = 4:5, find a:b:c.",
+    "options": [
+      "8:12:15",
+      "6:8:10",
+      "4:6:8",
+      "2:3:5"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "The average of 10 numbers is 25. If one number 35 is removed, find the new average.",
+    "options": [
+      "23.33",
+      "24",
+      "22.5",
+      "23"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "The average age of a class of 30 students is 12 years. If the teacher's age (40) is included, find the new average.",
+    "options": [
+      "12.9",
+      "13.5",
+      "13",
+      "12.5"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Find the average of first 20 natural numbers.",
+    "options": [
+      "10.5",
+      "10",
+      "11",
+      "9.5"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A man's average expenditure for January to June is ₹2500 and for July to December is ₹3000. Find his annual average.",
+    "options": [
+      "₹2750",
+      "₹2800",
+      "₹2700",
+      "₹2900"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Find the HCF of 36 and 60.",
+    "options": [
+      "12",
+      "6",
+      "18",
+      "24"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Find the LCM of 8, 12 and 16.",
+    "options": [
+      "48",
+      "36",
+      "24",
+      "96"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "What is the sum of the first 15 natural numbers?",
+    "options": [
+      "120",
+      "110",
+      "105",
+      "130"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "If x² - 5x + 6 = 0, find the values of x.",
+    "options": [
+      "2 and 3",
+      "1 and 6",
+      "2 and 4",
+      "3 and 4"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Simplify: 15 + 6 × 4 ÷ 2 - 3",
+    "options": [
+      "24",
+      "18",
+      "21",
+      "27"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Find the square root of 1764.",
+    "options": [
+      "42",
+      "44",
+      "40",
+      "46"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "The sum of three consecutive even numbers is 90. Find the largest number.",
+    "options": [
+      "32",
+      "30",
+      "34",
+      "28"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "What is the value of (2^5 × 3^2) / 6?",
+    "options": [
+      "48",
+      "36",
+      "24",
+      "60"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "If 3x + 7 = 22, find x.",
+    "options": [
+      "5",
+      "6",
+      "4",
+      "7"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Find the next prime number after 47.",
+    "options": [
+      "53",
+      "51",
+      "49",
+      "59"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A bag has 3 red, 4 green and 5 blue balls. Find the probability of drawing a green ball.",
+    "options": [
+      "1/3",
+      "1/4",
+      "1/2",
+      "2/5"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "In how many ways can 5 people be seated in a row?",
+    "options": [
+      "120",
+      "100",
+      "60",
+      "24"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "How many 3-letter words can be formed from the letters A, B, C, D without repetition?",
+    "options": [
+      "24",
+      "12",
+      "6",
+      "18"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A coin is tossed twice. What is the probability of getting at least one head?",
+    "options": [
+      "3/4",
+      "1/2",
+      "1/4",
+      "2/3"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "From a deck of 52 cards, one card is drawn. Find the probability that it is a king.",
+    "options": [
+      "1/13",
+      "1/52",
+      "1/4",
+      "4/13"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "In how many ways can the letters of the word 'BOOK' be arranged?",
+    "options": [
+      "12",
+      "24",
+      "6",
+      "18"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next number: 3, 6, 12, 24, 48, ?",
+    "options": [
+      "96",
+      "90",
+      "84",
+      "100"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next number: 5, 11, 23, 47, ?",
+    "options": [
+      "95",
+      "93",
+      "99",
+      "91"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the missing number: 8, 27, 64, 125, ?",
+    "options": [
+      "216",
+      "200",
+      "196",
+      "225"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next letter group: AB, DE, GH, JK, ?",
+    "options": [
+      "MN",
+      "LM",
+      "NO",
+      "KL"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "If in a code, 'BOOK' is written as 'CPPL', how is 'WORD' written?",
+    "options": [
+      "XPSE",
+      "XQSE",
+      "XPSF",
+      "WPSE"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Pointing to a man, a woman said, 'His mother is the only daughter of my mother.' How is the woman related to the man?",
+    "options": [
+      "Mother",
+      "Aunt",
+      "Sister",
+      "Grandmother"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "If South-East becomes North, North-East becomes West, then West becomes?",
+    "options": [
+      "South-East",
+      "North-West",
+      "South-West",
+      "North-East"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the odd one out: Square, Circle, Triangle, Pentagon, Speed",
+    "options": [
+      "Speed",
+      "Circle",
+      "Square",
+      "Triangle"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the odd one out: Dog, Cat, Lion, Snake, Tiger",
+    "options": [
+      "Snake",
+      "Dog",
+      "Lion",
+      "Tiger"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Statement: All doctors are educated. Some educated are rich. Conclusion: Some doctors are rich.",
+    "options": [
+      "Cannot be determined",
+      "True",
+      "False",
+      "Partially true"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "A is taller than B but shorter than C. D is taller than C. Who is the tallest?",
+    "options": [
+      "D",
+      "C",
+      "A",
+      "B"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "In a row of children, A is 7th from the left and B is 9th from the right. If they interchange positions, A becomes 11th from the left. How many children are in the row?",
+    "options": [
+      "19",
+      "18",
+      "20",
+      "17"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "If Monday falls on 1st of a month, what day falls on 25th of the same month?",
+    "options": [
+      "Thursday",
+      "Wednesday",
+      "Friday",
+      "Tuesday"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the missing term: 2, 5, 10, 17, 26, ?",
+    "options": [
+      "37",
+      "35",
+      "39",
+      "41"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Complete the analogy: Doctor is to Hospital as Teacher is to ?",
+    "options": [
+      "School",
+      "Book",
+      "Student",
+      "Class"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Complete the analogy: Pen is to Write as Knife is to ?",
+    "options": [
+      "Cut",
+      "Sharp",
+      "Kitchen",
+      "Blade"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "If '+' means '×', '×' means '−', '−' means '÷' and '÷' means '+', evaluate: 10 + 2 × 3 − 4",
+    "options": [
+      "20",
+      "18",
+      "16",
+      "22"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next in the series: Z, X, V, T, ?",
+    "options": [
+      "R",
+      "S",
+      "Q",
+      "U"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "In a certain code, 'TIGER' is written as 'UJHFS'. How is 'LIONS' written?",
+    "options": [
+      "MJPOT",
+      "MJOPT",
+      "MIPOT",
+      "MJPNT"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Five friends P, Q, R, S, T are sitting in a row. P is to the left of Q but right of R. S is to the right of Q. Who is in the middle?",
+    "options": [
+      "Q",
+      "R",
+      "S",
+      "P"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "If all Lions are Tigers and all Tigers are Cats, then all Lions are definitely?",
+    "options": [
+      "Cats",
+      "Dogs",
+      "Birds",
+      "None"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "A clock shows 3:15. What is the angle between the hour and minute hands?",
+    "options": [
+      "7.5°",
+      "0°",
+      "15°",
+      "30°"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the odd pair: (4,16), (5,25), (6,35), (7,49)",
+    "options": [
+      "(6,35)",
+      "(4,16)",
+      "(5,25)",
+      "(7,49)"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "How many Sundays are there in a leap year if 1st January is a Sunday?",
+    "options": [
+      "53",
+      "52",
+      "54",
+      "51"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next shape pattern: Triangle, Square, Pentagon, Hexagon, ?",
+    "options": [
+      "Heptagon",
+      "Octagon",
+      "Circle",
+      "Nonagon"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Six people sit around a circular table. A is opposite to D. B is to the right of A. Who is to the left of D?",
+    "options": [
+      "B",
+      "C",
+      "A",
+      "Cannot be determined"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "If P is the father of Q, and Q is the sister of R, how is P related to R?",
+    "options": [
+      "Father",
+      "Uncle",
+      "Brother",
+      "Grandfather"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Choose the figure that completes the series (conceptually): a triangle rotates 90° clockwise each step. After 4 steps it will be:",
+    "options": [
+      "Back to original position",
+      "Rotated 180°",
+      "Rotated 270°",
+      "Rotated 45°"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the missing number in the matrix pattern: 2,4,6 / 8,10,12 / 14,16,?",
+    "options": [
+      "18",
+      "20",
+      "17",
+      "19"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "A is the son of B. B is the mother of C. C is the father of D. How is A related to D?",
+    "options": [
+      "Uncle",
+      "Father",
+      "Brother",
+      "Grandfather"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "If 'CHAIR' is coded as 'DIBJS', how is 'TABLE' coded?",
+    "options": [
+      "UBCMF",
+      "UBCNF",
+      "TBCMF",
+      "UCBMF"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "If A=1, B=2, ..., Z=26, what is the code for 'CAT'?",
+    "options": [
+      "3-1-20",
+      "3-1-19",
+      "2-1-20",
+      "3-2-20"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "In a code, 'GO' is '57' and 'SO' is '67'. What is the code for 'SOAP'?",
+    "options": [
+      "6715",
+      "6710",
+      "6713",
+      "6711"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Pointing to a girl, Rohan said, 'She is the daughter of my grandfather's only son.' How is the girl related to Rohan?",
+    "options": [
+      "Sister",
+      "Cousin",
+      "Daughter",
+      "Niece"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "A's father is B's brother and C is B's mother. If D is C's husband, how is D related to A?",
+    "options": [
+      "Grandfather",
+      "Father",
+      "Uncle",
+      "Brother"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of 'ELOQUENT':",
+    "options": [
+      "Articulate",
+      "Silent",
+      "Confused",
+      "Rude"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of 'ARDUOUS':",
+    "options": [
+      "Difficult",
+      "Easy",
+      "Simple",
+      "Pleasant"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of 'TENACIOUS':",
+    "options": [
+      "Persistent",
+      "Weak",
+      "Lazy",
+      "Timid"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of 'AUSTERE':",
+    "options": [
+      "Strict",
+      "Generous",
+      "Lavish",
+      "Soft"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of 'CANDOR':",
+    "options": [
+      "Honesty",
+      "Deceit",
+      "Anger",
+      "Fear"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Antonym of 'GENEROUS':",
+    "options": [
+      "Stingy",
+      "Kind",
+      "Giving",
+      "Noble"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Antonym of 'OPTIMISTIC':",
+    "options": [
+      "Pessimistic",
+      "Hopeful",
+      "Cheerful",
+      "Bright"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Antonym of 'ANCIENT':",
+    "options": [
+      "Modern",
+      "Old",
+      "Antique",
+      "Historic"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Antonym of 'VERBOSE':",
+    "options": [
+      "Concise",
+      "Wordy",
+      "Lengthy",
+      "Detailed"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Antonym of 'HUMBLE':",
+    "options": [
+      "Arrogant",
+      "Modest",
+      "Shy",
+      "Polite"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Choose the correctly spelled word:",
+    "options": [
+      "Necessary",
+      "Neccessary",
+      "Necesary",
+      "Neccesary"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Fill in the blank: She has been living here ___ 2015.",
+    "options": [
+      "since",
+      "for",
+      "from",
+      "at"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Fill in the blank: He is allergic ___ peanuts.",
+    "options": [
+      "to",
+      "with",
+      "for",
+      "of"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Fill in the blank: I look forward ___ hearing from you.",
+    "options": [
+      "to",
+      "for",
+      "at",
+      "on"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Fill in the blank: They congratulated him ___ his success.",
+    "options": [
+      "on",
+      "for",
+      "with",
+      "at"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Choose the correct sentence:",
+    "options": [
+      "She doesn't like coffee.",
+      "She don't likes coffee.",
+      "She not like coffee.",
+      "She isn't like coffee."
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Choose the correct passive voice for: 'She writes a letter.'",
+    "options": [
+      "A letter is written by her.",
+      "A letter was written by her.",
+      "A letter is being written.",
+      "A letter writes by her."
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Identify the part of speech of the underlined word: 'He runs QUICKLY.'",
+    "options": [
+      "Adverb",
+      "Adjective",
+      "Verb",
+      "Noun"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "One word for 'a person who loves books':",
+    "options": [
+      "Bibliophile",
+      "Philanthropist",
+      "Linguist",
+      "Bibliographer"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "One word for 'government by the people':",
+    "options": [
+      "Democracy",
+      "Monarchy",
+      "Autocracy",
+      "Bureaucracy"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "One word for 'incapable of being understood':",
+    "options": [
+      "Incomprehensible",
+      "Illegible",
+      "Indelible",
+      "Inaudible"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Idiom 'spill the beans' means:",
+    "options": [
+      "Reveal a secret",
+      "Make a mistake",
+      "Waste food",
+      "Get angry"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Idiom 'once in a blue moon' means:",
+    "options": [
+      "Very rarely",
+      "Very often",
+      "Every month",
+      "At night"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Idiom 'a piece of cake' means:",
+    "options": [
+      "Something easy",
+      "Something sweet",
+      "A small task",
+      "A celebration"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Idiom 'beat around the bush' means:",
+    "options": [
+      "Avoid the main topic",
+      "Hit something",
+      "Go for a walk",
+      "Plant a tree"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Choose the correct plural form of 'Phenomenon':",
+    "options": [
+      "Phenomena",
+      "Phenomenons",
+      "Phenomenas",
+      "Phenomenae"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Choose the correct plural form of 'Analysis':",
+    "options": [
+      "Analyses",
+      "Analysises",
+      "Analysis's",
+      "Analyzes"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Find the error in: 'Each of the players have their own kit.'",
+    "options": [
+      "have should be has",
+      "players should be player",
+      "their should be its",
+      "no error"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Find the error in: 'He is one of the best student in the class.'",
+    "options": [
+      "student should be students",
+      "is should be are",
+      "one should be a",
+      "no error"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of 'BENEVOLENT':",
+    "options": [
+      "Kind",
+      "Cruel",
+      "Selfish",
+      "Greedy"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of 'METICULOUS':",
+    "options": [
+      "Careful",
+      "Careless",
+      "Hasty",
+      "Sloppy"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of 'GREGARIOUS':",
+    "options": [
+      "Sociable",
+      "Shy",
+      "Hostile",
+      "Quiet"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Antonym of 'TRANSPARENT':",
+    "options": [
+      "Opaque",
+      "Clear",
+      "Visible",
+      "Bright"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Antonym of 'DILIGENT':",
+    "options": [
+      "Lazy",
+      "Hardworking",
+      "Active",
+      "Sincere"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Fill in the blank: The committee ___ yet to decide.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "be"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Fill in the blank: Hardly had I reached the station ___ the train left.",
+    "options": [
+      "when",
+      "than",
+      "then",
+      "that"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Passage: 'Water boils at 100°C at sea level, but at high altitudes it boils at a lower temperature due to reduced atmospheric pressure.' Why does water boil at a lower temperature at high altitude?",
+    "options": [
+      "Reduced atmospheric pressure",
+      "Higher humidity",
+      "Colder air",
+      "Less oxygen"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Passage: 'Renewable energy sources like solar and wind do not deplete natural resources and produce no direct emissions.' What is a key advantage of renewable energy mentioned?",
+    "options": [
+      "No direct emissions",
+      "Lower cost always",
+      "Faster installation",
+      "Higher reliability"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Passage: 'The Industrial Revolution began in Britain in the late 18th century, transforming manufacturing through mechanization.' What transformed manufacturing during the Industrial Revolution?",
+    "options": [
+      "Mechanization",
+      "Globalization",
+      "Digitization",
+      "Automation only"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which data structure uses FIFO (First In First Out) order?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Tree",
+      "Graph"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which data structure uses LIFO (Last In First Out) order?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Linked List"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What is the time complexity of binary search?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(1)"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What is the time complexity of bubble sort in the worst case?",
+    "options": [
+      "O(n²)",
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which HTTP method is used to update a resource?",
+    "options": [
+      "PUT",
+      "GET",
+      "DELETE",
+      "HEAD"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which HTTP status code means 'Not Found'?",
+    "options": [
+      "404",
+      "200",
+      "500",
+      "301"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "In SQL, which command is used to remove all rows from a table without deleting the table itself?",
+    "options": [
+      "TRUNCATE",
+      "DROP",
+      "DELETE FROM",
+      "REMOVE"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What does CSS stand for?",
+    "options": [
+      "Cascading Style Sheets",
+      "Computer Style Sheets",
+      "Creative Style System",
+      "Cascading Style System"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What is the default port for HTTP?",
+    "options": [
+      "80",
+      "443",
+      "8080",
+      "21"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which of these is NOT a NoSQL database?",
+    "options": [
+      "MySQL",
+      "MongoDB",
+      "Redis",
+      "Cassandra"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What does 'REST' stand for in REST API?",
+    "options": [
+      "Representational State Transfer",
+      "Remote State Transfer",
+      "Representational Service Transfer",
+      "Remote Service Technique"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which sorting algorithm has the best average time complexity?",
+    "options": [
+      "Quick Sort / Merge Sort O(n log n)",
+      "Bubble Sort O(n²)",
+      "Selection Sort O(n²)",
+      "Insertion Sort O(n²)"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "In Git, which command creates a new branch?",
+    "options": [
+      "git branch <name>",
+      "git new <name>",
+      "git create <name>",
+      "git checkout -create <name>"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which language is primarily used for styling web pages?",
+    "options": [
+      "CSS",
+      "HTML",
+      "JSON",
+      "XML"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What is the full form of SQL?",
+    "options": [
+      "Structured Query Language",
+      "Sequential Query Language",
+      "Structured Question Language",
+      "Simple Query Language"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which of the following is a primitive data type in Java?",
+    "options": [
+      "int",
+      "String",
+      "Array",
+      "ArrayList"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What is the purpose of an index in a database?",
+    "options": [
+      "Speed up data retrieval",
+      "Store backup data",
+      "Encrypt data",
+      "Delete duplicate rows"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which keyword is used to define a constant in JavaScript (ES6)?",
+    "options": [
+      "const",
+      "var",
+      "let",
+      "static"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What does 'API' stand for?",
+    "options": [
+      "Application Programming Interface",
+      "Applied Program Interface",
+      "Application Process Integration",
+      "Advanced Programming Interface"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which of these is a version control system?",
+    "options": [
+      "Git",
+      "Docker",
+      "Kubernetes",
+      "Jenkins"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "What is 10% of 250?",
+    "options": [
+      "35",
+      "5",
+      "25",
+      "15"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "What is 30% of 90?",
+    "options": [
+      "7",
+      "17",
+      "37",
+      "27"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "What is 50% of 360?",
+    "options": [
+      "160",
+      "180",
+      "190",
+      "170"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "What is 70% of 140?",
+    "options": [
+      "108",
+      "88",
+      "98",
+      "78"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "What is 18% of 500?",
+    "options": [
+      "80",
+      "90",
+      "70",
+      "100"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "What is 22% of 450?",
+    "options": [
+      "89",
+      "109",
+      "99",
+      "79"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "What is 65% of 200?",
+    "options": [
+      "110",
+      "140",
+      "120",
+      "130"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "What is 80% of 75?",
+    "options": [
+      "70",
+      "60",
+      "50",
+      "40"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "What is 33% of 300?",
+    "options": [
+      "79",
+      "89",
+      "99",
+      "109"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "What is 48% of 250?",
+    "options": [
+      "100",
+      "130",
+      "110",
+      "120"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "What is 55% of 180?",
+    "options": [
+      "109",
+      "99",
+      "79",
+      "89"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "What is 85% of 120?",
+    "options": [
+      "112",
+      "82",
+      "92",
+      "102"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹8000 at 5% per annum for 3 years.",
+    "options": [
+      "1400",
+      "1100",
+      "1200",
+      "1300"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹12000 at 6% per annum for 2 years.",
+    "options": [
+      "1540",
+      "1640",
+      "1440",
+      "1340"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹7500 at 8% per annum for 2 years.",
+    "options": [
+      "1300",
+      "1400",
+      "1100",
+      "1200"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹9000 at 4% per annum for 4 years.",
+    "options": [
+      "1440",
+      "1540",
+      "1340",
+      "1640"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹15000 at 3% per annum for 3 years.",
+    "options": [
+      "1350",
+      "1550",
+      "1450",
+      "1250"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹2000 at 10% per annum for 3 years.",
+    "options": [
+      "800",
+      "600",
+      "700",
+      "500"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹5000 at 9% per annum for 2 years.",
+    "options": [
+      "1100",
+      "900",
+      "800",
+      "1000"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "Find the simple interest on ₹10000 at 7% per annum for 3 years.",
+    "options": [
+      "2300",
+      "2200",
+      "2000",
+      "2100"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "Find the HCF of 24 and 36.",
+    "options": [
+      "12",
+      "11",
+      "14",
+      "16"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Find the HCF of 48 and 60.",
+    "options": [
+      "14",
+      "12",
+      "16",
+      "11"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "Find the HCF of 18 and 24.",
+    "options": [
+      "10",
+      "8",
+      "5",
+      "6"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "Find the HCF of 15 and 20.",
+    "options": [
+      "4",
+      "5",
+      "9",
+      "7"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "Find the HCF of 28 and 42.",
+    "options": [
+      "13",
+      "14",
+      "16",
+      "18"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "Find the HCF of 32 and 48.",
+    "options": [
+      "20",
+      "18",
+      "15",
+      "16"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "Find the HCF of 45 and 75.",
+    "options": [
+      "15",
+      "17",
+      "19",
+      "14"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Find the HCF of 54 and 72.",
+    "options": [
+      "18",
+      "20",
+      "17",
+      "22"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Find the LCM of 6 and 8.",
+    "options": [
+      "16",
+      "30",
+      "36",
+      "24"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "Find the LCM of 9 and 12.",
+    "options": [
+      "45",
+      "36",
+      "24",
+      "54"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "Find the LCM of 10 and 15.",
+    "options": [
+      "50",
+      "40",
+      "15",
+      "30"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "Find the LCM of 14 and 21.",
+    "options": [
+      "42",
+      "21",
+      "56",
+      "70"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Find the LCM of 16 and 24.",
+    "options": [
+      "80",
+      "64",
+      "48",
+      "24"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "Find the LCM of 20 and 30.",
+    "options": [
+      "80",
+      "100",
+      "60",
+      "30"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "A car travels 150 km at a speed of 30 km/h. How long does it take?",
+    "options": [
+      "5.5 hours",
+      "4.5 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "A car travels 240 km at a speed of 60 km/h. How long does it take?",
+    "options": [
+      "4.5 hours",
+      "5 hours",
+      "4 hours",
+      "3.5 hours"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "A car travels 100 km at a speed of 25 km/h. How long does it take?",
+    "options": [
+      "4 hours",
+      "3.5 hours",
+      "4.5 hours",
+      "5 hours"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A car travels 360 km at a speed of 90 km/h. How long does it take?",
+    "options": [
+      "3.5 hours",
+      "4.5 hours",
+      "5 hours",
+      "4 hours"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "A car travels 280 km at a speed of 40 km/h. How long does it take?",
+    "options": [
+      "7 hours",
+      "7.5 hours",
+      "6.5 hours",
+      "8 hours"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A car travels 450 km at a speed of 75 km/h. How long does it take?",
+    "options": [
+      "6 hours",
+      "5.5 hours",
+      "7 hours",
+      "6.5 hours"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A car travels 200 km at a speed of 50 km/h. How long does it take?",
+    "options": [
+      "4 hours",
+      "3.5 hours",
+      "4.5 hours",
+      "5 hours"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A car travels 126 km at a speed of 42 km/h. How long does it take?",
+    "options": [
+      "4 hours",
+      "2.5 hours",
+      "3 hours",
+      "3.5 hours"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "A man buys an article for ₹800 and sells it at a profit of 25%. Find the selling price.",
+    "options": [
+      "1100",
+      "950",
+      "1000",
+      "1050"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "A man buys an article for ₹1200 and sells it at a profit of 10%. Find the selling price.",
+    "options": [
+      "1270",
+      "1420",
+      "1320",
+      "1370"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "A man buys an article for ₹600 and sells it at a profit of 50%. Find the selling price.",
+    "options": [
+      "900",
+      "850",
+      "1000",
+      "950"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A man buys an article for ₹900 and sells it at a profit of 20%. Find the selling price.",
+    "options": [
+      "1030",
+      "1130",
+      "1180",
+      "1080"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "A man buys an article for ₹1500 and sells it at a profit of 8%. Find the selling price.",
+    "options": [
+      "1620",
+      "1670",
+      "1720",
+      "1570"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A man buys an article for ₹2000 and sells it at a profit of 15%. Find the selling price.",
+    "options": [
+      "2400",
+      "2300",
+      "2250",
+      "2350"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "A man buys an article for ₹450 and sells it at a profit of 40%. Find the selling price.",
+    "options": [
+      "630",
+      "680",
+      "580",
+      "730"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A man buys an article for ₹750 and sells it at a profit of 12%. Find the selling price.",
+    "options": [
+      "840",
+      "790",
+      "890",
+      "940"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next number in the series: 4, 8, 12, 16, 20, ?",
+    "options": [
+      "26",
+      "22",
+      "20",
+      "24"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next number in the series: 1, 4, 9, 16, 25, ?",
+    "options": [
+      "32",
+      "34",
+      "38",
+      "36"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next number in the series: 2, 4, 8, 16, 32, ?",
+    "options": [
+      "62",
+      "64",
+      "66",
+      "60"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next number in the series: 3, 9, 27, 81, ?",
+    "options": [
+      "241",
+      "245",
+      "239",
+      "243"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next number in the series: 5, 10, 20, 40, 80, ?",
+    "options": [
+      "156",
+      "158",
+      "162",
+      "160"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next number in the series: 1, 3, 6, 10, 15, ?",
+    "options": [
+      "19",
+      "23",
+      "17",
+      "21"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next number in the series: 2, 5, 10, 17, 26, 37, ?",
+    "options": [
+      "48",
+      "46",
+      "52",
+      "50"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next number in the series: 7, 14, 21, 28, 35, ?",
+    "options": [
+      "42",
+      "44",
+      "40",
+      "38"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next number in the series: 100, 90, 81, 73, ?",
+    "options": [
+      "66",
+      "62",
+      "68",
+      "64"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next number in the series: 1, 2, 4, 7, 11, 16, ?",
+    "options": [
+      "18",
+      "20",
+      "22",
+      "24"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next number in the series: 6, 11, 21, 36, 56, ?",
+    "options": [
+      "81",
+      "79",
+      "77",
+      "83"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the next number in the series: 10, 20, 35, 55, ?",
+    "options": [
+      "78",
+      "80",
+      "76",
+      "82"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "Find the average of: 12, 15, 18, 21, 24",
+    "options": [
+      "16",
+      "22",
+      "18",
+      "20"
+    ],
+    "answer": 2
+  },
+  {
+    "section": "Quant",
+    "q": "Find the average of: 10, 20, 30, 40",
+    "options": [
+      "29",
+      "25",
+      "27",
+      "23"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "Find the average of: 5, 15, 25, 35, 45",
+    "options": [
+      "23",
+      "27",
+      "29",
+      "25"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Quant",
+    "q": "Find the average of: 8, 16, 24, 32",
+    "options": [
+      "24",
+      "20",
+      "18",
+      "22"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Quant",
+    "q": "Find the average of: 3, 6, 9, 12, 15, 18",
+    "options": [
+      "12.5",
+      "10.5",
+      "14.5",
+      "8.5"
+    ],
+    "answer": 1
+  },
+  {
+    "section": "Coding",
+    "q": "What is the output of: print(2 ** 3 ** 2) in Python?",
+    "options": [
+      "512",
+      "64",
+      "256",
+      "8"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "What is the output of: console.log(typeof NaN) in JavaScript?",
+    "options": [
+      "'number'",
+      "'NaN'",
+      "'undefined'",
+      "'object'"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "What is the output of: console.log(1 + '1') in JavaScript?",
+    "options": [
+      "'11'",
+      "2",
+      "'2'",
+      "NaN"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "What is the output of: console.log([1,2,3] + [4,5,6]) in JavaScript?",
+    "options": [
+      "'1,2,34,5,6'",
+      "[1,2,3,4,5,6]",
+      "'1,2,3,4,5,6'",
+      "NaN"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "In Python, what does len([1,2,[3,4]]) return?",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "Error"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "What is the output of: print(\"5\" + \"5\") in Python?",
+    "options": [
+      "'55'",
+      "10",
+      "'10'",
+      "Error"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "What is the output of: console.log(0 == '0') in JavaScript?",
+    "options": [
+      "true",
+      "false",
+      "undefined",
+      "Error"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "What is the output of: console.log(0 === '0') in JavaScript?",
+    "options": [
+      "false",
+      "true",
+      "undefined",
+      "Error"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "In Java, what is the default value of a boolean instance variable?",
+    "options": [
+      "false",
+      "true",
+      "null",
+      "0"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "What is the time complexity of accessing an element in a hash map on average?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "In SQL, which clause is used to filter groups after GROUP BY?",
+    "options": [
+      "HAVING",
+      "WHERE",
+      "FILTER",
+      "GROUP IF"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "Which of these correctly declares an array in C?",
+    "options": [
+      "int arr[10];",
+      "array int arr(10);",
+      "int[] arr = new(10);",
+      "arr int[10];"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "What does the 'this' keyword refer to inside a regular JavaScript object method?",
+    "options": [
+      "The object the method belongs to",
+      "The global window object always",
+      "The parent function",
+      "undefined"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "In Python, what is the result of 7 // 2?",
+    "options": [
+      "3",
+      "3.5",
+      "4",
+      "2"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "What is the output of: print(bool(0)) in Python?",
+    "options": [
+      "False",
+      "True",
+      "0",
+      "Error"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "Which SQL JOIN returns all rows from both tables, matching where possible?",
+    "options": [
+      "FULL OUTER JOIN",
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "In MongoDB, which method is used to retrieve documents from a collection?",
+    "options": [
+      "find()",
+      "get()",
+      "select()",
+      "fetch()"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "What is the output of: console.log(typeof undefined) in JavaScript?",
+    "options": [
+      "'undefined'",
+      "'null'",
+      "'object'",
+      "undefined"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "In Java, which keyword prevents a class from being inherited?",
+    "options": [
+      "final",
+      "static",
+      "private",
+      "abstract"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Coding",
+    "q": "What does Big-O notation O(n log n) typically describe?",
+    "options": [
+      "Efficient sorting algorithms like Merge/Quick Sort",
+      "Linear search",
+      "Constant time lookup",
+      "Brute force recursion"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Ravi walks 5 km North, then turns right and walks 3 km. He then turns right again and walks 5 km. How far is he from his starting point?",
+    "options": [
+      "3 km",
+      "8 km",
+      "5 km",
+      "13 km"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "A man walks 10 m North, then 10 m East, then 10 m South. How far and in which direction is he from his starting point?",
+    "options": [
+      "10 m East",
+      "10 m West",
+      "20 m East",
+      "10 m North"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "If today is Wednesday, what day will it be after 17 days?",
+    "options": [
+      "Saturday",
+      "Friday",
+      "Sunday",
+      "Thursday"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the odd one: 121, 144, 169, 200, 225",
+    "options": [
+      "200",
+      "144",
+      "169",
+      "225"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Statement: All birds can fly. Penguins are birds. Conclusion: Penguins can fly. Is this argument logically valid?",
+    "options": [
+      "Valid based on the statements given, though factually penguins can't fly",
+      "Invalid",
+      "Cannot be determined",
+      "Partially valid"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Five boxes are stacked. Box A is above B, B is above C, D is above A, E is at the bottom. What is the order from top to bottom?",
+    "options": [
+      "D, A, B, C, E",
+      "A, D, B, C, E",
+      "D, A, C, B, E",
+      "Cannot be determined"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "If 'X is the brother of Y' and 'Y is the daughter of Z', how is X related to Z?",
+    "options": [
+      "Son (or daughter)",
+      "Father",
+      "Brother",
+      "Cannot be determined — X's gender unknown, but X is Z's child"
+    ],
+    "answer": 3
+  },
+  {
+    "section": "Logical",
+    "q": "Choose the figure series logic: a clock's hour hand moves 30° every hour. How many degrees in 5 hours?",
+    "options": [
+      "150°",
+      "100°",
+      "180°",
+      "120°"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "In a class, Rahul ranks 7th from the top and 18th from the bottom. How many students are in the class?",
+    "options": [
+      "24",
+      "25",
+      "23",
+      "26"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Identify the next pair following the pattern: (2,4), (3,9), (4,16), (5,?)",
+    "options": [
+      "25",
+      "20",
+      "30",
+      "24"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Antonym of 'FRUGAL':",
+    "options": [
+      "Extravagant",
+      "Thrifty",
+      "Economical",
+      "Modest"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Antonym of 'COHERENT':",
+    "options": [
+      "Confusing",
+      "Clear",
+      "Logical",
+      "Organized"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of 'PRUDENT':",
+    "options": [
+      "Wise",
+      "Reckless",
+      "Careless",
+      "Foolish"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of 'ZEALOUS':",
+    "options": [
+      "Enthusiastic",
+      "Indifferent",
+      "Lazy",
+      "Calm"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "One word for 'study of birds':",
+    "options": [
+      "Ornithology",
+      "Entomology",
+      "Zoology",
+      "Botany"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "One word for 'handwriting that cannot be read':",
+    "options": [
+      "Illegible",
+      "Incomprehensible",
+      "Inaudible",
+      "Indelible"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Idiom 'burn the midnight oil' means:",
+    "options": [
+      "Work late into the night",
+      "Waste resources",
+      "Start a fire",
+      "Relax at night"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Idiom 'hit the nail on the head' means:",
+    "options": [
+      "Say exactly the right thing",
+      "Make a mistake",
+      "Work hard",
+      "Get hurt"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Fill in the blank: She is married ___ a doctor.",
+    "options": [
+      "to",
+      "with",
+      "for",
+      "at"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Fill in the blank: He apologized ___ being late.",
+    "options": [
+      "for",
+      "of",
+      "about",
+      "on"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Find the correctly spelled word:",
+    "options": [
+      "Occurrence",
+      "Occurence",
+      "Occurrance",
+      "Ocurrence"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Choose the correct passive form: 'They built this house in 1990.'",
+    "options": [
+      "This house was built in 1990.",
+      "This house is built in 1990.",
+      "This house has built in 1990.",
+      "This house built in 1990."
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A father is 3 times as old as his son. After 12 years, he will be twice as old as his son. Find the son's present age.",
+    "options": [
+      "12 years",
+      "10 years",
+      "14 years",
+      "15 years"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "Five years ago, A was thrice as old as B. Ten years hence, A will be twice as old as B. Find B's present age.",
+    "options": [
+      "20 years",
+      "15 years",
+      "25 years",
+      "18 years"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A boat goes 30 km downstream in 2 hours and returns upstream in 3 hours. Find the speed of the boat in still water.",
+    "options": [
+      "12.5 km/h",
+      "10 km/h",
+      "15 km/h",
+      "11 km/h"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Quant",
+    "q": "A mixture contains milk and water in the ratio 5:1. If 6 litres of water is added, the ratio becomes 5:3. Find the initial quantity of milk.",
+    "options": [
+      "15 litres",
+      "12 litres",
+      "18 litres",
+      "20 litres"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What is a primary key in a database?",
+    "options": [
+      "A column that uniquely identifies each row",
+      "A column that can have duplicate values",
+      "A foreign reference to another table",
+      "A column used only for sorting"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What is normalization in DBMS?",
+    "options": [
+      "Organizing data to reduce redundancy",
+      "Encrypting data for security",
+      "Compressing data to save space",
+      "Backing up data automatically"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which normal form removes partial dependency?",
+    "options": [
+      "2NF",
+      "1NF",
+      "3NF",
+      "BCNF"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What is a foreign key?",
+    "options": [
+      "A field that references the primary key of another table",
+      "A key used to encrypt data",
+      "A unique key with no relation to other tables",
+      "A backup key"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which SQL command is used to add a new row to a table?",
+    "options": [
+      "INSERT",
+      "ADD",
+      "UPDATE",
+      "CREATE"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which SQL clause is used to sort query results?",
+    "options": [
+      "ORDER BY",
+      "SORT BY",
+      "GROUP BY",
+      "ARRANGE BY"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What does ACID stand for in DBMS transactions?",
+    "options": [
+      "Atomicity, Consistency, Isolation, Durability",
+      "Accuracy, Consistency, Integrity, Durability",
+      "Atomicity, Concurrency, Isolation, Durability",
+      "Availability, Consistency, Isolation, Durability"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which type of SQL join returns only matching rows from both tables?",
+    "options": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "FULL JOIN"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What is the purpose of the GROUP BY clause in SQL?",
+    "options": [
+      "To group rows sharing a common value for aggregation",
+      "To sort rows alphabetically",
+      "To filter rows before aggregation",
+      "To join two tables"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "In MongoDB, what is the equivalent of a 'row' in a relational database?",
+    "options": [
+      "Document",
+      "Collection",
+      "Field",
+      "Database"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "In MongoDB, what is the equivalent of a 'table' in a relational database?",
+    "options": [
+      "Collection",
+      "Document",
+      "Index",
+      "Schema"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which MongoDB method is used to insert a single document?",
+    "options": [
+      "insertOne()",
+      "insert()",
+      "addOne()",
+      "push()"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What format does MongoDB use to store documents?",
+    "options": [
+      "BSON (Binary JSON)",
+      "XML",
+      "CSV",
+      "YAML"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which SQL keyword is used to remove duplicate rows from results?",
+    "options": [
+      "DISTINCT",
+      "UNIQUE",
+      "REMOVE DUPLICATE",
+      "FILTER"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What is a deadlock in DBMS?",
+    "options": [
+      "A situation where two transactions wait for each other indefinitely",
+      "A failed transaction commit",
+      "A type of database backup",
+      "A corrupted index"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which command is used to permanently remove a table from a database?",
+    "options": [
+      "DROP TABLE",
+      "DELETE TABLE",
+      "REMOVE TABLE",
+      "TRUNCATE TABLE"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What is the difference between DELETE and TRUNCATE in SQL?",
+    "options": [
+      "DELETE removes rows with logging and can use WHERE; TRUNCATE removes all rows without logging",
+      "They are identical",
+      "TRUNCATE can use WHERE but DELETE cannot",
+      "DELETE removes the table structure"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which SQL aggregate function returns the number of rows?",
+    "options": [
+      "COUNT()",
+      "SUM()",
+      "TOTAL()",
+      "NUMBER()"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "What is an index used for in a database?",
+    "options": [
+      "Speeding up data retrieval operations",
+      "Storing backup copies",
+      "Validating data types",
+      "Encrypting sensitive columns"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "GeneralAwareness",
+    "q": "Which MongoDB operator is used to match values greater than a given value?",
+    "options": [
+      "$gt",
+      "$greater",
+      "$more",
+      "$above"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Rearrange to form a meaningful sentence: 1.the 2.morning 3.sun 4.rises 5.every",
+    "options": [
+      "3-4-1-2-5 (The sun rises every morning)",
+      "1-2-3-4-5",
+      "5-1-2-3-4",
+      "2-3-4-1-5"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Choose the word that best completes: 'Despite the rain, the match ___ on schedule.'",
+    "options": [
+      "went",
+      "goes",
+      "gone",
+      "go"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Identify the correctly punctuated sentence:",
+    "options": [
+      "Although it was raining, we went out.",
+      "Although it was raining we went out",
+      "Although, it was raining, we went out.",
+      "Although it was raining; we went out."
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Choose the correct word: 'The number of students ___ increasing every year.'",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "be"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Choose the correct word: 'Neither the manager nor the employees ___ aware of the change.'",
+    "options": [
+      "were",
+      "was",
+      "is",
+      "be"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of 'UBIQUITOUS':",
+    "options": [
+      "Omnipresent",
+      "Rare",
+      "Hidden",
+      "Local"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Synonym of 'PRAGMATIC':",
+    "options": [
+      "Practical",
+      "Idealistic",
+      "Emotional",
+      "Theoretical"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Antonym of 'MUNDANE':",
+    "options": [
+      "Extraordinary",
+      "Ordinary",
+      "Boring",
+      "Routine"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "Antonym of 'CONCISE':",
+    "options": [
+      "Verbose",
+      "Brief",
+      "Short",
+      "Compact"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Verbal",
+    "q": "One word for 'a place where birds are kept':",
+    "options": [
+      "Aviary",
+      "Apiary",
+      "Aquarium",
+      "Sanctuary"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "If the day before yesterday was Friday, what day is tomorrow?",
+    "options": [
+      "Tuesday",
+      "Monday",
+      "Wednesday",
+      "Sunday"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "A is twice as old as B. Five years ago, A was three times as old as B was then. Find B's present age.",
+    "options": [
+      "10 years",
+      "12 years",
+      "8 years",
+      "15 years"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Find the odd one out: Mercury, Venus, Earth, Sun, Mars",
+    "options": [
+      "Sun",
+      "Mercury",
+      "Earth",
+      "Mars"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "Complete the analogy: Author is to Book as Composer is to ?",
+    "options": [
+      "Music",
+      "Orchestra",
+      "Instrument",
+      "Song"
+    ],
+    "answer": 0
+  },
+  {
+    "section": "Logical",
+    "q": "If all squares are rectangles and all rectangles are parallelograms, then all squares are definitely:",
+    "options": [
+      "Parallelograms",
+      "Circles",
+      "Triangles",
+      "Trapeziums"
+    ],
+    "answer": 0
+  }
+]
