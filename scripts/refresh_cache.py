@@ -10,6 +10,10 @@ def revision_for(catalog):
     digest = sha256(json.dumps(clean,sort_keys=True).encode())
     runtime = json.loads((ROOT/'assets/runtime-manifest.js').read_text(encoding='utf-8').removeprefix('window.CODELAB_RUNTIME=').rstrip(';\n'))
     names = set(runtime['shell']+catalog['files']+['sw.js','assets/runtime-manifest.js'])-{'offline/catalog.js'}
+    # Generated index embeds this revision; fingerprint its editable source to
+    # avoid feeding the generated revision back into its own hash.
+    names.discard('index.html')
+    names.add('backupindex.html')
     for name in sorted(names):
         digest.update(name.encode());digest.update((ROOT/name).read_bytes())
     return digest.hexdigest()[:16]

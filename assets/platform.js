@@ -6,7 +6,7 @@ const RuntimeAssets={
     return {python:'https://cdn.jsdelivr.net/pyodide/v0.26.2/full/',sql:'https://cdn.jsdelivr.net/npm/sql.js@1.14.0/dist/',monaco:'https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/'}[kind];
   },
   script(url){if(!this.scripts.has(url))this.scripts.set(url,new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=url;script.onload=resolve;script.onerror=()=>{this.scripts.delete(url);reject(new Error('Could not load runtime: '+url));};document.head.append(script);}));return this.scripts.get(url);},
-  allFiles(){return [...new Set(['./','StudyLab.html',...CODELAB_RUNTIME.shell,...OfflineLibrary.catalog.files,...CODELAB_RUNTIME.files.map(f=>f.path)])];},
+  allFiles(){return [...new Set(['./',...CODELAB_RUNTIME.shell,...OfflineLibrary.catalog.files,...CODELAB_RUNTIME.files.map(f=>f.path)])];},
   async saved(){
     if(window.CODELAB_STANDALONE)return 'portable';
     if(location.protocol==='file:')return 'folder';

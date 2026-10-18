@@ -6,8 +6,8 @@ App, questions, diagrams, Python/SQL engines aur editor isi folder mein hain.
 ## Option 1: VS Code Live Server
 
 1. VS Code mein **File > Open Folder** se poora `Code-Editor-Pro` folder kholo.
-2. `StudyLab.html` par right-click > **Open with Live Server**.
-3. Vivaldi mein `http://127.0.0.1:5500/StudyLab.html` kholo. Is computer ki project settings Vivaldi ke liye configured hain.
+2. `index.html` par right-click > **Open with Live Server**.
+3. Vivaldi mein `http://127.0.0.1:5500/index.html` kholo. Is computer ki project settings Vivaldi ke liye configured hain.
 4. Ab internet disconnect karke practice kar sakte ho. VS Code aur Live Server running rehne chahiye.
 
 Live Server already running ho aur Vivaldi kholna ho to isi folder ke PowerShell terminal mein:
@@ -101,4 +101,4 @@ Top ke Back/Forward buttons ya browser history use karo. Active test se leave ka
 
 ## Latest StudyLab screen
 
-`StudyLab.html` kholo. Upar Study Material, My Study aur Smart Revision buttons hain. Offline Library ab Advanced ke andar **3 ? Offline Library** mein hai; saara content aur saved notes wahi hain. Agar purana CodeLab/index page khula ho to isi address par `StudyLab.html` kholo. Hosted copy: https://laxtline.github.io/Code-Editor-Pro/StudyLab.html#study
+`index.html` kholo. Upar Study Material, My Study aur Smart Revision buttons hain. Offline Library Advanced > 3 > Offline Library mein hai. Purana page `backupindex.html` mein preserved hai. Hosted copy: https://laxtline.github.io/Code-Editor-Pro/index.html#study. Agar browser purani cached copy dikhaye, Online / Offline se available update apply karo; phir Ctrl+Shift+R karo.

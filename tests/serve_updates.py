@@ -1,5 +1,6 @@
 """Local-only fixture: serve two real worker revisions without editing build artifacts."""
 import json
+import re
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -38,7 +39,11 @@ class Handler(SimpleHTTPRequestHandler):
             return
         self.path = self.path[len('/update-test'):]
         name = urlsplit(self.path).path
-        if name == '/offline/catalog.js':
+        if name in ['/', '/index.html']:
+            html=(ROOT/'index.html').read_text(encoding='utf-8')
+            html=re.sub(r'(window\.CODELAB_OFFLINE_CATALOG=\{.*?"revision":")[^"]*(")',lambda match:match[1]+revision+match[2],html,count=1,flags=re.S)
+            self.send_bytes(html.encode('utf-8'), 'text/html')
+        elif name == '/offline/catalog.js':
             catalog = json.loads((ROOT/'offline/catalog.js').read_text(encoding='utf-8').removeprefix('window.CODELAB_OFFLINE_CATALOG=').rstrip(';\n'))
             catalog['revision'] = revision
             self.send_bytes(('window.CODELAB_OFFLINE_CATALOG='+json.dumps(catalog)+';').encode(), 'application/javascript')

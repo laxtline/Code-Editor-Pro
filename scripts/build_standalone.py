@@ -11,7 +11,8 @@ def script(text):
     return '<script>'+re.sub(r'</script',r'<\\/script',text,flags=re.I)+'</script>'
 
 def build():
-    html=(ROOT/'index.html').read_text(encoding='utf-8')
+    source=(ROOT/'backupindex.html').read_text(encoding='utf-8')
+    html=source
     html=re.sub(r'<link rel="manifest"[^>]*>', '', html)
     html=html.replace('href="assets/icon-192.png"','href="data:image/png;base64,'+base64.b64encode((ROOT/'assets/icon-192.png').read_bytes()).decode()+'"')
     catalog=json.loads((ROOT/'offline/catalog.js').read_text(encoding='utf-8').removeprefix('window.CODELAB_OFFLINE_CATALOG=').rstrip(';\n'))
@@ -36,10 +37,9 @@ def build():
     html=html.replace('<title>StudyLab —','<title>StudyLab Offline —')
     output=ROOT/'CodeLab-Offline.html';output.write_text(html,encoding='utf-8')
     print(f'Built {output.name}: {output.stat().st_size/1024/1024:.2f} MiB; {len(images)} embedded diagrams.')
-    # A distinct entry URL bypasses older workers' cached index. Inline the current
-    # app modules so an older worker cannot mix old scripts with the new document.
-    # Keep normal localhost/PWA engines and folder backup enabled on this entry.
-    current=(ROOT/'index.html').read_text(encoding='utf-8')
+    # Preserve the editable original in backupindex.html. The default index
+    # bundles current UI modules while retaining local engines and folder backup.
+    current=source
     bootstrap='window.CODELAB_CURRENT_ENTRY=true;window.CODELAB_PYTHON_WORKER_SOURCE='+json.dumps((ROOT/'assets/python-worker.js').read_text(encoding='utf-8'))+';'
     def current_script(match):
         path=match[1]
@@ -47,8 +47,8 @@ def build():
         return (script(bootstrap) if path=='assets/library.js' else '')+script((ROOT/path).read_text(encoding='utf-8'))
     current=re.sub(r'<script src="([^"]+)"\s*></script>',current_script,current)
     current=re.sub(r'<link rel="stylesheet" href="([^"\s]+)"\s*/>',inline_style,current)
-    (ROOT/'StudyLab.html').write_text(current,encoding='utf-8')
-    print('Built StudyLab.html: current app shell with local engines and private folder backup.')
+    (ROOT/'index.html').write_text(current,encoding='utf-8')
+    print('Built index.html: current app shell with local engines and private folder backup.')
 
 if __name__=='__main__':
     build()

@@ -10,7 +10,7 @@ test('two local origins restore folder notes, avoid save ping-pong, retain tombs
   test.setTimeout(120000);
   const root=info.outputPath('local app');fs.mkdirSync(root,{recursive:true});
   // Symlink-free copy excludes all private/user files and never mutates _site.
-  for(const name of ['index.html','StudyLab.html','Start-CodeLab.py','local_tools.py'])fs.copyFileSync(name,path.join(root,name));
+  for(const name of ['index.html','Start-CodeLab.py','local_tools.py'])fs.copyFileSync(name,path.join(root,name));
   for(const name of ['assets','vendor','offline'])fs.cpSync(name,path.join(root,name),{recursive:true});
   const servers=[];const contexts=[];
   const start=async port=>{
@@ -20,7 +20,7 @@ test('two local origins restore folder notes, avoid save ping-pong, retain tombs
   const open=async port=>{
     const context=await browser.newContext();contexts.push(context);
     await context.addInitScript(()=>{window.CODELAB_DISABLE_MONACO=true;window.CODELAB_DISABLE_PYTHON=true;localStorage.setItem('cl_first_visit','false');});
-    const page=await context.newPage();await page.goto(`http://127.0.0.1:${port}/StudyLab.html#study/html/html-start`);
+    const page=await context.newPage();await page.goto(`http://127.0.0.1:${port}/index.html#study/html/html-start`);
     await page.waitForFunction(()=>!!LocalBridge.capabilities);return page;
   };
   try{

@@ -25,17 +25,18 @@ test('three study sections stay visible in every mode and the full library lives
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(errors).toEqual([]);
 });
 
-test('fresh entry bypasses stale cached HTML and scripts, preserves notes and opens all study sections offline',async({page,context})=>{
+test('default index refreshes stale cached HTML and scripts, preserves notes and opens all study sections offline',async({page,context})=>{
   await page.goto(HOST);await page.waitForFunction(()=>!!navigator.serviceWorker.controller);
   await page.evaluate(async()=>{
     Store.setRaw('study_notes_py-setup','Keep my existing study notes');
     const cache=await caches.open(OfflineLibrary.cacheName()),old='<title>CodeLab</title><h1>CodeLab old cached copy</h1>';
-    for(const path of ['./','index.html','StudyLab.html'])await cache.put(new URL(path,document.baseURI),new Response(old,{headers:{'Content-Type':'text/html'}}));
+    for(const path of ['./','index.html'])await cache.put(new URL(path,document.baseURI),new Response(old,{headers:{'Content-Type':'text/html'}}));
     await cache.put(new URL('assets/study.js',document.baseURI),new Response('throw new Error("stale study module");',{headers:{'Content-Type':'text/javascript'}}));
   });
-  await page.goto(HOST);await expect(page.locator('h1')).toHaveText('CodeLab old cached copy');
+  await context.setOffline(true);await page.goto(HOST);await expect(page.locator('h1')).toHaveText('CodeLab old cached copy');await context.setOffline(false);
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
-  await page.goto(HOST+'StudyLab.html#study');await expect(page.locator('.study-summary')).toContainText('30 courses');
+  await page.goto(HOST+'index.html#study');await expect(page.locator('.study-summary')).toContainText('30 courses');
+  await page.goto(HOST+'#study');await expect(page.locator('.study-summary')).toContainText('30 courses');
   expect(await page.evaluate(()=>({lessons:Study.lessons().length,answers:Study.lessons().reduce((n,l)=>n+l.interviews.length,0),questions:Academy.data.questions.length}))).toEqual({lessons:145,answers:446,questions:1138});
   expect(await page.evaluate(()=>!!window.CODELAB_STANDALONE)).toBe(false);
   await page.locator('#navbar [data-nav="dashboard"]').click();await expect(page.locator('#view-dashboard h1')).toHaveText("Today's study plan");
