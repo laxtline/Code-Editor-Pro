@@ -4,7 +4,7 @@ import shutil
 import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
-STATIC=['index.html','backupindex.html','sw.js','manifest.webmanifest','CodeLab-Offline.html','Start-CodeLab.py','local_tools.py','Start-CodeLab.cmd','Start-CodeLab-Vivaldi.ps1','OFFLINE-START-HERE.md','README.md','.vscode/extensions.json','.vscode/tasks.json']
+STATIC=['index.html','backupindex.html','update.html','sw.js','manifest.webmanifest','CodeLab-Offline.html','Start-CodeLab.py','local_tools.py','Start-CodeLab.cmd','Start-CodeLab-Vivaldi.ps1','OFFLINE-START-HERE.md','README.md','.vscode/extensions.json','.vscode/tasks.json']
 
 def build():
     target=(ROOT/'_site').resolve()

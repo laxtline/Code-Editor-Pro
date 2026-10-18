@@ -39,7 +39,23 @@ class Handler(SimpleHTTPRequestHandler):
             return
         self.path = self.path[len('/update-test'):]
         name = urlsplit(self.path).path
-        if name in ['/', '/index.html']:
+        if name == '/legacy.html':
+            self.send_bytes(b'<!doctype html><title>Legacy worker fixture</title><h1>Legacy worker fixture</h1>', 'text/html')
+        elif name == '/legacy-worker.js':
+            # Reproduce the old cache-first worker, including its cached root.
+            self.send_bytes(b'''
+const legacyCache='legacy-codelab-test';
+self.addEventListener('install',event=>event.waitUntil((async()=>{
+  const cache=await caches.open(legacyCache);
+  for(const path of ['./','index.html'])await cache.put(new URL(path,self.registration.scope),new Response('<title>CodeLab</title><h1>CodeLab old cached copy</h1>',{headers:{'Content-Type':'text/html'}}));
+})()));
+self.addEventListener('activate',event=>event.waitUntil(self.clients.claim()));
+self.addEventListener('fetch',event=>{
+  const url=new URL(event.request.url);url.search='';url.hash='';
+  if(['./','index.html'].some(path=>url.href===new URL(path,self.registration.scope).href))event.respondWith(caches.open(legacyCache).then(cache=>cache.match(url.href)));
+});
+''', 'application/javascript')
+        elif name in ['/', '/index.html']:
             html=(ROOT/'index.html').read_text(encoding='utf-8')
             html=re.sub(r'(window\.CODELAB_OFFLINE_CATALOG=\{.*?"revision":")[^"]*(")',lambda match:match[1]+revision+match[2],html,count=1,flags=re.S)
             self.send_bytes(html.encode('utf-8'), 'text/html')

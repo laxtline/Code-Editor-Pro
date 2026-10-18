@@ -101,4 +101,6 @@ Top ke Back/Forward buttons ya browser history use karo. Active test se leave ka
 
 ## Latest StudyLab screen
 
+Purana CodeLab screen ya “Update ready” dikh raha ho to isi server address par `update.html` kholo. Active test finish/save-and-leave karo, doosre StudyLab tabs/windows band karo, phir **Check and apply update** dabao. Browser storage ya saved progress clear mat karo.
+
 `index.html` kholo. Upar Study Material, My Study aur Smart Revision buttons hain. Offline Library Advanced > 3 > Offline Library mein hai. Purana page `backupindex.html` mein preserved hai. Hosted copy: https://laxtline.github.io/Code-Editor-Pro/index.html#study. Agar browser purani cached copy dikhaye, Online / Offline se available update apply karo; phir Ctrl+Shift+R karo.

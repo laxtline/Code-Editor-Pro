@@ -2,6 +2,8 @@
 
 Open **`index.html`** for StudyLab. Study Material, My Study and Smart Revision are permanent top navigation buttons. The full Offline Library is under **Advanced > 3 > Offline Library**. The previous page is preserved as `backupindex.html`; the build uses it as the editable source and bundles the current UI into `index.html`.
 
+If a browser still shows the old CodeLab page, open [Update StudyLab](https://laxtline.github.io/Code-Editor-Pro/update.html). Finish/save any active test, close other StudyLab tabs/windows, and apply the pending update. Saved notes and progress stay in the browser.
+
 A static coding and placement practice app with an editor, judged exercises, contests, mock exams, theory lessons and a bundled offline study library. No build step is needed to use or deploy the generated app.
 
 ## Version 3.0 upgrades
